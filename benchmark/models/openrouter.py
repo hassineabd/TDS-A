@@ -1,7 +1,5 @@
 """Unified OpenRouter client - OpenAI-compatible API that proxies to
-Anthropic, OpenAI, Google and others. One API key gets access to all providers.
-
-Model IDs are in the form 'provider/model', e.g. 'anthropic/claude-sonnet-4.5'.
+Anthropic, OpenAI, Google and others via a single API key.
 """
 from __future__ import annotations
 
@@ -10,62 +8,84 @@ from typing import Any
 
 from openai import OpenAI
 
-from .base import GroundingModel
+from .base import GroundingModel, RawResponse
 
 
 class OpenRouterModel(GroundingModel):
-    """Unified client for any OpenRouter-hosted model with vision support."""
+    """Vision model accessed through OpenRouter."""
 
-    def __init__(self, *, name: str, model_id: str, provider: str,
-                 cu_trained: bool, max_tokens: int = 2048) -> None:
-        # 2048 is generous: leaves headroom for reasoning models (Gemini 2.5
-        # Pro, GPT-4o with thinking) that use hidden reasoning tokens before
-        # the final JSON. The actual JSON output is ~15 tokens.
+    def __init__(
+        self,
+        *,
+        name: str,
+        model_id: str,
+        provider: str,
+        cu_trained: bool,
+    ) -> None:
         self.name = name
         self.model_id = model_id
         self.provider = provider
         self.cu_trained = cu_trained
-        self.max_tokens = max_tokens
         self._client = OpenAI(
             api_key=os.environ["OPENROUTER_API_KEY"],
             base_url="https://openrouter.ai/api/v1",
             default_headers={
-                # Attribution headers recommended by OpenRouter
                 "HTTP-Referer": "https://github.com/hassineabd/TDS-A",
                 "X-Title": "TDS-A Mobile Grounding Benchmark",
             },
         )
 
-    def _call(self, image_b64: str, prompt: str,
-              media_type: str) -> tuple[str, dict[str, Any]]:
-        resp = self._client.chat.completions.create(
-            model=self.model_id,
-            max_tokens=self.max_tokens,
-            temperature=0,
-            messages=[{
-                "role": "user",
-                "content": [
-                    {"type": "text", "text": prompt},
-                    {"type": "image_url", "image_url": {
-                        "url": f"data:{media_type};base64,{image_b64}",
-                    }},
-                ],
-            }],
-        )
+    def call(
+        self,
+        image_b64: str,
+        media_type: str,
+        prompt: str,
+        max_tokens: int = 2048,
+        temperature: float = 0.0,
+    ) -> RawResponse:
+        import time
+        start = time.perf_counter()
+        try:
+            resp = self._client.chat.completions.create(
+                model=self.model_id,
+                max_tokens=max_tokens,
+                temperature=temperature,
+                messages=[{
+                    "role": "user",
+                    "content": [
+                        {"type": "text", "text": prompt},
+                        {"type": "image_url", "image_url": {
+                            "url": f"data:{media_type};base64,{image_b64}",
+                        }},
+                    ],
+                }],
+            )
+        except Exception as exc:
+            elapsed = int((time.perf_counter() - start) * 1000)
+            return RawResponse(
+                text="", latency_ms=elapsed,
+                error=f"{type(exc).__name__}: {exc}",
+            )
+        elapsed = int((time.perf_counter() - start) * 1000)
+
         text = resp.choices[0].message.content or ""
-        usage = resp.usage
         meta: dict[str, Any] = {"model_id": self.model_id}
+        usage = resp.usage
+        in_tok = out_tok = None
         if usage is not None:
-            meta["input_tokens"] = usage.prompt_tokens
-            meta["output_tokens"] = usage.completion_tokens
-            # OpenRouter exposes cost in response.usage when available
+            in_tok = usage.prompt_tokens
+            out_tok = usage.completion_tokens
             cost = getattr(usage, "cost", None)
             if cost is not None:
                 meta["cost_usd"] = cost
-        return text, meta
+        return RawResponse(
+            text=text, latency_ms=elapsed,
+            input_tokens=in_tok, output_tokens=out_tok,
+            metadata=meta,
+        )
 
 
-# Factory builders
+# Factory builders — one per (model, provider) we benchmark.
 def ClaudeSonnet45() -> OpenRouterModel:
     return OpenRouterModel(
         name="claude-sonnet-4.5",
@@ -78,6 +98,16 @@ def ClaudeOpus46() -> OpenRouterModel:
     return OpenRouterModel(
         name="claude-opus-4.6",
         model_id="anthropic/claude-opus-4.6",
+        provider="anthropic", cu_trained=True,
+    )
+
+
+def ClaudeOpus47() -> OpenRouterModel:
+    """Opus 4.7 ships native 1:1 pixel coordinates (no internal downsampling
+    rescale required) — included as a comparison point for the article."""
+    return OpenRouterModel(
+        name="claude-opus-4.7",
+        model_id="anthropic/claude-opus-4.7",
         provider="anthropic", cu_trained=True,
     )
 

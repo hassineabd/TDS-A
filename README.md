@@ -1,135 +1,152 @@
-# Mobile UI Grounding Benchmark: CU-trained vs non-CU-trained models
+# Mobile UI Grounding Benchmark
 
 Companion code for the TDS article *"Building a Mobile Test Agent with Robot
-Framework and Multimodal AI"*.
+Framework and Multimodal AI"*. The benchmark tests how well vision-language
+models can locate UI elements on mobile screenshots, which is the core skill
+needed to drive a mobile test agent that operates by clicking pixel
+coordinates rather than DOM/accessibility selectors.
 
-## Hypothesis
+## Hypotheses
 
-Vision-language models that have been trained on Computer Use tasks (Claude
-4.x, GPT-4o/4.1) should develop a *pixel-counting* skill — the ability to
-predict precise click coordinates directly from a screenshot — that transfers
-to mobile UIs even though Anthropic/OpenAI only advertise desktop training.
-Models without this training (Gemini 2.5 Pro) should rely on weaker general
-visual reasoning and produce less accurate coordinates, forcing them to use
-an external parser (OmniParser, SoM overlay, accessibility tree) to be
-useful for mobile agents.
+**H1 (zero-shot):** vision-language models that have been trained on Computer
+Use tasks (Claude 4.x, GPT-4o/4.1) should locate UI elements more accurately
+than models without that training (Gemini 2.5 Pro), even on mobile UIs that
+fall outside the desktop training distribution.
 
-This benchmark tests that hypothesis on **three real mobile screenshots**
-captured from a Google Pixel 7 via BrowserStack App Automate, across five
-VLMs accessed through OpenRouter.
+**H2 (with anchors):** priming the model with a small number of *calibration
+anchors* — a few reference bboxes drawn on the screenshot AND given as
+coordinate text — should improve grounding accuracy. This tests whether the
+gap between models can be closed (or reversed) with a coordinate-system
+priming technique inspired by Set-of-Marks prompting.
 
-## Method
+## Coordinate protocol
 
-**Screenshots** (no preprocessing — sent at native resolution):
-- `clock_pixel7.png` — Android Clock app (landscape 2400×1080)
-- `home_pixel7.png`  — Pixel launcher home screen (portrait 1080×2400)
-- `youtube_pixel7.png` — YouTube notification permission dialog (2400×1080)
+Every model is asked for normalized bounding boxes in `[y_min, x_min, y_max,
+x_max]` format, scaled to 0–1000. This:
 
-**Targets** (curated manually from UiAutomator2 `page_source` bounds):
-24 elements total across the three screens, spanning size categories
-*medium* (48dp ≤ area < 150dp²) and *large* (≥ 150dp²), with diverse
-positions (corners, center, dock, headers).
+  - matches Gemini's [native documented format](https://ai.google.dev/gemini-api/docs/image-understanding) so it answers in its training distribution,
+  - avoids each provider's internal image downsampling (Claude clamps the long
+    edge to 1568 px and returns coordinates in *that* space; GPT-4o/4.1
+    rescales to a 768-shortest-side tiled image — both are documented quirks
+    that bite naïve "give me pixel coordinates" prompts),
+  - leaves the client-side denormalisation as a single, uniform formula:
+    `pixel = norm × dim / 1000` using the *original* screenshot dimensions.
 
-**Models** (5 total, 1 API key via OpenRouter):
+The Y-first ordering is Gemini's convention. Pixel-space tuples remain X-first
+(standard for image processing).
 
-| Model              | Provider  | CU-trained? |
-|--------------------|-----------|-------------|
-| claude-sonnet-4.5  | Anthropic | **Yes**     |
-| claude-opus-4.6    | Anthropic | **Yes**     |
-| gpt-4o             | OpenAI    | **Yes** (via CUA) |
-| gpt-4.1            | OpenAI    | **Yes** (via CUA) |
-| gemini-2.5-pro     | Google    | No          |
+## Experiments
 
-**Prompt** (identical for all models):
+Each experiment is an independent unit with its own prompt, image-prep
+pipeline, parser, evaluator, and results directory. Add a new one by
+subclassing `Experiment` and registering it in
+[`benchmark/experiments/__init__.py`](benchmark/experiments/__init__.py).
 
-```
-You are looking at a mobile screenshot of <W>x<H> pixels (origin [0,0] is
-top-left, x goes right, y goes down).
+| Experiment                  | Calls | Prompt                                        | Image                       |
+|-----------------------------|-------|-----------------------------------------------|-----------------------------|
+| `grounding_zero_shot`       | 24    | Locate ONE described element                   | screenshot, untouched       |
+| `grounding_with_anchors`    | 15    | Locate ONE element + 3 anchor calibration boxes | screenshot with magenta SoM overlay |
 
-Return the exact pixel coordinates [x, y] of the CENTER of the following UI
-element:
+`grounding_with_anchors` excludes the 3 anchors from its eval set, so it
+runs over 24 − (3 anchors × 3 scenes) = 15 targets.
 
-"<element description>"
+## Models
 
-Respond with ONLY a JSON object in this exact format and nothing else
-(no markdown fences, no explanation):
-{"x": <integer>, "y": <integer>}
-```
+Six VLMs accessed through a single OpenRouter API key:
 
-No tools, no schema, no Computer-Use-mode activation. Every model gets the
-raw screenshot (JPEG 95, full resolution — no downsampling) and a plain text
-prompt. We measure how close their predicted `(x, y)` lands to the ground
-truth center of each element.
+| Model              | Provider  | CU-trained? | Notes                                                        |
+|--------------------|-----------|-------------|--------------------------------------------------------------|
+| claude-sonnet-4.5  | Anthropic | yes         | downsamples to 1568 px long edge                             |
+| claude-opus-4.6    | Anthropic | yes         | same downsample as Sonnet 4.5                                |
+| claude-opus-4.7    | Anthropic | yes         | 2576 px long edge, **no** downsample-space coord quirk        |
+| gpt-4o             | OpenAI    | yes (CUA)   | tile pipeline rescales shortest side to 768 px                |
+| gpt-4.1            | OpenAI    | yes (CUA)   | same as 4o                                                   |
+| gemini-2.5-pro     | Google    | no          | native 0-1000 [y,x,y,x] coordinate output                     |
 
-**Runs**: 3 runs per target per model (to capture stochasticity) →
-`5 × 24 × 3 = 360 API calls`.
-
-**Metrics**:
-- Mean Euclidean error in pixels (native screenshot coordinates)
-- Hit rate: % of predictions that land inside the target's bounding box
-- Breakdown by element size category
-- Latency per model
+Total API calls per experiment, single run: 144 (zero-shot) and 90 (anchors).
 
 ## Repository layout
 
 ```
 TDS-A/
-├── data/                      Screenshots + UiAutomator2 XML + curated targets
-│   ├── clock_pixel7.png       Clock app (2400×1080, landscape)
-│   ├── clock_pixel7.xml       UiAutomator2 page source
-│   ├── clock_pixel7.targets.json  Curated targets with ground-truth bounds
-│   ├── home_pixel7.*
-│   └── youtube_pixel7.*
+├── data/
+│   ├── *_pixel7.png          screenshots
+│   ├── *_pixel7.xml          UiAutomator2 page sources
+│   └── *_pixel7.targets.json curated targets with pixel-space ground-truth bboxes
 ├── benchmark/
-│   ├── capture.py             BrowserStack session + screenshot + XML dump
-│   ├── targets.py             Parse XML, classify targets by Material size
-│   ├── models/
-│   │   ├── base.py            GroundingModel ABC + prompt + JPEG encoder
-│   │   └── openrouter.py      Unified OpenAI-compatible client for 5 models
-│   ├── run.py                 Orchestrator: model × scene × target × run → JSON
-│   └── analyze.py             Pandas stats + matplotlib charts
-├── results/
-│   ├── raw_predictions.json   All 360 predictions with metadata
-│   ├── summary_by_model.csv   Per-model stats
-│   ├── summary.csv            Per-model × size-category stats
-│   └── charts/*.png           Error, hit rate, latency, scatter
-└── requirements.txt
+│   ├── coords.py             norm ↔ pixel, bbox math, deterministic anchor pick
+│   ├── metrics.py            hit_rate, IoU, center_err, precision/recall/F1
+│   ├── render.py             PIL: anchor overlay (magenta bbox + label)
+│   ├── models/               OpenRouter client (one class per model)
+│   ├── experiments/
+│   │   ├── base.py           Experiment ABC + dataclasses (Scene, Call, Prediction)
+│   │   ├── grounding_zero_shot.py
+│   │   └── grounding_with_anchors.py
+│   ├── analyze/
+│   │   └── grounding.py      stats + charts for grounding experiments
+│   ├── run.py                generic runner: --experiment <name>
+│   ├── capture.py            BrowserStack session + screenshot dump
+│   └── targets.py            parse XML, classify by Material size category
+└── results/<experiment_name>/
+    ├── raw_predictions.json
+    ├── summary_by_model.csv
+    ├── summary_by_model_size.csv
+    └── charts/
 ```
 
 ## Reproduce
 
 ```bash
-# 1. Clone + deps
-git clone https://github.com/hassineabd/TDS-A.git
-cd TDS-A
+git clone https://github.com/hassineabd/TDS-A.git && cd TDS-A
 python -m venv .venv && source .venv/bin/activate
 pip install -r requirements.txt
 
-# 2. Set API keys
 cp .env.example .env
-# Edit .env and add OPENROUTER_API_KEY (https://openrouter.ai/keys)
-# Optional: BROWSERSTACK_* if you want to re-capture screenshots
+# Edit .env and add your OPENROUTER_API_KEY (https://openrouter.ai/keys)
 
-# 3. (Optional) Re-capture apps via BrowserStack
-python -m benchmark.capture --app com.google.android.deskclock --out data/clock_pixel7
-python -m benchmark.capture --app com.google.android.dialer    --out data/home_pixel7
-python -m benchmark.capture --app com.google.android.youtube   --out data/youtube_pixel7
-python -m benchmark.targets data/clock_pixel7.xml --screenshot-id clock_pixel7 --out data/clock_pixel7.targets.json
+# Plan only:
+python -m benchmark.run --experiment grounding_zero_shot --dry-run
 
-# 4. Run the benchmark (~$1-2 via OpenRouter, 15-30 min)
-python -m benchmark.run --dry-run         # plan
-python -m benchmark.run                   # full run (resumable)
+# Run (resumable; checkpoints every 10 calls):
+python -m benchmark.run --experiment grounding_zero_shot
+python -m benchmark.run --experiment grounding_with_anchors
 
-# 5. Stats + charts
-python -m benchmark.analyze
-open results/charts/error_by_model.png
+# Aggregate stats + charts:
+python -m benchmark.analyze.grounding --experiment grounding_zero_shot
+python -m benchmark.analyze.grounding --experiment grounding_with_anchors
 ```
 
-## Results
+Useful flags on `benchmark.run`:
 
-See `results/charts/` and `results/summary_by_model.csv` after running the
-benchmark. A high-resolution version of the key chart is exported to
-`article_snippets/figure_grounding.png` for inclusion in the TDS article.
+  - `--models claude-sonnet-4.5 gemini-2.5-pro` — restrict to a subset
+  - `--runs 3` — repeat each call N times (default 1; only useful when
+    `--temperature > 0`, otherwise outputs are near-deterministic)
+  - `--temperature 0.7` — non-zero sampling
+  - `--max-calls 1000` — safety cap; runner refuses to start above this
+
+## Methodological caveats
+
+To be honest about the scope of this benchmark:
+
+  - **Sample size is small.** 24 targets × 6 models is illustrative, not a
+    statistically powered comparison. We don't claim significance.
+  - **Targets only cover medium and large sizes.** The 8-target curation per
+    scene happens to skip elements below 3600 px², which means we don't
+    evaluate the regime where grounding is hardest.
+  - **Target descriptions are humanly annotated and somewhat over-specified.**
+    "*The 'Alarm' tab in the bottom navigation bar (leftmost)*" already
+    encodes spatial information. A real agent would receive shorter,
+    user-style commands. A future experiment could test the gap between
+    rich and short descriptions.
+  - **OpenRouter is assumed to be a passthrough** to upstream providers.
+    Image preprocessing on the OpenRouter side is not officially documented.
+  - **Anchor selection is fixed per scene.** The same 3 anchors are reused
+    for every target in a scene. Diversifying anchors per target — and
+    measuring the variance — is left as a follow-up experiment.
+
+These are deliberate tradeoffs to keep the experiment runnable on a tight
+API-cost budget; the article should frame results as directional, not
+definitive.
 
 ## License
 

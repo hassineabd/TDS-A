@@ -1,51 +1,30 @@
-"""Benchmark orchestrator.
+"""Generic experiment runner.
 
-Loops over (model x screenshot x target x run) and records predictions.
-Saves results incrementally to `results/raw_predictions.json` so we can
-resume after API failures.
+Usage:
+    python -m benchmark.run --experiment grounding_zero_shot --dry-run
+    python -m benchmark.run --experiment grounding_zero_shot
+    python -m benchmark.run --experiment grounding_with_anchors --models gemini-2.5-pro
+
+The runner is task-agnostic: it loops over (model x call x run), encodes
+the image, dispatches to the model, then asks the experiment to parse and
+evaluate the response. Results are streamed to
+`results/<experiment>/raw_predictions.json` and the run is resumable —
+re-launching skips rows already on disk.
 """
 from __future__ import annotations
 
 import argparse
 import json
-import math
 import os
 import sys
 from dataclasses import asdict
 from pathlib import Path
 
 from dotenv import load_dotenv
-from PIL import Image
 
+from .experiments import EXPERIMENTS, Scene, get_experiment
 from .models import ALL_MODELS, GroundingModel, available_models
-
-
-def euclidean(ax: int, ay: int, bx: int, by: int) -> float:
-    return math.hypot(ax - bx, ay - by)
-
-
-def inside_bounds(bounds: list[int], x: int, y: int) -> bool:
-    x1, y1, x2, y2 = bounds
-    return x1 <= x <= x2 and y1 <= y <= y2
-
-
-def load_screenshots(data_dir: Path) -> list[dict]:
-    """Discover all <name>.{png,xml,targets.json} triples in `data_dir`."""
-    scenes = []
-    for png in sorted(data_dir.glob("*.png")):
-        name = png.stem
-        targets_path = data_dir / f"{name}.targets.json"
-        if not targets_path.exists():
-            print(f"  skip {name}: no targets.json")
-            continue
-        with Image.open(png) as im:
-            w, h = im.size
-        targets = json.loads(targets_path.read_text())
-        scenes.append(
-            {"name": name, "image": png, "width": w, "height": h,
-             "targets": targets}
-        )
-    return scenes
+from .models.base import encode_image
 
 
 def load_existing(path: Path) -> list[dict]:
@@ -57,168 +36,193 @@ def load_existing(path: Path) -> list[dict]:
     return []
 
 
-def save_results(path: Path, results: list[dict]) -> None:
+def save_results(path: Path, rows: list[dict]) -> None:
     path.parent.mkdir(parents=True, exist_ok=True)
-    path.write_text(json.dumps(results, indent=2))
+    path.write_text(json.dumps(rows, indent=2, default=str))
 
 
-def already_done(results: list[dict], key: tuple) -> bool:
-    for r in results:
-        k = (r["model"], r["screenshot"], r["target_id"], r["run"])
-        if k == key:
-            return True
-    return False
+def make_row_key(experiment: str, model: str, scene: str,
+                 target_id: str | None, run: int) -> tuple:
+    return (experiment, model, scene, target_id or "_scene_", run)
 
 
 def main() -> None:
     load_dotenv()
     parser = argparse.ArgumentParser()
+    parser.add_argument("--experiment", required=True,
+                        choices=list(EXPERIMENTS.keys()))
     parser.add_argument("--data-dir", type=Path, default=Path("data"))
-    parser.add_argument("--out", type=Path, default=Path("results/raw_predictions.json"))
+    parser.add_argument("--out-dir", type=Path, default=Path("results"))
     parser.add_argument("--models", nargs="*", default=None,
                         help="Subset of model names; defaults to all available")
-    parser.add_argument("--runs", type=int,
-                        default=int(os.environ.get("RUNS_PER_TARGET", 3)))
+    parser.add_argument("--runs", type=int, default=1,
+                        help="Repeat each call N times for stochasticity "
+                             "measurement; default 1 because temperature=0 "
+                             "makes additional runs near-deterministic")
+    parser.add_argument("--temperature", type=float, default=0.0)
+    parser.add_argument("--max-tokens", type=int, default=2048)
     parser.add_argument("--max-calls", type=int,
-                        default=int(os.environ.get("MAX_CALLS", 500)))
+                        default=int(os.environ.get("MAX_CALLS", 500)),
+                        help="Safety cap; refuses to start if planned > this")
     parser.add_argument("--dry-run", action="store_true",
-                        help="Print plan without calling APIs")
+                        help="Print plan + sample prompt and exit")
     args = parser.parse_args()
 
+    # Resolve models
     if args.models:
         requested = args.models
     else:
         requested = available_models()
         if not requested:
-            print("ERROR: no API keys found. Set ANTHROPIC_API_KEY, "
-                  "OPENAI_API_KEY, GOOGLE_API_KEY in .env", file=sys.stderr)
+            print("ERROR: no API keys found. Set OPENROUTER_API_KEY in .env",
+                  file=sys.stderr)
             sys.exit(1)
-
     unknown = [m for m in requested if m not in ALL_MODELS]
     if unknown:
         print(f"ERROR: unknown models: {unknown}", file=sys.stderr)
         print(f"  available: {list(ALL_MODELS.keys())}", file=sys.stderr)
         sys.exit(1)
 
-    scenes = load_screenshots(args.data_dir)
+    # Build the plan
+    exp = get_experiment(args.experiment)
+    scenes = Scene.load_from(args.data_dir)
     if not scenes:
-        print(f"ERROR: no screenshots found in {args.data_dir}", file=sys.stderr)
+        print(f"ERROR: no scenes found in {args.data_dir}", file=sys.stderr)
         sys.exit(1)
+    calls = list(exp.iter_calls(scenes))
+    planned = len(calls) * len(requested) * args.runs
 
-    total_targets = sum(len(s["targets"]) for s in scenes)
-    planned = len(requested) * total_targets * args.runs
+    out_path = args.out_dir / args.experiment / "raw_predictions.json"
 
-    print(f"Plan:")
-    print(f"  Models ({len(requested)}): {requested}")
-    print(f"  Scenes ({len(scenes)}):    {[s['name'] for s in scenes]}")
-    print(f"  Targets per scene:          {[len(s['targets']) for s in scenes]}")
-    print(f"  Total targets:              {total_targets}")
-    print(f"  Runs per target:            {args.runs}")
-    print(f"  Total API calls planned:    {planned}")
-    print(f"  Max calls allowed:          {args.max_calls}")
-
+    print(f"Experiment:       {args.experiment}")
+    print(f"Models ({len(requested)}):  {requested}")
+    print(f"Scenes ({len(scenes)}):   {[s.name for s in scenes]}")
+    print(f"Calls per model:  {len(calls)}")
+    print(f"Runs per call:    {args.runs}")
+    print(f"Total API calls:  {planned}")
+    print(f"Max allowed:      {args.max_calls}")
+    print(f"Output:           {out_path}")
     if planned > args.max_calls:
-        print(f"ERROR: planned {planned} > max {args.max_calls}. Lower --runs "
-              f"or raise --max-calls.", file=sys.stderr)
+        print(f"\nERROR: planned {planned} > max {args.max_calls}. "
+              f"Lower --runs or raise --max-calls.", file=sys.stderr)
         sys.exit(1)
 
     if args.dry_run:
-        print("\n(dry run - exiting)")
+        if calls:
+            sample = calls[0]
+            print(f"\n--- Sample call ---")
+            print(f"  scene = {sample.scene_name}")
+            print(f"  target = {sample.target_id}")
+            print(f"  image = {type(sample.image).__name__}")
+            print(f"  prompt:\n{sample.prompt}")
+        print("\n(dry run, exiting)")
         return
 
-    existing = load_existing(args.out)
-    done_keys = {(r["model"], r["screenshot"], r["target_id"], r["run"])
-                 for r in existing}
-    print(f"\nResuming: {len(existing)} predictions already in {args.out}")
+    existing = load_existing(out_path)
+    done_keys = {tuple(r["_key"]) for r in existing if "_key" in r}
+    rows = list(existing)
+    print(f"\nResuming: {len(existing)} rows already on disk")
 
-    # Instantiate only needed models lazily
     instances: dict[str, GroundingModel] = {}
-
-    results = list(existing)
-    call_count = 0
     failures: dict[str, int] = {m: 0 for m in requested}
+    n_called = 0
 
-    for model_name in requested:
-        if model_name not in instances:
+    try:
+        for model_name in requested:
             try:
-                instances[model_name] = ALL_MODELS[model_name]()
-                print(f"\n[model] {model_name} ready")
+                model = instances.setdefault(model_name, ALL_MODELS[model_name]())
             except Exception as exc:
-                print(f"\n[model] {model_name} FAILED to init: {exc}")
+                print(f"[{model_name}] init failed: {exc}", file=sys.stderr)
                 continue
-        model = instances[model_name]
 
-        for scene in scenes:
-            for target in scene["targets"]:
+            for call in calls:
+                # Encode image once per call (no point caching across models —
+                # they're independent, and we may have unique images per call)
+                try:
+                    img_b64, media_type = encode_image(call.image)
+                except Exception as exc:
+                    print(f"  encode failed for {call.scene_name}/{call.target_id}: {exc}",
+                          file=sys.stderr)
+                    continue
+
                 for run_idx in range(args.runs):
-                    key = (model_name, scene["name"], target["id"], run_idx)
+                    key = make_row_key(args.experiment, model_name,
+                                       call.scene_name, call.target_id, run_idx)
                     if key in done_keys:
                         continue
 
-                    pred = model.predict(
-                        scene["image"], target["description"],
-                        scene["width"], scene["height"],
+                    resp = model.call(
+                        image_b64=img_b64, media_type=media_type,
+                        prompt=call.prompt,
+                        max_tokens=args.max_tokens,
+                        temperature=args.temperature,
                     )
-                    call_count += 1
+                    n_called += 1
 
-                    if pred.error:
+                    if resp.error:
                         failures[model_name] += 1
-                        # Abort a model if it fails 5 times in a row
+                        prediction = exp.parse_response("", _scene_for(scenes, call.scene_name), call)
+                        prediction.parse_error = resp.error
+                        metrics = exp.evaluate(prediction, _scene_for(scenes, call.scene_name), call)
                         if failures[model_name] >= 5:
-                            print(f"  [{model_name}] too many errors, skipping")
+                            print(f"  [{model_name}] too many errors, skipping rest")
                             break
+                    else:
+                        scene = _scene_for(scenes, call.scene_name)
+                        prediction = exp.parse_response(resp.text, scene, call)
+                        metrics = exp.evaluate(prediction, scene, call)
 
-                    err_px = (euclidean(pred.x, pred.y, *target["center"])
-                              if pred.x >= 0 else None)
-                    ok = (inside_bounds(target["bounds"], pred.x, pred.y)
-                          if pred.x >= 0 else False)
-
-                    record = {
+                    pred_bbox = (prediction.items[0].bbox_px
+                                 if prediction.parse_ok else None)
+                    row = {
+                        "_key": list(key),
+                        "experiment": args.experiment,
                         "model": model_name,
                         "cu_trained": model.cu_trained,
                         "provider": model.provider,
-                        "screenshot": scene["name"],
-                        "screenshot_w": scene["width"],
-                        "screenshot_h": scene["height"],
-                        "target_id": target["id"],
-                        "target_description": target["description"],
-                        "size_category": target["size_category"],
-                        "area": target["area"],
-                        "ground_truth": target["center"],
-                        "bounds": target["bounds"],
-                        "predicted": [pred.x, pred.y],
-                        "euclidean_error_px": err_px,
-                        "inside_bounds": ok,
+                        "scene": call.scene_name,
+                        "target_id": call.target_id,
                         "run": run_idx,
-                        "latency_ms": pred.latency_ms,
-                        "input_tokens": pred.input_tokens,
-                        "output_tokens": pred.output_tokens,
-                        "raw_response": pred.raw_response,
-                        "error": pred.error,
+                        "predicted_bbox_px": list(pred_bbox) if pred_bbox else None,
+                        "raw_response": resp.text[:500],
+                        "parse_error": prediction.parse_error,
+                        "metrics": metrics,
+                        "metadata": call.metadata,
+                        "latency_ms": resp.latency_ms,
+                        "input_tokens": resp.input_tokens,
+                        "output_tokens": resp.output_tokens,
+                        "api_error": resp.error,
                     }
-                    results.append(record)
-                    mark = "OK" if ok else ("  " if err_px is None else "..")
-                    err_str = (f"{int(err_px):4}px" if err_px is not None
-                               else " fail")
-                    print(f"  [{mark}] {model_name:20} {scene['name']:16} "
-                          f"{target['id']:28} run{run_idx} -> ({pred.x:4},{pred.y:4}) "
-                          f"err={err_str}")
+                    rows.append(row)
+                    done_keys.add(key)
 
-                    if call_count % 10 == 0:
-                        save_results(args.out, results)
+                    mark = ("OK" if metrics.get("hit") else
+                            "  " if not metrics.get("parse_fail") else "??")
+                    err = metrics.get("center_error_px")
+                    err_str = f"{int(err):4d}px" if isinstance(err, (int, float)) else "  fail"
+                    print(f"  [{mark}] {model_name:20} {call.scene_name:18} "
+                          f"{(call.target_id or '_scene_'):28} run{run_idx} -> err={err_str}")
 
-                    if call_count >= args.max_calls:
-                        print(f"\nReached max calls ({args.max_calls}), "
-                              f"saving and exiting.")
-                        save_results(args.out, results)
-                        return
+                    if n_called % 10 == 0:
+                        save_results(out_path, rows)
+                else:
+                    continue
+                break  # broke out of run loop
             else:
                 continue
-            break  # broke inner loop due to model failures
-    save_results(args.out, results)
-    print(f"\nDone. {len(results)} total predictions in {args.out}")
-    print(f"  API calls this run: {call_count}")
-    print(f"  Failures per model: {failures}")
+            # Inner break above came from the model-failure path
+    finally:
+        save_results(out_path, rows)
+        print(f"\nDone. {len(rows)} rows in {out_path}")
+        print(f"  API calls this run: {n_called}")
+        print(f"  Failures per model: {failures}")
+
+
+def _scene_for(scenes: list[Scene], name: str) -> Scene:
+    for s in scenes:
+        if s.name == name:
+            return s
+    raise KeyError(f"Scene not found: {name}")
 
 
 if __name__ == "__main__":
