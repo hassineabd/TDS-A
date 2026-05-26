@@ -1,0 +1,6621 @@
+[
+  {
+    "_key": [
+      "grounding_zero_shot",
+      "claude-sonnet-4.5",
+      "clock_pixel7",
+      "clock_alarm_tab",
+      0
+    ],
+    "experiment": "grounding_zero_shot",
+    "model": "claude-sonnet-4.5",
+    "cu_trained": true,
+    "provider": "anthropic",
+    "scene": "clock_pixel7",
+    "target_id": "clock_alarm_tab",
+    "run": 0,
+    "predicted_bbox_px": [
+      1291,
+      581,
+      1596,
+      269
+    ],
+    "raw_response": "{\"box_2d\": [538, 538, 249, 665]}",
+    "parse_error": null,
+    "metrics": {
+      "parse_fail": false,
+      "center_error_px": 1282.0939903142828,
+      "hit": false,
+      "iou": 0.0
+    },
+    "metadata": {
+      "target_description": "The 'Alarm' tab in the bottom navigation bar (leftmost)",
+      "ground_truth_bbox_px": [
+        36,
+        807,
+        478,
+        1017
+      ],
+      "size_category": "large",
+      "area": 92820,
+      "coord_space": "normalized_1000"
+    },
+    "latency_ms": 21720,
+    "input_tokens": 1607,
+    "output_tokens": 21,
+    "api_error": null
+  },
+  {
+    "_key": [
+      "grounding_zero_shot",
+      "claude-sonnet-4.5",
+      "clock_pixel7",
+      "clock_timer_tab",
+      0
+    ],
+    "experiment": "grounding_zero_shot",
+    "model": "claude-sonnet-4.5",
+    "cu_trained": true,
+    "provider": "anthropic",
+    "scene": "clock_pixel7",
+    "target_id": "clock_timer_tab",
+    "run": 0,
+    "predicted_bbox_px": [
+      1325,
+      581,
+      1555,
+      1026
+    ],
+    "raw_response": "{\"box_2d\": [538, 552, 950, 648]}",
+    "parse_error": null,
+    "metrics": {
+      "parse_fail": false,
+      "center_error_px": 318.2483307104689,
+      "hit": false,
+      "iou": 0.041462113127001064
+    },
+    "metadata": {
+      "target_description": "The 'Timer' tab in the bottom navigation bar (center)",
+      "ground_truth_bbox_px": [
+        920,
+        807,
+        1362,
+        1017
+      ],
+      "size_category": "large",
+      "area": 92820,
+      "coord_space": "normalized_1000"
+    },
+    "latency_ms": 2503,
+    "input_tokens": 1605,
+    "output_tokens": 21,
+    "api_error": null
+  },
+  {
+    "_key": [
+      "grounding_zero_shot",
+      "claude-sonnet-4.5",
+      "clock_pixel7",
+      "clock_bedtime_tab",
+      0
+    ],
+    "experiment": "grounding_zero_shot",
+    "model": "claude-sonnet-4.5",
+    "cu_trained": true,
+    "provider": "anthropic",
+    "scene": "clock_pixel7",
+    "target_id": "clock_bedtime_tab",
+    "run": 0,
+    "predicted_bbox_px": [
+      1291,
+      1342,
+      1589,
+      1517
+    ],
+    "raw_response": "{\"box_2d\": [1243, 538, 1405, 662]}",
+    "parse_error": null,
+    "metrics": {
+      "parse_fail": false,
+      "center_error_px": 780.7137759768301,
+      "hit": false,
+      "iou": 0.0
+    },
+    "metadata": {
+      "target_description": "The 'Bedtime' tab in the bottom navigation bar (rightmost)",
+      "ground_truth_bbox_px": [
+        1804,
+        807,
+        2246,
+        1017
+      ],
+      "size_category": "large",
+      "area": 92820,
+      "coord_space": "normalized_1000"
+    },
+    "latency_ms": 2681,
+    "input_tokens": 1608,
+    "output_tokens": 23,
+    "api_error": null
+  },
+  {
+    "_key": [
+      "grounding_zero_shot",
+      "claude-sonnet-4.5",
+      "clock_pixel7",
+      "clock_fab_add_city",
+      0
+    ],
+    "experiment": "grounding_zero_shot",
+    "model": "claude-sonnet-4.5",
+    "cu_trained": true,
+    "provider": "anthropic",
+    "scene": "clock_pixel7",
+    "target_id": "clock_fab_add_city",
+    "run": 0,
+    "predicted_bbox_px": [
+      2986,
+      305,
+      3377,
+      1476
+    ],
+    "raw_response": "{\"box_2d\": [282, 1244, 1367, 1407]}",
+    "parse_error": null,
+    "metrics": {
+      "parse_fail": false,
+      "center_error_px": 1240.5297255608186,
+      "hit": false,
+      "iou": 0.0
+    },
+    "metadata": {
+      "target_description": "The blue circular '+' floating action button (Add city)",
+      "ground_truth_bbox_px": [
+        1902,
+        429,
+        2091,
+        618
+      ],
+      "size_category": "large",
+      "area": 35721,
+      "coord_space": "normalized_1000"
+    },
+    "latency_ms": 3420,
+    "input_tokens": 1603,
+    "output_tokens": 24,
+    "api_error": null
+  },
+  {
+    "_key": [
+      "grounding_zero_shot",
+      "claude-sonnet-4.5",
+      "clock_pixel7",
+      "clock_more_options",
+      0
+    ],
+    "experiment": "grounding_zero_shot",
+    "model": "claude-sonnet-4.5",
+    "cu_trained": true,
+    "provider": "anthropic",
+    "scene": "clock_pixel7",
+    "target_id": "clock_more_options",
+    "run": 0,
+    "predicted_bbox_px": [
+      3365,
+      78,
+      3540,
+      157
+    ],
+    "raw_response": "{\"box_2d\": [72, 1402, 145, 1475]}",
+    "parse_error": null,
+    "metrics": {
+      "parse_fail": false,
+      "center_error_px": 1223.6870514964191,
+      "hit": false,
+      "iou": 0.0
+    },
+    "metadata": {
+      "target_description": "The three-dot 'More options' menu in the top right corner",
+      "ground_truth_bbox_px": [
+        2177,
+        95,
+        2282,
+        221
+      ],
+      "size_category": "medium",
+      "area": 13230,
+      "coord_space": "normalized_1000"
+    },
+    "latency_ms": 16378,
+    "input_tokens": 1607,
+    "output_tokens": 23,
+    "api_error": null
+  },
+  {
+    "_key": [
+      "grounding_zero_shot",
+      "claude-sonnet-4.5",
+      "clock_pixel7",
+      "clock_time_display",
+      0
+    ],
+    "experiment": "grounding_zero_shot",
+    "model": "claude-sonnet-4.5",
+    "cu_trained": true,
+    "provider": "anthropic",
+    "scene": "clock_pixel7",
+    "target_id": "clock_time_display",
+    "run": 0,
+    "predicted_bbox_px": [
+      67,
+      214,
+      782,
+      378
+    ],
+    "raw_response": "{\"box_2d\": [198, 28, 350, 326]}",
+    "parse_error": null,
+    "metrics": {
+      "parse_fail": false,
+      "center_error_px": 165.65325230734229,
+      "hit": true,
+      "iou": 0.3166323948117684
+    },
+    "metadata": {
+      "target_description": "The large '22:25' time display on the left side",
+      "ground_truth_bbox_px": [
+        41,
+        242,
+        538,
+        542
+      ],
+      "size_category": "large",
+      "area": 149100,
+      "coord_space": "normalized_1000"
+    },
+    "latency_ms": 21256,
+    "input_tokens": 1605,
+    "output_tokens": 21,
+    "api_error": null
+  },
+  {
+    "_key": [
+      "grounding_zero_shot",
+      "claude-sonnet-4.5",
+      "clock_pixel7",
+      "clock_date_subtitle",
+      0
+    ],
+    "experiment": "grounding_zero_shot",
+    "model": "claude-sonnet-4.5",
+    "cu_trained": true,
+    "provider": "anthropic",
+    "scene": "clock_pixel7",
+    "target_id": "clock_date_subtitle",
+    "run": 0,
+    "predicted_bbox_px": [
+      67,
+      388,
+      958,
+      181
+    ],
+    "raw_response": "{\"box_2d\": [359, 28, 168, 399]}",
+    "parse_error": null,
+    "metrics": {
+      "parse_fail": false,
+      "center_error_px": 465.86800705779314,
+      "hit": false,
+      "iou": 0.0
+    },
+    "metadata": {
+      "target_description": "The small date text 'Sat, Apr 11' below the time",
+      "ground_truth_bbox_px": [
+        42,
+        542,
+        256,
+        610
+      ],
+      "size_category": "medium",
+      "area": 14552,
+      "coord_space": "normalized_1000"
+    },
+    "latency_ms": 5360,
+    "input_tokens": 1608,
+    "output_tokens": 21,
+    "api_error": null
+  },
+  {
+    "_key": [
+      "grounding_zero_shot",
+      "claude-sonnet-4.5",
+      "clock_pixel7",
+      "clock_title_label",
+      0
+    ],
+    "experiment": "grounding_zero_shot",
+    "model": "claude-sonnet-4.5",
+    "cu_trained": true,
+    "provider": "anthropic",
+    "scene": "clock_pixel7",
+    "target_id": "clock_title_label",
+    "run": 0,
+    "predicted_bbox_px": [
+      0,
+      89,
+      502,
+      172
+    ],
+    "raw_response": "{\"box_2d\": [82, 0.0, 159, 209]}",
+    "parse_error": null,
+    "metrics": {
+      "parse_fail": false,
+      "center_error_px": 116.18089343777659,
+      "hit": false,
+      "iou": 0.18754085501372728
+    },
+    "metadata": {
+      "target_description": "The 'Clock' app title in the top left corner",
+      "ground_truth_bbox_px": [
+        63,
+        115,
+        214,
+        200
+      ],
+      "size_category": "medium",
+      "area": 12835,
+      "coord_space": "normalized_1000"
+    },
+    "latency_ms": 2954,
+    "input_tokens": 1604,
+    "output_tokens": 23,
+    "api_error": null
+  },
+  {
+    "_key": [
+      "grounding_zero_shot",
+      "claude-sonnet-4.5",
+      "home_pixel7",
+      "home_play_store",
+      0
+    ],
+    "experiment": "grounding_zero_shot",
+    "model": "claude-sonnet-4.5",
+    "cu_trained": true,
+    "provider": "anthropic",
+    "scene": "home_pixel7",
+    "target_id": "home_play_store",
+    "run": 0,
+    "predicted_bbox_px": [
+      1067,
+      2354,
+      1234,
+      382
+    ],
+    "raw_response": "```json\n{\"box_2d\": [981, 988, 159, 1143]}\n```",
+    "parse_error": null,
+    "metrics": {
+      "parse_fail": false,
+      "center_error_px": 1017.6836443610558,
+      "hit": false,
+      "iou": 0.0
+    },
+    "metadata": {
+      "target_description": "The 'Play Store' app icon (first icon in the top row, leftmost)",
+      "ground_truth_bbox_px": [
+        57,
+        1476,
+        267,
+        1748
+      ],
+      "size_category": "large",
+      "area": 57120,
+      "coord_space": "normalized_1000"
+    },
+    "latency_ms": 3627,
+    "input_tokens": 1610,
+    "output_tokens": 27,
+    "api_error": null
+  },
+  {
+    "_key": [
+      "grounding_zero_shot",
+      "claude-sonnet-4.5",
+      "home_pixel7",
+      "home_gmail",
+      0
+    ],
+    "experiment": "grounding_zero_shot",
+    "model": "claude-sonnet-4.5",
+    "cu_trained": true,
+    "provider": "anthropic",
+    "scene": "home_pixel7",
+    "target_id": "home_gmail",
+    "run": 0,
+    "predicted_bbox_px": [
+      1067,
+      2354,
+      1233,
+      2580
+    ],
+    "raw_response": "```json\n{\"box_2d\": [981, 988, 1075, 1142]}\n```",
+    "parse_error": null,
+    "metrics": {
+      "parse_fail": false,
+      "center_error_px": 1128.149369542881,
+      "hit": false,
+      "iou": 0.0
+    },
+    "metadata": {
+      "target_description": "The 'Gmail' app icon (red and white envelope, second in the top row)",
+      "ground_truth_bbox_px": [
+        309,
+        1476,
+        519,
+        1748
+      ],
+      "size_category": "large",
+      "area": 57120,
+      "coord_space": "normalized_1000"
+    },
+    "latency_ms": 5598,
+    "input_tokens": 1610,
+    "output_tokens": 28,
+    "api_error": null
+  },
+  {
+    "_key": [
+      "grounding_zero_shot",
+      "claude-sonnet-4.5",
+      "home_pixel7",
+      "home_youtube",
+      0
+    ],
+    "experiment": "grounding_zero_shot",
+    "model": "claude-sonnet-4.5",
+    "cu_trained": true,
+    "provider": "anthropic",
+    "scene": "home_pixel7",
+    "target_id": "home_youtube",
+    "run": 0,
+    "predicted_bbox_px": [
+      1067,
+      2352,
+      1234,
+      1591
+    ],
+    "raw_response": "{\"box_2d\": [980, 988, 663, 1143]}",
+    "parse_error": null,
+    "metrics": {
+      "parse_fail": false,
+      "center_error_px": 427.4400542766202,
+      "hit": false,
+      "iou": 0.0
+    },
+    "metadata": {
+      "target_description": "The 'YouTube' app icon (red play button, rightmost in the top row)",
+      "ground_truth_bbox_px": [
+        813,
+        1476,
+        1023,
+        1748
+      ],
+      "size_category": "large",
+      "area": 57120,
+      "coord_space": "normalized_1000"
+    },
+    "latency_ms": 22666,
+    "input_tokens": 1610,
+    "output_tokens": 22,
+    "api_error": null
+  },
+  {
+    "_key": [
+      "grounding_zero_shot",
+      "claude-sonnet-4.5",
+      "home_pixel7",
+      "home_phone",
+      0
+    ],
+    "experiment": "grounding_zero_shot",
+    "model": "claude-sonnet-4.5",
+    "cu_trained": true,
+    "provider": "anthropic",
+    "scene": "home_pixel7",
+    "target_id": "home_phone",
+    "run": 0,
+    "predicted_bbox_px": [
+      1321,
+      2930,
+      1440,
+      3197
+    ],
+    "raw_response": "{\"box_2d\": [1221, 1223, 1332, 1333]}",
+    "parse_error": null,
+    "metrics": {
+      "parse_fail": false,
+      "center_error_px": 1649.2628656463469,
+      "hit": false,
+      "iou": 0.0
+    },
+    "metadata": {
+      "target_description": "The blue 'Phone' (dialer) icon in the bottom dock row (leftmost blue circle)",
+      "ground_truth_bbox_px": [
+        76,
+        1854,
+        249,
+        2049
+      ],
+      "size_category": "large",
+      "area": 33735,
+      "coord_space": "normalized_1000"
+    },
+    "latency_ms": 9351,
+    "input_tokens": 1613,
+    "output_tokens": 25,
+    "api_error": null
+  },
+  {
+    "_key": [
+      "grounding_zero_shot",
+      "claude-sonnet-4.5",
+      "home_pixel7",
+      "home_chrome",
+      0
+    ],
+    "experiment": "grounding_zero_shot",
+    "model": "claude-sonnet-4.5",
+    "cu_trained": true,
+    "provider": "anthropic",
+    "scene": "home_pixel7",
+    "target_id": "home_chrome",
+    "run": 0,
+    "predicted_bbox_px": [
+      414,
+      2933,
+      1464,
+      3190
+    ],
+    "raw_response": "{\"box_2d\": [1222, 383, 1329, 1356]}",
+    "parse_error": null,
+    "metrics": {
+      "parse_fail": false,
+      "center_error_px": 1143.0787374455008,
+      "hit": false,
+      "iou": 0.0
+    },
+    "metadata": {
+      "target_description": "The colorful Chrome browser icon in the bottom dock (third icon from left)",
+      "ground_truth_bbox_px": [
+        580,
+        1854,
+        753,
+        2049
+      ],
+      "size_category": "large",
+      "area": 33735,
+      "coord_space": "normalized_1000"
+    },
+    "latency_ms": 3299,
+    "input_tokens": 1607,
+    "output_tokens": 24,
+    "api_error": null
+  },
+  {
+    "_key": [
+      "grounding_zero_shot",
+      "claude-sonnet-4.5",
+      "home_pixel7",
+      "home_camera",
+      0
+    ],
+    "experiment": "grounding_zero_shot",
+    "model": "claude-sonnet-4.5",
+    "cu_trained": true,
+    "provider": "anthropic",
+    "scene": "home_pixel7",
+    "target_id": "home_camera",
+    "run": 0,
+    "predicted_bbox_px": [
+      1320,
+      2930,
+      1439,
+      3192
+    ],
+    "raw_response": "{\"box_2d\": [1221, 1222, 1330, 1332]}",
+    "parse_error": null,
+    "metrics": {
+      "parse_fail": false,
+      "center_error_px": 1201.923874461274,
+      "hit": false,
+      "iou": 0.0
+    },
+    "metadata": {
+      "target_description": "The 'Camera' icon in the bottom dock (rightmost white circle with a black camera)",
+      "ground_truth_bbox_px": [
+        832,
+        1854,
+        1004,
+        2049
+      ],
+      "size_category": "large",
+      "area": 33540,
+      "coord_space": "normalized_1000"
+    },
+    "latency_ms": 3412,
+    "input_tokens": 1611,
+    "output_tokens": 25,
+    "api_error": null
+  },
+  {
+    "_key": [
+      "grounding_zero_shot",
+      "claude-sonnet-4.5",
+      "home_pixel7",
+      "home_google_search_bar",
+      0
+    ],
+    "experiment": "grounding_zero_shot",
+    "model": "claude-sonnet-4.5",
+    "cu_trained": true,
+    "provider": "anthropic",
+    "scene": "home_pixel7",
+    "target_id": "home_google_search_bar",
+    "run": 0,
+    "predicted_bbox_px": [
+      53,
+      3360,
+      1581,
+      3571
+    ],
+    "raw_response": "{\"box_2d\": [1400, 49, 1488, 1464]}",
+    "parse_error": null,
+    "metrics": {
+      "parse_fail": false,
+      "center_error_px": 1322.547919736748,
+      "hit": false,
+      "iou": 0.0
+    },
+    "metadata": {
+      "target_description": "The white Google search bar at the very bottom of the screen",
+      "ground_truth_bbox_px": [
+        75,
+        2125,
+        1003,
+        2219
+      ],
+      "size_category": "large",
+      "area": 87326,
+      "coord_space": "normalized_1000"
+    },
+    "latency_ms": 2667,
+    "input_tokens": 1604,
+    "output_tokens": 24,
+    "api_error": null
+  },
+  {
+    "_key": [
+      "grounding_zero_shot",
+      "claude-sonnet-4.5",
+      "home_pixel7",
+      "home_voice_search",
+      0
+    ],
+    "experiment": "grounding_zero_shot",
+    "model": "claude-sonnet-4.5",
+    "cu_trained": true,
+    "provider": "anthropic",
+    "scene": "home_pixel7",
+    "target_id": "home_voice_search",
+    "run": 0,
+    "predicted_bbox_px": [
+      1530,
+      3389,
+      1587,
+      3730
+    ],
+    "raw_response": "```json\n{\"box_2d\": [1412, 1417, 1554, 1469]}\n```",
+    "parse_error": null,
+    "metrics": {
+      "parse_fail": false,
+      "center_error_px": 1578.6972477330794,
+      "hit": false,
+      "iou": 0.0
+    },
+    "metadata": {
+      "target_description": "The microphone icon for voice search (inside the bottom search bar)",
+      "ground_truth_bbox_px": [
+        741,
+        2125,
+        867,
+        2219
+      ],
+      "size_category": "medium",
+      "area": 11844,
+      "coord_space": "normalized_1000"
+    },
+    "latency_ms": 2956,
+    "input_tokens": 1605,
+    "output_tokens": 30,
+    "api_error": null
+  },
+  {
+    "_key": [
+      "grounding_zero_shot",
+      "claude-sonnet-4.5",
+      "home_pixel7",
+      "home_google_lens",
+      0
+    ],
+    "experiment": "grounding_zero_shot",
+    "model": "claude-sonnet-4.5",
+    "cu_trained": true,
+    "provider": "anthropic",
+    "scene": "home_pixel7",
+    "target_id": "home_google_lens",
+    "run": 0,
+    "predicted_bbox_px": [
+      1534,
+      3394,
+      1581,
+      3499
+    ],
+    "raw_response": "```json\n{\"box_2d\": [1414, 1420, 1458, 1464]}\n```",
+    "parse_error": null,
+    "metrics": {
+      "parse_fail": false,
+      "center_error_px": 1419.9313363680653,
+      "hit": false,
+      "iou": 0.0
+    },
+    "metadata": {
+      "target_description": "The colorful Google Lens camera icon (rightmost icon inside the search bar)",
+      "ground_truth_bbox_px": [
+        867,
+        2125,
+        993,
+        2219
+      ],
+      "size_category": "medium",
+      "area": 11844,
+      "coord_space": "normalized_1000"
+    },
+    "latency_ms": 3436,
+    "input_tokens": 1608,
+    "output_tokens": 30,
+    "api_error": null
+  },
+  {
+    "_key": [
+      "grounding_zero_shot",
+      "claude-sonnet-4.5",
+      "home_pixel7",
+      "home_date",
+      0
+    ],
+    "experiment": "grounding_zero_shot",
+    "model": "claude-sonnet-4.5",
+    "cu_trained": true,
+    "provider": "anthropic",
+    "scene": "home_pixel7",
+    "target_id": "home_date",
+    "run": 0,
+    "predicted_bbox_px": [
+      71,
+      482,
+      254,
+      562
+    ],
+    "raw_response": "{\"box_2d\": [201, 66, 234, 235]}",
+    "parse_error": null,
+    "metrics": {
+      "parse_fail": false,
+      "center_error_px": 439.80222827993947,
+      "hit": false,
+      "iou": 0.0
+    },
+    "metadata": {
+      "target_description": "The 'Thu, Apr 16' date text near the top of the screen",
+      "ground_truth_bbox_px": [
+        99,
+        304,
+        1023,
+        370
+      ],
+      "size_category": "large",
+      "area": 60984,
+      "coord_space": "normalized_1000"
+    },
+    "latency_ms": 3418,
+    "input_tokens": 1609,
+    "output_tokens": 21,
+    "api_error": null
+  },
+  {
+    "_key": [
+      "grounding_zero_shot",
+      "claude-sonnet-4.5",
+      "youtube_pixel7",
+      "youtube_allow_button",
+      0
+    ],
+    "experiment": "grounding_zero_shot",
+    "model": "claude-sonnet-4.5",
+    "cu_trained": true,
+    "provider": "anthropic",
+    "scene": "youtube_pixel7",
+    "target_id": "youtube_allow_button",
+    "run": 0,
+    "predicted_bbox_px": [
+      809,
+      366,
+      1042,
+      1337
+    ],
+    "raw_response": "{\"box_2d\": [339, 337, 1238, 434]}",
+    "parse_error": null,
+    "metrics": {
+      "parse_fail": false,
+      "center_error_px": 424.4997055358225,
+      "hit": false,
+      "iou": 0.0936104550142152
+    },
+    "metadata": {
+      "target_description": "The 'Allow' button in the notifications permission dialog (top blue button)",
+      "ground_truth_bbox_px": [
+        619,
+        511,
+        1900,
+        668
+      ],
+      "size_category": "large",
+      "area": 201117,
+      "coord_space": "normalized_1000"
+    },
+    "latency_ms": 2520,
+    "input_tokens": 1607,
+    "output_tokens": 22,
+    "api_error": null
+  },
+  {
+    "_key": [
+      "grounding_zero_shot",
+      "claude-sonnet-4.5",
+      "youtube_pixel7",
+      "youtube_dont_allow_button",
+      0
+    ],
+    "experiment": "grounding_zero_shot",
+    "model": "claude-sonnet-4.5",
+    "cu_trained": true,
+    "provider": "anthropic",
+    "scene": "youtube_pixel7",
+    "target_id": "youtube_dont_allow_button",
+    "run": 0,
+    "predicted_bbox_px": [
+      1051,
+      477,
+      1277,
+      1293
+    ],
+    "raw_response": "{\"box_2d\": [442, 438, 1197, 532]}",
+    "parse_error": null,
+    "metrics": {
+      "parse_fail": false,
+      "center_error_px": 168.36270370839262,
+      "hit": false,
+      "iou": 0.10136237291137577
+    },
+    "metadata": {
+      "target_description": "The 'Don't allow' button in the notifications permission dialog (bottom blue button)",
+      "ground_truth_bbox_px": [
+        619,
+        668,
+        1900,
+        825
+      ],
+      "size_category": "large",
+      "area": 201117,
+      "coord_space": "normalized_1000"
+    },
+    "latency_ms": 3349,
+    "input_tokens": 1609,
+    "output_tokens": 22,
+    "api_error": null
+  },
+  {
+    "_key": [
+      "grounding_zero_shot",
+      "claude-sonnet-4.5",
+      "youtube_pixel7",
+      "youtube_bell_icon",
+      0
+    ],
+    "experiment": "grounding_zero_shot",
+    "model": "claude-sonnet-4.5",
+    "cu_trained": true,
+    "provider": "anthropic",
+    "scene": "youtube_pixel7",
+    "target_id": "youtube_bell_icon",
+    "run": 0,
+    "predicted_bbox_px": [
+      410,
+      183,
+      509,
+      913
+    ],
+    "raw_response": "{\"box_2d\": [169, 171, 845, 212]}",
+    "parse_error": null,
+    "metrics": {
+      "parse_fail": false,
+      "center_error_px": 838.4515489877755,
+      "hit": false,
+      "iou": 0.0
+    },
+    "metadata": {
+      "target_description": "The blue notification bell icon at the top of the dialog",
+      "ground_truth_bbox_px": [
+        1206,
+        255,
+        1312,
+        339
+      ],
+      "size_category": "medium",
+      "area": 8904,
+      "coord_space": "normalized_1000"
+    },
+    "latency_ms": 3789,
+    "input_tokens": 1603,
+    "output_tokens": 21,
+    "api_error": null
+  },
+  {
+    "_key": [
+      "grounding_zero_shot",
+      "claude-sonnet-4.5",
+      "youtube_pixel7",
+      "youtube_dialog_title",
+      0
+    ],
+    "experiment": "grounding_zero_shot",
+    "model": "claude-sonnet-4.5",
+    "cu_trained": true,
+    "provider": "anthropic",
+    "scene": "youtube_pixel7",
+    "target_id": "youtube_dialog_title",
+    "run": 0,
+    "predicted_bbox_px": [
+      1186,
+      266,
+      1303,
+      1243
+    ],
+    "raw_response": "{\"box_2d\": [246, 494, 1151, 543]}",
+    "parse_error": null,
+    "metrics": {
+      "parse_fail": false,
+      "center_error_px": 344.37189200049414,
+      "hit": false,
+      "iou": 0.046211040291485025
+    },
+    "metadata": {
+      "target_description": "The dialog title text 'Allow YouTube to send you notifications?'",
+      "ground_truth_bbox_px": [
+        650,
+        370,
+        1870,
+        450
+      ],
+      "size_category": "large",
+      "area": 97600,
+      "coord_space": "normalized_1000"
+    },
+    "latency_ms": 3925,
+    "input_tokens": 1605,
+    "output_tokens": 22,
+    "api_error": null
+  },
+  {
+    "_key": [
+      "grounding_zero_shot",
+      "claude-sonnet-4.5",
+      "youtube_pixel7",
+      "youtube_signin_button",
+      0
+    ],
+    "experiment": "grounding_zero_shot",
+    "model": "claude-sonnet-4.5",
+    "cu_trained": true,
+    "provider": "anthropic",
+    "scene": "youtube_pixel7",
+    "target_id": "youtube_signin_button",
+    "run": 0,
+    "predicted_bbox_px": [
+      336,
+      151,
+      451,
+      1564
+    ],
+    "raw_response": "```json\n{\"box_2d\": [140, 140, 1448, 188]}\n```",
+    "parse_error": null,
+    "metrics": {
+      "parse_fail": false,
+      "center_error_px": 1777.0728741388182,
+      "hit": false,
+      "iou": 0.0
+    },
+    "metadata": {
+      "target_description": "The 'Sign in' button/pill visible in the top-right corner (dimmed, behind dialog)",
+      "ground_truth_bbox_px": [
+        1920,
+        205,
+        2210,
+        305
+      ],
+      "size_category": "large",
+      "area": 29000,
+      "coord_space": "normalized_1000"
+    },
+    "latency_ms": 3472,
+    "input_tokens": 1614,
+    "output_tokens": 27,
+    "api_error": null
+  },
+  {
+    "_key": [
+      "grounding_zero_shot",
+      "claude-sonnet-4.5",
+      "youtube_pixel7",
+      "youtube_logo",
+      0
+    ],
+    "experiment": "grounding_zero_shot",
+    "model": "claude-sonnet-4.5",
+    "cu_trained": true,
+    "provider": "anthropic",
+    "scene": "youtube_pixel7",
+    "target_id": "youtube_logo",
+    "run": 0,
+    "predicted_bbox_px": [
+      350,
+      158,
+      432,
+      364
+    ],
+    "raw_response": "```json\n{\"box_2d\": [146, 146, 337, 180]}\n```",
+    "parse_error": null,
+    "metrics": {
+      "parse_fail": false,
+      "center_error_px": 12.529964086141668,
+      "hit": true,
+      "iou": 0.2092263727291284
+    },
+    "metadata": {
+      "target_description": "The 'YouTube' logo in the top-left corner (red play icon + YouTube text, dimmed behind the dialog)",
+      "ground_truth_bbox_px": [
+        250,
+        205,
+        555,
+        305
+      ],
+      "size_category": "large",
+      "area": 30500,
+      "coord_space": "normalized_1000"
+    },
+    "latency_ms": 3249,
+    "input_tokens": 1617,
+    "output_tokens": 26,
+    "api_error": null
+  },
+  {
+    "_key": [
+      "grounding_zero_shot",
+      "claude-opus-4.6",
+      "clock_pixel7",
+      "clock_alarm_tab",
+      0
+    ],
+    "experiment": "grounding_zero_shot",
+    "model": "claude-opus-4.6",
+    "cu_trained": true,
+    "provider": "anthropic",
+    "scene": "clock_pixel7",
+    "target_id": "clock_alarm_tab",
+    "run": 0,
+    "predicted_bbox_px": [
+      178,
+      854,
+      619,
+      1013
+    ],
+    "raw_response": "{\"box_2d\": [791, 74, 938, 258]}",
+    "parse_error": null,
+    "metrics": {
+      "parse_fail": false,
+      "center_error_px": 142.55525244620065,
+      "hit": true,
+      "iou": 0.4139223700309791
+    },
+    "metadata": {
+      "target_description": "The 'Alarm' tab in the bottom navigation bar (leftmost)",
+      "ground_truth_bbox_px": [
+        36,
+        807,
+        478,
+        1017
+      ],
+      "size_category": "large",
+      "area": 92820,
+      "coord_space": "normalized_1000"
+    },
+    "latency_ms": 3493,
+    "input_tokens": 1607,
+    "output_tokens": 21,
+    "api_error": null
+  },
+  {
+    "_key": [
+      "grounding_zero_shot",
+      "claude-opus-4.6",
+      "clock_pixel7",
+      "clock_timer_tab",
+      0
+    ],
+    "experiment": "grounding_zero_shot",
+    "model": "claude-opus-4.6",
+    "cu_trained": true,
+    "provider": "anthropic",
+    "scene": "clock_pixel7",
+    "target_id": "clock_timer_tab",
+    "run": 0,
+    "predicted_bbox_px": [
+      1454,
+      888,
+      2126,
+      1017
+    ],
+    "raw_response": "{\"box_2d\": [822, 606, 942, 886]}",
+    "parse_error": null,
+    "metrics": {
+      "parse_fail": false,
+      "center_error_px": 650.2314972377145,
+      "hit": false,
+      "iou": 0.0
+    },
+    "metadata": {
+      "target_description": "The 'Timer' tab in the bottom navigation bar (center)",
+      "ground_truth_bbox_px": [
+        920,
+        807,
+        1362,
+        1017
+      ],
+      "size_category": "large",
+      "area": 92820,
+      "coord_space": "normalized_1000"
+    },
+    "latency_ms": 3323,
+    "input_tokens": 1605,
+    "output_tokens": 21,
+    "api_error": null
+  },
+  {
+    "_key": [
+      "grounding_zero_shot",
+      "claude-opus-4.6",
+      "clock_pixel7",
+      "clock_bedtime_tab",
+      0
+    ],
+    "experiment": "grounding_zero_shot",
+    "model": "claude-opus-4.6",
+    "cu_trained": true,
+    "provider": "anthropic",
+    "scene": "clock_pixel7",
+    "target_id": "clock_bedtime_tab",
+    "run": 0,
+    "predicted_bbox_px": [
+      2911,
+      610,
+      3391,
+      713
+    ],
+    "raw_response": "{\"box_2d\": [565, 1213, 660, 1413]}",
+    "parse_error": null,
+    "metrics": {
+      "parse_fail": false,
+      "center_error_px": 1153.636424528976,
+      "hit": false,
+      "iou": 0.0
+    },
+    "metadata": {
+      "target_description": "The 'Bedtime' tab in the bottom navigation bar (rightmost)",
+      "ground_truth_bbox_px": [
+        1804,
+        807,
+        2246,
+        1017
+      ],
+      "size_category": "large",
+      "area": 92820,
+      "coord_space": "normalized_1000"
+    },
+    "latency_ms": 2689,
+    "input_tokens": 1608,
+    "output_tokens": 23,
+    "api_error": null
+  },
+  {
+    "_key": [
+      "grounding_zero_shot",
+      "claude-opus-4.6",
+      "clock_pixel7",
+      "clock_fab_add_city",
+      0
+    ],
+    "experiment": "grounding_zero_shot",
+    "model": "claude-opus-4.6",
+    "cu_trained": true,
+    "provider": "anthropic",
+    "scene": "clock_pixel7",
+    "target_id": "clock_fab_add_city",
+    "run": 0,
+    "predicted_bbox_px": [
+      2928,
+      454,
+      3264,
+      583
+    ],
+    "raw_response": "{\"box_2d\": [420, 1220, 540, 1360]}",
+    "parse_error": null,
+    "metrics": {
+      "parse_fail": false,
+      "center_error_px": 1100.0113635776677,
+      "hit": false,
+      "iou": 0.0
+    },
+    "metadata": {
+      "target_description": "The blue circular '+' floating action button (Add city)",
+      "ground_truth_bbox_px": [
+        1902,
+        429,
+        2091,
+        618
+      ],
+      "size_category": "large",
+      "area": 35721,
+      "coord_space": "normalized_1000"
+    },
+    "latency_ms": 3146,
+    "input_tokens": 1603,
+    "output_tokens": 23,
+    "api_error": null
+  },
+  {
+    "_key": [
+      "grounding_zero_shot",
+      "claude-opus-4.6",
+      "clock_pixel7",
+      "clock_more_options",
+      0
+    ],
+    "experiment": "grounding_zero_shot",
+    "model": "claude-opus-4.6",
+    "cu_trained": true,
+    "provider": "anthropic",
+    "scene": "clock_pixel7",
+    "target_id": "clock_more_options",
+    "run": 0,
+    "predicted_bbox_px": [
+      3432,
+      92,
+      3528,
+      135
+    ],
+    "raw_response": "{\"box_2d\": [85, 1430, 125, 1470]}",
+    "parse_error": null,
+    "metrics": {
+      "parse_fail": false,
+      "center_error_px": 1251.8090908760807,
+      "hit": false,
+      "iou": 0.0
+    },
+    "metadata": {
+      "target_description": "The three-dot 'More options' menu in the top right corner",
+      "ground_truth_bbox_px": [
+        2177,
+        95,
+        2282,
+        221
+      ],
+      "size_category": "medium",
+      "area": 13230,
+      "coord_space": "normalized_1000"
+    },
+    "latency_ms": 3096,
+    "input_tokens": 1607,
+    "output_tokens": 23,
+    "api_error": null
+  },
+  {
+    "_key": [
+      "grounding_zero_shot",
+      "claude-opus-4.6",
+      "clock_pixel7",
+      "clock_time_display",
+      0
+    ],
+    "experiment": "grounding_zero_shot",
+    "model": "claude-opus-4.6",
+    "cu_trained": true,
+    "provider": "anthropic",
+    "scene": "clock_pixel7",
+    "target_id": "clock_time_display",
+    "run": 0,
+    "predicted_bbox_px": [
+      53,
+      200,
+      840,
+      400
+    ],
+    "raw_response": "{\"box_2d\": [185, 22, 370, 350]}",
+    "parse_error": null,
+    "metrics": {
+      "parse_fail": false,
+      "center_error_px": 181.96977771047588,
+      "hit": true,
+      "iou": 0.3333623352329578
+    },
+    "metadata": {
+      "target_description": "The large '22:25' time display on the left side",
+      "ground_truth_bbox_px": [
+        41,
+        242,
+        538,
+        542
+      ],
+      "size_category": "large",
+      "area": 149100,
+      "coord_space": "normalized_1000"
+    },
+    "latency_ms": 3753,
+    "input_tokens": 1605,
+    "output_tokens": 21,
+    "api_error": null
+  },
+  {
+    "_key": [
+      "grounding_zero_shot",
+      "claude-opus-4.6",
+      "clock_pixel7",
+      "clock_date_subtitle",
+      0
+    ],
+    "experiment": "grounding_zero_shot",
+    "model": "claude-opus-4.6",
+    "cu_trained": true,
+    "provider": "anthropic",
+    "scene": "clock_pixel7",
+    "target_id": "clock_date_subtitle",
+    "run": 0,
+    "predicted_bbox_px": [
+      46,
+      389,
+      408,
+      432
+    ],
+    "raw_response": "{\"box_2d\": [360, 19, 400, 170]}",
+    "parse_error": null,
+    "metrics": {
+      "parse_fail": false,
+      "center_error_px": 183.412104289766,
+      "hit": false,
+      "iou": 0.0
+    },
+    "metadata": {
+      "target_description": "The small date text 'Sat, Apr 11' below the time",
+      "ground_truth_bbox_px": [
+        42,
+        542,
+        256,
+        610
+      ],
+      "size_category": "medium",
+      "area": 14552,
+      "coord_space": "normalized_1000"
+    },
+    "latency_ms": 2156,
+    "input_tokens": 1608,
+    "output_tokens": 21,
+    "api_error": null
+  },
+  {
+    "_key": [
+      "grounding_zero_shot",
+      "claude-opus-4.6",
+      "clock_pixel7",
+      "clock_title_label",
+      0
+    ],
+    "experiment": "grounding_zero_shot",
+    "model": "claude-opus-4.6",
+    "cu_trained": true,
+    "provider": "anthropic",
+    "scene": "clock_pixel7",
+    "target_id": "clock_title_label",
+    "run": 0,
+    "predicted_bbox_px": [
+      65,
+      130,
+      329,
+      178
+    ],
+    "raw_response": "{\"box_2d\": [120, 27, 165, 137]}",
+    "parse_error": null,
+    "metrics": {
+      "parse_fail": false,
+      "center_error_px": 59.07622195096772,
+      "hit": true,
+      "iou": 0.3896485971125034
+    },
+    "metadata": {
+      "target_description": "The 'Clock' app title in the top left corner",
+      "ground_truth_bbox_px": [
+        63,
+        115,
+        214,
+        200
+      ],
+      "size_category": "medium",
+      "area": 12835,
+      "coord_space": "normalized_1000"
+    },
+    "latency_ms": 2935,
+    "input_tokens": 1604,
+    "output_tokens": 21,
+    "api_error": null
+  },
+  {
+    "_key": [
+      "grounding_zero_shot",
+      "claude-opus-4.6",
+      "home_pixel7",
+      "home_play_store",
+      0
+    ],
+    "experiment": "grounding_zero_shot",
+    "model": "claude-opus-4.6",
+    "cu_trained": true,
+    "provider": "anthropic",
+    "scene": "home_pixel7",
+    "target_id": "home_play_store",
+    "run": 0,
+    "predicted_bbox_px": [
+      64,
+      2371,
+      173,
+      2597
+    ],
+    "raw_response": "{\"box_2d\": [988, 59, 1082, 160]}",
+    "parse_error": null,
+    "metrics": {
+      "parse_fail": false,
+      "center_error_px": 873.1093860450706,
+      "hit": false,
+      "iou": 0.0
+    },
+    "metadata": {
+      "target_description": "The 'Play Store' app icon (first icon in the top row, leftmost)",
+      "ground_truth_bbox_px": [
+        57,
+        1476,
+        267,
+        1748
+      ],
+      "size_category": "large",
+      "area": 57120,
+      "coord_space": "normalized_1000"
+    },
+    "latency_ms": 5885,
+    "input_tokens": 1610,
+    "output_tokens": 22,
+    "api_error": null
+  },
+  {
+    "_key": [
+      "grounding_zero_shot",
+      "claude-opus-4.6",
+      "home_pixel7",
+      "home_gmail",
+      0
+    ],
+    "experiment": "grounding_zero_shot",
+    "model": "claude-opus-4.6",
+    "cu_trained": true,
+    "provider": "anthropic",
+    "scene": "home_pixel7",
+    "target_id": "home_gmail",
+    "run": 0,
+    "predicted_bbox_px": [
+      230,
+      2371,
+      356,
+      2587
+    ],
+    "raw_response": "{\"box_2d\": [988, 213, 1078, 330]}",
+    "parse_error": null,
+    "metrics": {
+      "parse_fail": false,
+      "center_error_px": 875.4027644461719,
+      "hit": false,
+      "iou": 0.0
+    },
+    "metadata": {
+      "target_description": "The 'Gmail' app icon (red and white envelope, second in the top row)",
+      "ground_truth_bbox_px": [
+        309,
+        1476,
+        519,
+        1748
+      ],
+      "size_category": "large",
+      "area": 57120,
+      "coord_space": "normalized_1000"
+    },
+    "latency_ms": 4649,
+    "input_tokens": 1610,
+    "output_tokens": 22,
+    "api_error": null
+  },
+  {
+    "_key": [
+      "grounding_zero_shot",
+      "claude-opus-4.6",
+      "home_pixel7",
+      "home_youtube",
+      0
+    ],
+    "experiment": "grounding_zero_shot",
+    "model": "claude-opus-4.6",
+    "cu_trained": true,
+    "provider": "anthropic",
+    "scene": "home_pixel7",
+    "target_id": "home_youtube",
+    "run": 0,
+    "predicted_bbox_px": [
+      589,
+      2371,
+      703,
+      2573
+    ],
+    "raw_response": "{\"box_2d\": [988, 545, 1072, 651]}",
+    "parse_error": null,
+    "metrics": {
+      "parse_fail": false,
+      "center_error_px": 901.9889134573662,
+      "hit": false,
+      "iou": 0.0
+    },
+    "metadata": {
+      "target_description": "The 'YouTube' app icon (red play button, rightmost in the top row)",
+      "ground_truth_bbox_px": [
+        813,
+        1476,
+        1023,
+        1748
+      ],
+      "size_category": "large",
+      "area": 57120,
+      "coord_space": "normalized_1000"
+    },
+    "latency_ms": 6156,
+    "input_tokens": 1610,
+    "output_tokens": 22,
+    "api_error": null
+  },
+  {
+    "_key": [
+      "grounding_zero_shot",
+      "claude-opus-4.6",
+      "home_pixel7",
+      "home_phone",
+      0
+    ],
+    "experiment": "grounding_zero_shot",
+    "model": "claude-opus-4.6",
+    "cu_trained": true,
+    "provider": "anthropic",
+    "scene": "home_pixel7",
+    "target_id": "home_phone",
+    "run": 0,
+    "predicted_bbox_px": [
+      67,
+      2904,
+      175,
+      3144
+    ],
+    "raw_response": "{\"box_2d\": [1210, 62, 1310, 162]}",
+    "parse_error": null,
+    "metrics": {
+      "parse_fail": false,
+      "center_error_px": 1073.7830320879539,
+      "hit": false,
+      "iou": 0.0
+    },
+    "metadata": {
+      "target_description": "The blue 'Phone' (dialer) icon in the bottom dock row (leftmost blue circle)",
+      "ground_truth_bbox_px": [
+        76,
+        1854,
+        249,
+        2049
+      ],
+      "size_category": "large",
+      "area": 33735,
+      "coord_space": "normalized_1000"
+    },
+    "latency_ms": 3403,
+    "input_tokens": 1613,
+    "output_tokens": 23,
+    "api_error": null
+  },
+  {
+    "_key": [
+      "grounding_zero_shot",
+      "claude-opus-4.6",
+      "home_pixel7",
+      "home_chrome",
+      0
+    ],
+    "experiment": "grounding_zero_shot",
+    "model": "claude-opus-4.6",
+    "cu_trained": true,
+    "provider": "anthropic",
+    "scene": "home_pixel7",
+    "target_id": "home_chrome",
+    "run": 0,
+    "predicted_bbox_px": [
+      424,
+      2923,
+      526,
+      3125
+    ],
+    "raw_response": "{\"box_2d\": [1218, 393, 1302, 487]}",
+    "parse_error": null,
+    "metrics": {
+      "parse_fail": false,
+      "center_error_px": 1089.8669643584944,
+      "hit": false,
+      "iou": 0.0
+    },
+    "metadata": {
+      "target_description": "The colorful Chrome browser icon in the bottom dock (third icon from left)",
+      "ground_truth_bbox_px": [
+        580,
+        1854,
+        753,
+        2049
+      ],
+      "size_category": "large",
+      "area": 33735,
+      "coord_space": "normalized_1000"
+    },
+    "latency_ms": 3824,
+    "input_tokens": 1607,
+    "output_tokens": 23,
+    "api_error": null
+  },
+  {
+    "_key": [
+      "grounding_zero_shot",
+      "claude-opus-4.6",
+      "home_pixel7",
+      "home_camera",
+      0
+    ],
+    "experiment": "grounding_zero_shot",
+    "model": "claude-opus-4.6",
+    "cu_trained": true,
+    "provider": "anthropic",
+    "scene": "home_pixel7",
+    "target_id": "home_camera",
+    "run": 0,
+    "predicted_bbox_px": [
+      600,
+      2923,
+      696,
+      3125
+    ],
+    "raw_response": "{\"box_2d\": [1218, 556, 1302, 644]}",
+    "parse_error": null,
+    "metrics": {
+      "parse_fail": false,
+      "center_error_px": 1106.4488239408092,
+      "hit": false,
+      "iou": 0.0
+    },
+    "metadata": {
+      "target_description": "The 'Camera' icon in the bottom dock (rightmost white circle with a black camera)",
+      "ground_truth_bbox_px": [
+        832,
+        1854,
+        1004,
+        2049
+      ],
+      "size_category": "large",
+      "area": 33540,
+      "coord_space": "normalized_1000"
+    },
+    "latency_ms": 2887,
+    "input_tokens": 1611,
+    "output_tokens": 23,
+    "api_error": null
+  },
+  {
+    "_key": [
+      "grounding_zero_shot",
+      "claude-opus-4.6",
+      "home_pixel7",
+      "home_google_search_bar",
+      0
+    ],
+    "experiment": "grounding_zero_shot",
+    "model": "claude-opus-4.6",
+    "cu_trained": true,
+    "provider": "anthropic",
+    "scene": "home_pixel7",
+    "target_id": "home_google_search_bar",
+    "run": 0,
+    "predicted_bbox_px": [
+      67,
+      3384,
+      702,
+      3528
+    ],
+    "raw_response": "{\"box_2d\": [1410, 62, 1470, 650]}",
+    "parse_error": null,
+    "metrics": {
+      "parse_fail": false,
+      "center_error_px": 1293.321692387474,
+      "hit": false,
+      "iou": 0.0
+    },
+    "metadata": {
+      "target_description": "The white Google search bar at the very bottom of the screen",
+      "ground_truth_bbox_px": [
+        75,
+        2125,
+        1003,
+        2219
+      ],
+      "size_category": "large",
+      "area": 87326,
+      "coord_space": "normalized_1000"
+    },
+    "latency_ms": 3437,
+    "input_tokens": 1604,
+    "output_tokens": 23,
+    "api_error": null
+  },
+  {
+    "_key": [
+      "grounding_zero_shot",
+      "claude-opus-4.6",
+      "home_pixel7",
+      "home_voice_search",
+      0
+    ],
+    "experiment": "grounding_zero_shot",
+    "model": "claude-opus-4.6",
+    "cu_trained": true,
+    "provider": "anthropic",
+    "scene": "home_pixel7",
+    "target_id": "home_voice_search",
+    "run": 0,
+    "predicted_bbox_px": [
+      543,
+      3442,
+      589,
+      3542
+    ],
+    "raw_response": "{\"box_2d\": [1434, 503, 1476, 545]}",
+    "parse_error": null,
+    "metrics": {
+      "parse_fail": false,
+      "center_error_px": 1341.2844590168038,
+      "hit": false,
+      "iou": 0.0
+    },
+    "metadata": {
+      "target_description": "The microphone icon for voice search (inside the bottom search bar)",
+      "ground_truth_bbox_px": [
+        741,
+        2125,
+        867,
+        2219
+      ],
+      "size_category": "medium",
+      "area": 11844,
+      "coord_space": "normalized_1000"
+    },
+    "latency_ms": 3781,
+    "input_tokens": 1605,
+    "output_tokens": 23,
+    "api_error": null
+  },
+  {
+    "_key": [
+      "grounding_zero_shot",
+      "claude-opus-4.6",
+      "home_pixel7",
+      "home_google_lens",
+      0
+    ],
+    "experiment": "grounding_zero_shot",
+    "model": "claude-opus-4.6",
+    "cu_trained": true,
+    "provider": "anthropic",
+    "scene": "home_pixel7",
+    "target_id": "home_google_lens",
+    "run": 0,
+    "predicted_bbox_px": [
+      630,
+      3437,
+      673,
+      3533
+    ],
+    "raw_response": "{\"box_2d\": [1432, 583, 1472, 623]}",
+    "parse_error": null,
+    "metrics": {
+      "parse_fail": false,
+      "center_error_px": 1342.3151641846262,
+      "hit": false,
+      "iou": 0.0
+    },
+    "metadata": {
+      "target_description": "The colorful Google Lens camera icon (rightmost icon inside the search bar)",
+      "ground_truth_bbox_px": [
+        867,
+        2125,
+        993,
+        2219
+      ],
+      "size_category": "medium",
+      "area": 11844,
+      "coord_space": "normalized_1000"
+    },
+    "latency_ms": 3621,
+    "input_tokens": 1608,
+    "output_tokens": 23,
+    "api_error": null
+  },
+  {
+    "_key": [
+      "grounding_zero_shot",
+      "claude-opus-4.6",
+      "home_pixel7",
+      "home_date",
+      0
+    ],
+    "experiment": "grounding_zero_shot",
+    "model": "claude-opus-4.6",
+    "cu_trained": true,
+    "provider": "anthropic",
+    "scene": "home_pixel7",
+    "target_id": "home_date",
+    "run": 0,
+    "predicted_bbox_px": [
+      65,
+      480,
+      265,
+      569
+    ],
+    "raw_response": "{\"box_2d\": [200, 60, 237, 245]}",
+    "parse_error": null,
+    "metrics": {
+      "parse_fail": false,
+      "center_error_px": 437.9326432226764,
+      "hit": false,
+      "iou": 0.0
+    },
+    "metadata": {
+      "target_description": "The 'Thu, Apr 16' date text near the top of the screen",
+      "ground_truth_bbox_px": [
+        99,
+        304,
+        1023,
+        370
+      ],
+      "size_category": "large",
+      "area": 60984,
+      "coord_space": "normalized_1000"
+    },
+    "latency_ms": 3275,
+    "input_tokens": 1609,
+    "output_tokens": 21,
+    "api_error": null
+  },
+  {
+    "_key": [
+      "grounding_zero_shot",
+      "claude-opus-4.6",
+      "youtube_pixel7",
+      "youtube_allow_button",
+      0
+    ],
+    "experiment": "grounding_zero_shot",
+    "model": "claude-opus-4.6",
+    "cu_trained": true,
+    "provider": "anthropic",
+    "scene": "youtube_pixel7",
+    "target_id": "youtube_allow_button",
+    "run": 0,
+    "predicted_bbox_px": [
+      1058,
+      375,
+      2957,
+      455
+    ],
+    "raw_response": "{\"box_2d\": [347, 441, 421, 1232]}",
+    "parse_error": null,
+    "metrics": {
+      "parse_fail": false,
+      "center_error_px": 767.9713536324125,
+      "hit": false,
+      "iou": 0.0
+    },
+    "metadata": {
+      "target_description": "The 'Allow' button in the notifications permission dialog (top blue button)",
+      "ground_truth_bbox_px": [
+        619,
+        511,
+        1900,
+        668
+      ],
+      "size_category": "large",
+      "area": 201117,
+      "coord_space": "normalized_1000"
+    },
+    "latency_ms": 2895,
+    "input_tokens": 1607,
+    "output_tokens": 22,
+    "api_error": null
+  },
+  {
+    "_key": [
+      "grounding_zero_shot",
+      "claude-opus-4.6",
+      "youtube_pixel7",
+      "youtube_dont_allow_button",
+      0
+    ],
+    "experiment": "grounding_zero_shot",
+    "model": "claude-opus-4.6",
+    "cu_trained": true,
+    "provider": "anthropic",
+    "scene": "youtube_pixel7",
+    "target_id": "youtube_dont_allow_button",
+    "run": 0,
+    "predicted_bbox_px": [
+      1042,
+      487,
+      2966,
+      569
+    ],
+    "raw_response": "{\"box_2d\": [451, 434, 527, 1236]}",
+    "parse_error": null,
+    "metrics": {
+      "parse_fail": false,
+      "center_error_px": 776.2402978459698,
+      "hit": false,
+      "iou": 0.0
+    },
+    "metadata": {
+      "target_description": "The 'Don't allow' button in the notifications permission dialog (bottom blue button)",
+      "ground_truth_bbox_px": [
+        619,
+        668,
+        1900,
+        825
+      ],
+      "size_category": "large",
+      "area": 201117,
+      "coord_space": "normalized_1000"
+    },
+    "latency_ms": 2503,
+    "input_tokens": 1609,
+    "output_tokens": 22,
+    "api_error": null
+  },
+  {
+    "_key": [
+      "grounding_zero_shot",
+      "claude-opus-4.6",
+      "youtube_pixel7",
+      "youtube_bell_icon",
+      0
+    ],
+    "experiment": "grounding_zero_shot",
+    "model": "claude-opus-4.6",
+    "cu_trained": true,
+    "provider": "anthropic",
+    "scene": "youtube_pixel7",
+    "target_id": "youtube_bell_icon",
+    "run": 0,
+    "predicted_bbox_px": [
+      1286,
+      262,
+      1392,
+      327
+    ],
+    "raw_response": "{\"box_2d\": [243, 536, 303, 580]}",
+    "parse_error": null,
+    "metrics": {
+      "parse_fail": false,
+      "center_error_px": 80.05623023850174,
+      "hit": false,
+      "iou": 0.11982416335791266
+    },
+    "metadata": {
+      "target_description": "The blue notification bell icon at the top of the dialog",
+      "ground_truth_bbox_px": [
+        1206,
+        255,
+        1312,
+        339
+      ],
+      "size_category": "medium",
+      "area": 8904,
+      "coord_space": "normalized_1000"
+    },
+    "latency_ms": 2384,
+    "input_tokens": 1603,
+    "output_tokens": 21,
+    "api_error": null
+  },
+  {
+    "_key": [
+      "grounding_zero_shot",
+      "claude-opus-4.6",
+      "youtube_pixel7",
+      "youtube_dialog_title",
+      0
+    ],
+    "experiment": "grounding_zero_shot",
+    "model": "claude-opus-4.6",
+    "cu_trained": true,
+    "provider": "anthropic",
+    "scene": "youtube_pixel7",
+    "target_id": "youtube_dialog_title",
+    "run": 0,
+    "predicted_bbox_px": [
+      1042,
+      269,
+      2729,
+      320
+    ],
+    "raw_response": "{\"box_2d\": [249, 434, 296, 1137]}",
+    "parse_error": null,
+    "metrics": {
+      "parse_fail": false,
+      "center_error_px": 635.6736584128683,
+      "hit": false,
+      "iou": 0.0
+    },
+    "metadata": {
+      "target_description": "The dialog title text 'Allow YouTube to send you notifications?'",
+      "ground_truth_bbox_px": [
+        650,
+        370,
+        1870,
+        450
+      ],
+      "size_category": "large",
+      "area": 97600,
+      "coord_space": "normalized_1000"
+    },
+    "latency_ms": 2464,
+    "input_tokens": 1605,
+    "output_tokens": 22,
+    "api_error": null
+  },
+  {
+    "_key": [
+      "grounding_zero_shot",
+      "claude-opus-4.6",
+      "youtube_pixel7",
+      "youtube_signin_button",
+      0
+    ],
+    "experiment": "grounding_zero_shot",
+    "model": "claude-opus-4.6",
+    "cu_trained": true,
+    "provider": "anthropic",
+    "scene": "youtube_pixel7",
+    "target_id": "youtube_signin_button",
+    "run": 0,
+    "predicted_bbox_px": [
+      2105,
+      160,
+      2364,
+      216
+    ],
+    "raw_response": "{\"box_2d\": [148, 877, 200, 985]}",
+    "parse_error": null,
+    "metrics": {
+      "parse_fail": false,
+      "center_error_px": 181.79658962697843,
+      "hit": false,
+      "iou": 0.027273371272048926
+    },
+    "metadata": {
+      "target_description": "The 'Sign in' button/pill visible in the top-right corner (dimmed, behind dialog)",
+      "ground_truth_bbox_px": [
+        1920,
+        205,
+        2210,
+        305
+      ],
+      "size_category": "large",
+      "area": 29000,
+      "coord_space": "normalized_1000"
+    },
+    "latency_ms": 3006,
+    "input_tokens": 1614,
+    "output_tokens": 21,
+    "api_error": null
+  },
+  {
+    "_key": [
+      "grounding_zero_shot",
+      "claude-opus-4.6",
+      "youtube_pixel7",
+      "youtube_logo",
+      0
+    ],
+    "experiment": "grounding_zero_shot",
+    "model": "claude-opus-4.6",
+    "cu_trained": true,
+    "provider": "anthropic",
+    "scene": "youtube_pixel7",
+    "target_id": "youtube_logo",
+    "run": 0,
+    "predicted_bbox_px": [
+      454,
+      159,
+      816,
+      211
+    ],
+    "raw_response": "{\"box_2d\": [147, 189, 195, 340]}",
+    "parse_error": null,
+    "metrics": {
+      "parse_fail": false,
+      "center_error_px": 243.28789530101986,
+      "hit": false,
+      "iou": 0.012438934274806027
+    },
+    "metadata": {
+      "target_description": "The 'YouTube' logo in the top-left corner (red play icon + YouTube text, dimmed behind the dialog)",
+      "ground_truth_bbox_px": [
+        250,
+        205,
+        555,
+        305
+      ],
+      "size_category": "large",
+      "area": 30500,
+      "coord_space": "normalized_1000"
+    },
+    "latency_ms": 2578,
+    "input_tokens": 1617,
+    "output_tokens": 21,
+    "api_error": null
+  },
+  {
+    "_key": [
+      "grounding_zero_shot",
+      "claude-opus-4.7",
+      "clock_pixel7",
+      "clock_alarm_tab",
+      0
+    ],
+    "experiment": "grounding_zero_shot",
+    "model": "claude-opus-4.7",
+    "cu_trained": true,
+    "provider": "anthropic",
+    "scene": "clock_pixel7",
+    "target_id": "clock_alarm_tab",
+    "run": 0,
+    "predicted_bbox_px": [
+      38,
+      850,
+      475,
+      1015
+    ],
+    "raw_response": "{\"box_2d\":[850,38,1015,475]}",
+    "parse_error": null,
+    "metrics": {
+      "parse_fail": false,
+      "center_error_px": 20.024984394500787,
+      "hit": true,
+      "iou": 0.7768261150614092
+    },
+    "metadata": {
+      "target_description": "The 'Alarm' tab in the bottom navigation bar (leftmost)",
+      "ground_truth_bbox_px": [
+        36,
+        807,
+        478,
+        1017
+      ],
+      "size_category": "large",
+      "area": 92820,
+      "coord_space": "pixel_yx"
+    },
+    "latency_ms": 3673,
+    "input_tokens": 3584,
+    "output_tokens": 22,
+    "api_error": null
+  },
+  {
+    "_key": [
+      "grounding_zero_shot",
+      "claude-opus-4.7",
+      "clock_pixel7",
+      "clock_timer_tab",
+      0
+    ],
+    "experiment": "grounding_zero_shot",
+    "model": "claude-opus-4.7",
+    "cu_trained": true,
+    "provider": "anthropic",
+    "scene": "clock_pixel7",
+    "target_id": "clock_timer_tab",
+    "run": 0,
+    "predicted_bbox_px": [
+      915,
+      856,
+      1366,
+      1019
+    ],
+    "raw_response": "{\"box_2d\":[856,915,1019,1366]}",
+    "parse_error": null,
+    "metrics": {
+      "parse_fail": false,
+      "center_error_px": 25.019992006393608,
+      "hit": true,
+      "iou": 0.7477277742169358
+    },
+    "metadata": {
+      "target_description": "The 'Timer' tab in the bottom navigation bar (center)",
+      "ground_truth_bbox_px": [
+        920,
+        807,
+        1362,
+        1017
+      ],
+      "size_category": "large",
+      "area": 92820,
+      "coord_space": "pixel_yx"
+    },
+    "latency_ms": 3770,
+    "input_tokens": 3580,
+    "output_tokens": 23,
+    "api_error": null
+  },
+  {
+    "_key": [
+      "grounding_zero_shot",
+      "claude-opus-4.7",
+      "clock_pixel7",
+      "clock_bedtime_tab",
+      0
+    ],
+    "experiment": "grounding_zero_shot",
+    "model": "claude-opus-4.7",
+    "cu_trained": true,
+    "provider": "anthropic",
+    "scene": "clock_pixel7",
+    "target_id": "clock_bedtime_tab",
+    "run": 0,
+    "predicted_bbox_px": [
+      1853,
+      847,
+      2196,
+      996
+    ],
+    "raw_response": "{\"box_2d\":[847,1853,996,2196]}",
+    "parse_error": null,
+    "metrics": {
+      "parse_fail": false,
+      "center_error_px": 9.055385138137417,
+      "hit": true,
+      "iou": 0.5506033182503771
+    },
+    "metadata": {
+      "target_description": "The 'Bedtime' tab in the bottom navigation bar (rightmost)",
+      "ground_truth_bbox_px": [
+        1804,
+        807,
+        2246,
+        1017
+      ],
+      "size_category": "large",
+      "area": 92820,
+      "coord_space": "pixel_yx"
+    },
+    "latency_ms": 3907,
+    "input_tokens": 3585,
+    "output_tokens": 23,
+    "api_error": null
+  },
+  {
+    "_key": [
+      "grounding_zero_shot",
+      "claude-opus-4.7",
+      "clock_pixel7",
+      "clock_fab_add_city",
+      0
+    ],
+    "experiment": "grounding_zero_shot",
+    "model": "claude-opus-4.7",
+    "cu_trained": true,
+    "provider": "anthropic",
+    "scene": "clock_pixel7",
+    "target_id": "clock_fab_add_city",
+    "run": 0,
+    "predicted_bbox_px": [
+      1880,
+      438,
+      2087,
+      640
+    ],
+    "raw_response": "{\"box_2d\":[438,1880,640,2087]}",
+    "parse_error": null,
+    "metrics": {
+      "parse_fail": false,
+      "center_error_px": 20.615528128088304,
+      "hit": true,
+      "iou": 0.7527975584944049
+    },
+    "metadata": {
+      "target_description": "The blue circular '+' floating action button (Add city)",
+      "ground_truth_bbox_px": [
+        1902,
+        429,
+        2091,
+        618
+      ],
+      "size_category": "large",
+      "area": 35721,
+      "coord_space": "pixel_yx"
+    },
+    "latency_ms": 3936,
+    "input_tokens": 3575,
+    "output_tokens": 23,
+    "api_error": null
+  },
+  {
+    "_key": [
+      "grounding_zero_shot",
+      "claude-opus-4.7",
+      "clock_pixel7",
+      "clock_more_options",
+      0
+    ],
+    "experiment": "grounding_zero_shot",
+    "model": "claude-opus-4.7",
+    "cu_trained": true,
+    "provider": "anthropic",
+    "scene": "clock_pixel7",
+    "target_id": "clock_more_options",
+    "run": 0,
+    "predicted_bbox_px": [
+      2168,
+      120,
+      2280,
+      232
+    ],
+    "raw_response": "{\"box_2d\":[120,2168,232,2280]}",
+    "parse_error": null,
+    "metrics": {
+      "parse_fail": false,
+      "center_error_px": 18.681541692269406,
+      "hit": true,
+      "iou": 0.6767939626569514
+    },
+    "metadata": {
+      "target_description": "The three-dot 'More options' menu in the top right corner",
+      "ground_truth_bbox_px": [
+        2177,
+        95,
+        2282,
+        221
+      ],
+      "size_category": "medium",
+      "area": 13230,
+      "coord_space": "pixel_yx"
+    },
+    "latency_ms": 3594,
+    "input_tokens": 3576,
+    "output_tokens": 23,
+    "api_error": null
+  },
+  {
+    "_key": [
+      "grounding_zero_shot",
+      "claude-opus-4.7",
+      "clock_pixel7",
+      "clock_time_display",
+      0
+    ],
+    "experiment": "grounding_zero_shot",
+    "model": "claude-opus-4.7",
+    "cu_trained": true,
+    "provider": "anthropic",
+    "scene": "clock_pixel7",
+    "target_id": "clock_time_display",
+    "run": 0,
+    "predicted_bbox_px": [
+      57,
+      358,
+      524,
+      510
+    ],
+    "raw_response": "{\"box_2d\":[358,57,510,524]}",
+    "parse_error": null,
+    "metrics": {
+      "parse_fail": false,
+      "center_error_px": 42.01190307520001,
+      "hit": true,
+      "iou": 0.47608316566063047
+    },
+    "metadata": {
+      "target_description": "The large '22:25' time display on the left side",
+      "ground_truth_bbox_px": [
+        41,
+        242,
+        538,
+        542
+      ],
+      "size_category": "large",
+      "area": 149100,
+      "coord_space": "pixel_yx"
+    },
+    "latency_ms": 3526,
+    "input_tokens": 3571,
+    "output_tokens": 21,
+    "api_error": null
+  },
+  {
+    "_key": [
+      "grounding_zero_shot",
+      "claude-opus-4.7",
+      "clock_pixel7",
+      "clock_date_subtitle",
+      0
+    ],
+    "experiment": "grounding_zero_shot",
+    "model": "claude-opus-4.7",
+    "cu_trained": true,
+    "provider": "anthropic",
+    "scene": "clock_pixel7",
+    "target_id": "clock_date_subtitle",
+    "run": 0,
+    "predicted_bbox_px": [
+      68,
+      547,
+      265,
+      609
+    ],
+    "raw_response": "{\"box_2d\":[547,68,609,265]}",
+    "parse_error": null,
+    "metrics": {
+      "parse_fail": false,
+      "center_error_px": 17.11724276862369,
+      "hit": true,
+      "iou": 0.771409662475182
+    },
+    "metadata": {
+      "target_description": "The small date text 'Sat, Apr 11' below the time",
+      "ground_truth_bbox_px": [
+        42,
+        542,
+        256,
+        610
+      ],
+      "size_category": "medium",
+      "area": 14552,
+      "coord_space": "pixel_yx"
+    },
+    "latency_ms": 3755,
+    "input_tokens": 3577,
+    "output_tokens": 21,
+    "api_error": null
+  },
+  {
+    "_key": [
+      "grounding_zero_shot",
+      "claude-opus-4.7",
+      "clock_pixel7",
+      "clock_title_label",
+      0
+    ],
+    "experiment": "grounding_zero_shot",
+    "model": "claude-opus-4.7",
+    "cu_trained": true,
+    "provider": "anthropic",
+    "scene": "clock_pixel7",
+    "target_id": "clock_title_label",
+    "run": 0,
+    "predicted_bbox_px": [
+      68,
+      123,
+      210,
+      201
+    ],
+    "raw_response": "{\"box_2d\":[123,68,201,210]}",
+    "parse_error": null,
+    "metrics": {
+      "parse_fail": false,
+      "center_error_px": 5.0990195135927845,
+      "hit": true,
+      "iou": 0.8425676196347384
+    },
+    "metadata": {
+      "target_description": "The 'Clock' app title in the top left corner",
+      "ground_truth_bbox_px": [
+        63,
+        115,
+        214,
+        200
+      ],
+      "size_category": "medium",
+      "area": 12835,
+      "coord_space": "pixel_yx"
+    },
+    "latency_ms": 3631,
+    "input_tokens": 3573,
+    "output_tokens": 21,
+    "api_error": null
+  },
+  {
+    "_key": [
+      "grounding_zero_shot",
+      "claude-opus-4.7",
+      "home_pixel7",
+      "home_play_store",
+      0
+    ],
+    "experiment": "grounding_zero_shot",
+    "model": "claude-opus-4.7",
+    "cu_trained": true,
+    "provider": "anthropic",
+    "scene": "home_pixel7",
+    "target_id": "home_play_store",
+    "run": 0,
+    "predicted_bbox_px": [
+      98,
+      1503,
+      261,
+      1736
+    ],
+    "raw_response": "{\"box_2d\":[1503,98,1736,261]}",
+    "parse_error": null,
+    "metrics": {
+      "parse_fail": false,
+      "center_error_px": 18.384776310850235,
+      "hit": true,
+      "iou": 0.6648984593837535
+    },
+    "metadata": {
+      "target_description": "The 'Play Store' app icon (first icon in the top row, leftmost)",
+      "ground_truth_bbox_px": [
+        57,
+        1476,
+        267,
+        1748
+      ],
+      "size_category": "large",
+      "area": 57120,
+      "coord_space": "pixel_yx"
+    },
+    "latency_ms": 5980,
+    "input_tokens": 3583,
+    "output_tokens": 23,
+    "api_error": null
+  },
+  {
+    "_key": [
+      "grounding_zero_shot",
+      "claude-opus-4.7",
+      "home_pixel7",
+      "home_gmail",
+      0
+    ],
+    "experiment": "grounding_zero_shot",
+    "model": "claude-opus-4.7",
+    "cu_trained": true,
+    "provider": "anthropic",
+    "scene": "home_pixel7",
+    "target_id": "home_gmail",
+    "run": 0,
+    "predicted_bbox_px": [
+      361,
+      1525,
+      555,
+      1719
+    ],
+    "raw_response": "{\"box_2d\":[1525,361,1719,555]}",
+    "parse_error": null,
+    "metrics": {
+      "parse_fail": false,
+      "center_error_px": 45.12205669071391,
+      "hit": true,
+      "iou": 0.4781604892050418
+    },
+    "metadata": {
+      "target_description": "The 'Gmail' app icon (red and white envelope, second in the top row)",
+      "ground_truth_bbox_px": [
+        309,
+        1476,
+        519,
+        1748
+      ],
+      "size_category": "large",
+      "area": 57120,
+      "coord_space": "pixel_yx"
+    },
+    "latency_ms": 5111,
+    "input_tokens": 3583,
+    "output_tokens": 23,
+    "api_error": null
+  },
+  {
+    "_key": [
+      "grounding_zero_shot",
+      "claude-opus-4.7",
+      "home_pixel7",
+      "home_youtube",
+      0
+    ],
+    "experiment": "grounding_zero_shot",
+    "model": "claude-opus-4.7",
+    "cu_trained": true,
+    "provider": "anthropic",
+    "scene": "home_pixel7",
+    "target_id": "home_youtube",
+    "run": 0,
+    "predicted_bbox_px": [
+      818,
+      1530,
+      1010,
+      1746
+    ],
+    "raw_response": "{\"box_2d\":[1530,818,1746,1010]}",
+    "parse_error": null,
+    "metrics": {
+      "parse_fail": false,
+      "center_error_px": 26.30589287593181,
+      "hit": true,
+      "iou": 0.7260504201680672
+    },
+    "metadata": {
+      "target_description": "The 'YouTube' app icon (red play button, rightmost in the top row)",
+      "ground_truth_bbox_px": [
+        813,
+        1476,
+        1023,
+        1748
+      ],
+      "size_category": "large",
+      "area": 57120,
+      "coord_space": "pixel_yx"
+    },
+    "latency_ms": 5797,
+    "input_tokens": 3583,
+    "output_tokens": 24,
+    "api_error": null
+  },
+  {
+    "_key": [
+      "grounding_zero_shot",
+      "claude-opus-4.7",
+      "home_pixel7",
+      "home_phone",
+      0
+    ],
+    "experiment": "grounding_zero_shot",
+    "model": "claude-opus-4.7",
+    "cu_trained": true,
+    "provider": "anthropic",
+    "scene": "home_pixel7",
+    "target_id": "home_phone",
+    "run": 0,
+    "predicted_bbox_px": [
+      82,
+      1846,
+      310,
+      2074
+    ],
+    "raw_response": "{\"box_2d\":[1846,82,2074,310]}",
+    "parse_error": null,
+    "metrics": {
+      "parse_fail": false,
+      "center_error_px": 35.17101079013795,
+      "hit": true,
+      "iou": 0.6126537983971103
+    },
+    "metadata": {
+      "target_description": "The blue 'Phone' (dialer) icon in the bottom dock row (leftmost blue circle)",
+      "ground_truth_bbox_px": [
+        76,
+        1854,
+        249,
+        2049
+      ],
+      "size_category": "large",
+      "area": 33735,
+      "coord_space": "pixel_yx"
+    },
+    "latency_ms": 5627,
+    "input_tokens": 3592,
+    "output_tokens": 23,
+    "api_error": null
+  },
+  {
+    "_key": [
+      "grounding_zero_shot",
+      "claude-opus-4.7",
+      "home_pixel7",
+      "home_chrome",
+      0
+    ],
+    "experiment": "grounding_zero_shot",
+    "model": "claude-opus-4.7",
+    "cu_trained": true,
+    "provider": "anthropic",
+    "scene": "home_pixel7",
+    "target_id": "home_chrome",
+    "run": 0,
+    "predicted_bbox_px": [
+      587,
+      1839,
+      803,
+      2055
+    ],
+    "raw_response": "{\"box_2d\":[1839,587,2055,803]}",
+    "parse_error": null,
+    "metrics": {
+      "parse_fail": false,
+      "center_error_px": 29.274562336608895,
+      "hit": true,
+      "iou": 0.6740800899606422
+    },
+    "metadata": {
+      "target_description": "The colorful Chrome browser icon in the bottom dock (third icon from left)",
+      "ground_truth_bbox_px": [
+        580,
+        1854,
+        753,
+        2049
+      ],
+      "size_category": "large",
+      "area": 33735,
+      "coord_space": "pixel_yx"
+    },
+    "latency_ms": 4791,
+    "input_tokens": 3584,
+    "output_tokens": 23,
+    "api_error": null
+  },
+  {
+    "_key": [
+      "grounding_zero_shot",
+      "claude-opus-4.7",
+      "home_pixel7",
+      "home_camera",
+      0
+    ],
+    "experiment": "grounding_zero_shot",
+    "model": "claude-opus-4.7",
+    "cu_trained": true,
+    "provider": "anthropic",
+    "scene": "home_pixel7",
+    "target_id": "home_camera",
+    "run": 0,
+    "predicted_bbox_px": [
+      832,
+      1837,
+      1052,
+      2057
+    ],
+    "raw_response": "{\"box_2d\":[1837,832,2057,1052]}",
+    "parse_error": null,
+    "metrics": {
+      "parse_fail": false,
+      "center_error_px": 24.331050121192877,
+      "hit": true,
+      "iou": 0.6929752066115702
+    },
+    "metadata": {
+      "target_description": "The 'Camera' icon in the bottom dock (rightmost white circle with a black camera)",
+      "ground_truth_bbox_px": [
+        832,
+        1854,
+        1004,
+        2049
+      ],
+      "size_category": "large",
+      "area": 33540,
+      "coord_space": "pixel_yx"
+    },
+    "latency_ms": 5594,
+    "input_tokens": 3588,
+    "output_tokens": 24,
+    "api_error": null
+  },
+  {
+    "_key": [
+      "grounding_zero_shot",
+      "claude-opus-4.7",
+      "home_pixel7",
+      "home_google_search_bar",
+      0
+    ],
+    "experiment": "grounding_zero_shot",
+    "model": "claude-opus-4.7",
+    "cu_trained": true,
+    "provider": "anthropic",
+    "scene": "home_pixel7",
+    "target_id": "home_google_search_bar",
+    "run": 0,
+    "predicted_bbox_px": [
+      89,
+      2129,
+      990,
+      2253
+    ],
+    "raw_response": "{\"box_2d\":[2129,89,2253,990]}",
+    "parse_error": null,
+    "metrics": {
+      "parse_fail": false,
+      "center_error_px": 19.0,
+      "hit": true,
+      "iou": 0.6879846605467226
+    },
+    "metadata": {
+      "target_description": "The white Google search bar at the very bottom of the screen",
+      "ground_truth_bbox_px": [
+        75,
+        2125,
+        1003,
+        2219
+      ],
+      "size_category": "large",
+      "area": 87326,
+      "coord_space": "pixel_yx"
+    },
+    "latency_ms": 5011,
+    "input_tokens": 3575,
+    "output_tokens": 23,
+    "api_error": null
+  },
+  {
+    "_key": [
+      "grounding_zero_shot",
+      "claude-opus-4.7",
+      "home_pixel7",
+      "home_voice_search",
+      0
+    ],
+    "experiment": "grounding_zero_shot",
+    "model": "claude-opus-4.7",
+    "cu_trained": true,
+    "provider": "anthropic",
+    "scene": "home_pixel7",
+    "target_id": "home_voice_search",
+    "run": 0,
+    "predicted_bbox_px": [
+      759,
+      2125,
+      891,
+      2257
+    ],
+    "raw_response": "{\"box_2d\":[2125,759,2257,891]}",
+    "parse_error": null,
+    "metrics": {
+      "parse_fail": false,
+      "center_error_px": 28.319604517012593,
+      "hit": true,
+      "iou": 0.5310734463276836
+    },
+    "metadata": {
+      "target_description": "The microphone icon for voice search (inside the bottom search bar)",
+      "ground_truth_bbox_px": [
+        741,
+        2125,
+        867,
+        2219
+      ],
+      "size_category": "medium",
+      "area": 11844,
+      "coord_space": "pixel_yx"
+    },
+    "latency_ms": 4863,
+    "input_tokens": 3579,
+    "output_tokens": 23,
+    "api_error": null
+  },
+  {
+    "_key": [
+      "grounding_zero_shot",
+      "claude-opus-4.7",
+      "home_pixel7",
+      "home_google_lens",
+      0
+    ],
+    "experiment": "grounding_zero_shot",
+    "model": "claude-opus-4.7",
+    "cu_trained": true,
+    "provider": "anthropic",
+    "scene": "home_pixel7",
+    "target_id": "home_google_lens",
+    "run": 0,
+    "predicted_bbox_px": [
+      910,
+      2127,
+      1012,
+      2229
+    ],
+    "raw_response": "{\"box_2d\":[2127,910,2229,1012]}",
+    "parse_error": null,
+    "metrics": {
+      "parse_fail": false,
+      "center_error_px": 31.575306807693888,
+      "hit": true,
+      "iou": 0.5225841773884479
+    },
+    "metadata": {
+      "target_description": "The colorful Google Lens camera icon (rightmost icon inside the search bar)",
+      "ground_truth_bbox_px": [
+        867,
+        2125,
+        993,
+        2219
+      ],
+      "size_category": "medium",
+      "area": 11844,
+      "coord_space": "pixel_yx"
+    },
+    "latency_ms": 4627,
+    "input_tokens": 3585,
+    "output_tokens": 24,
+    "api_error": null
+  },
+  {
+    "_key": [
+      "grounding_zero_shot",
+      "claude-opus-4.7",
+      "home_pixel7",
+      "home_date",
+      0
+    ],
+    "experiment": "grounding_zero_shot",
+    "model": "claude-opus-4.7",
+    "cu_trained": true,
+    "provider": "anthropic",
+    "scene": "home_pixel7",
+    "target_id": "home_date",
+    "run": 0,
+    "predicted_bbox_px": [
+      107,
+      300,
+      406,
+      365
+    ],
+    "raw_response": "{\"box_2d\":[300,107,365,406]}",
+    "parse_error": null,
+    "metrics": {
+      "parse_fail": false,
+      "center_error_px": 305.04098085339285,
+      "hit": true,
+      "iou": 0.29332582824059183
+    },
+    "metadata": {
+      "target_description": "The 'Thu, Apr 16' date text near the top of the screen",
+      "ground_truth_bbox_px": [
+        99,
+        304,
+        1023,
+        370
+      ],
+      "size_category": "large",
+      "area": 60984,
+      "coord_space": "pixel_yx"
+    },
+    "latency_ms": 4735,
+    "input_tokens": 3580,
+    "output_tokens": 21,
+    "api_error": null
+  },
+  {
+    "_key": [
+      "grounding_zero_shot",
+      "claude-opus-4.7",
+      "youtube_pixel7",
+      "youtube_allow_button",
+      0
+    ],
+    "experiment": "grounding_zero_shot",
+    "model": "claude-opus-4.7",
+    "cu_trained": true,
+    "provider": "anthropic",
+    "scene": "youtube_pixel7",
+    "target_id": "youtube_allow_button",
+    "run": 0,
+    "predicted_bbox_px": [
+      627,
+      535,
+      1893,
+      651
+    ],
+    "raw_response": "{\"box_2d\":[535,627,651,1893]}",
+    "parse_error": null,
+    "metrics": {
+      "parse_fail": false,
+      "center_error_px": 4.123105625617661,
+      "hit": true,
+      "iou": 0.7302018228195528
+    },
+    "metadata": {
+      "target_description": "The 'Allow' button in the notifications permission dialog (top blue button)",
+      "ground_truth_bbox_px": [
+        619,
+        511,
+        1900,
+        668
+      ],
+      "size_category": "large",
+      "area": 201117,
+      "coord_space": "pixel_yx"
+    },
+    "latency_ms": 3514,
+    "input_tokens": 3582,
+    "output_tokens": 22,
+    "api_error": null
+  },
+  {
+    "_key": [
+      "grounding_zero_shot",
+      "claude-opus-4.7",
+      "youtube_pixel7",
+      "youtube_dont_allow_button",
+      0
+    ],
+    "experiment": "grounding_zero_shot",
+    "model": "claude-opus-4.7",
+    "cu_trained": true,
+    "provider": "anthropic",
+    "scene": "youtube_pixel7",
+    "target_id": "youtube_dont_allow_button",
+    "run": 0,
+    "predicted_bbox_px": [
+      628,
+      680,
+      1894,
+      816
+    ],
+    "raw_response": "{\"box_2d\":[680,628,816,1894]}",
+    "parse_error": null,
+    "metrics": {
+      "parse_fail": false,
+      "center_error_px": 2.8284271247461903,
+      "hit": true,
+      "iou": 0.856098688822924
+    },
+    "metadata": {
+      "target_description": "The 'Don't allow' button in the notifications permission dialog (bottom blue button)",
+      "ground_truth_bbox_px": [
+        619,
+        668,
+        1900,
+        825
+      ],
+      "size_category": "large",
+      "area": 201117,
+      "coord_space": "pixel_yx"
+    },
+    "latency_ms": 3476,
+    "input_tokens": 3586,
+    "output_tokens": 22,
+    "api_error": null
+  },
+  {
+    "_key": [
+      "grounding_zero_shot",
+      "claude-opus-4.7",
+      "youtube_pixel7",
+      "youtube_bell_icon",
+      0
+    ],
+    "experiment": "grounding_zero_shot",
+    "model": "claude-opus-4.7",
+    "cu_trained": true,
+    "provider": "anthropic",
+    "scene": "youtube_pixel7",
+    "target_id": "youtube_bell_icon",
+    "run": 0,
+    "predicted_bbox_px": [
+      1180,
+      244,
+      1338,
+      378
+    ],
+    "raw_response": "{\"box_2d\":[244,1180,378,1338]}",
+    "parse_error": null,
+    "metrics": {
+      "parse_fail": false,
+      "center_error_px": 14.0,
+      "hit": true,
+      "iou": 0.4205554505951256
+    },
+    "metadata": {
+      "target_description": "The blue notification bell icon at the top of the dialog",
+      "ground_truth_bbox_px": [
+        1206,
+        255,
+        1312,
+        339
+      ],
+      "size_category": "medium",
+      "area": 8904,
+      "coord_space": "pixel_yx"
+    },
+    "latency_ms": 3456,
+    "input_tokens": 3575,
+    "output_tokens": 23,
+    "api_error": null
+  },
+  {
+    "_key": [
+      "grounding_zero_shot",
+      "claude-opus-4.7",
+      "youtube_pixel7",
+      "youtube_dialog_title",
+      0
+    ],
+    "experiment": "grounding_zero_shot",
+    "model": "claude-opus-4.7",
+    "cu_trained": true,
+    "provider": "anthropic",
+    "scene": "youtube_pixel7",
+    "target_id": "youtube_dialog_title",
+    "run": 0,
+    "predicted_bbox_px": [
+      716,
+      372,
+      1748,
+      448
+    ],
+    "raw_response": "{\"box_2d\":[372,716,448,1748]}",
+    "parse_error": null,
+    "metrics": {
+      "parse_fail": false,
+      "center_error_px": 28.0,
+      "hit": true,
+      "iou": 0.8036065573770492
+    },
+    "metadata": {
+      "target_description": "The dialog title text 'Allow YouTube to send you notifications?'",
+      "ground_truth_bbox_px": [
+        650,
+        370,
+        1870,
+        450
+      ],
+      "size_category": "large",
+      "area": 97600,
+      "coord_space": "pixel_yx"
+    },
+    "latency_ms": 4657,
+    "input_tokens": 3581,
+    "output_tokens": 22,
+    "api_error": null
+  },
+  {
+    "_key": [
+      "grounding_zero_shot",
+      "claude-opus-4.7",
+      "youtube_pixel7",
+      "youtube_signin_button",
+      0
+    ],
+    "experiment": "grounding_zero_shot",
+    "model": "claude-opus-4.7",
+    "cu_trained": true,
+    "provider": "anthropic",
+    "scene": "youtube_pixel7",
+    "target_id": "youtube_signin_button",
+    "run": 0,
+    "predicted_bbox_px": [
+      1956,
+      182,
+      2278,
+      323
+    ],
+    "raw_response": "{\"box_2d\":[182,1956,323,2278]}",
+    "parse_error": null,
+    "metrics": {
+      "parse_fail": false,
+      "center_error_px": 52.08646657242167,
+      "hit": true,
+      "iou": 0.5183461899514306
+    },
+    "metadata": {
+      "target_description": "The 'Sign in' button/pill visible in the top-right corner (dimmed, behind dialog)",
+      "ground_truth_bbox_px": [
+        1920,
+        205,
+        2210,
+        305
+      ],
+      "size_category": "large",
+      "area": 29000,
+      "coord_space": "pixel_yx"
+    },
+    "latency_ms": 3800,
+    "input_tokens": 3591,
+    "output_tokens": 23,
+    "api_error": null
+  },
+  {
+    "_key": [
+      "grounding_zero_shot",
+      "claude-opus-4.7",
+      "youtube_pixel7",
+      "youtube_logo",
+      0
+    ],
+    "experiment": "grounding_zero_shot",
+    "model": "claude-opus-4.7",
+    "cu_trained": true,
+    "provider": "anthropic",
+    "scene": "youtube_pixel7",
+    "target_id": "youtube_logo",
+    "run": 0,
+    "predicted_bbox_px": [
+      278,
+      212,
+      548,
+      302
+    ],
+    "raw_response": "{\"box_2d\":[212,278,302,548]}",
+    "parse_error": null,
+    "metrics": {
+      "parse_fail": false,
+      "center_error_px": 11.180339887498949,
+      "hit": true,
+      "iou": 0.7967213114754098
+    },
+    "metadata": {
+      "target_description": "The 'YouTube' logo in the top-left corner (red play icon + YouTube text, dimmed behind the dialog)",
+      "ground_truth_bbox_px": [
+        250,
+        205,
+        555,
+        305
+      ],
+      "size_category": "large",
+      "area": 30500,
+      "coord_space": "pixel_yx"
+    },
+    "latency_ms": 3507,
+    "input_tokens": 3598,
+    "output_tokens": 21,
+    "api_error": null
+  },
+  {
+    "_key": [
+      "grounding_zero_shot",
+      "gpt-4o",
+      "clock_pixel7",
+      "clock_alarm_tab",
+      0
+    ],
+    "experiment": "grounding_zero_shot",
+    "model": "gpt-4o",
+    "cu_trained": true,
+    "provider": "openai",
+    "scene": "clock_pixel7",
+    "target_id": "clock_alarm_tab",
+    "run": 0,
+    "predicted_bbox_px": [
+      0,
+      972,
+      480,
+      1080
+    ],
+    "raw_response": "{\"box_2d\": [900, 0, 1000, 200]}",
+    "parse_error": null,
+    "metrics": {
+      "parse_fail": false,
+      "center_error_px": 115.26057435220423,
+      "hit": false,
+      "iou": 0.15941332050973792
+    },
+    "metadata": {
+      "target_description": "The 'Alarm' tab in the bottom navigation bar (leftmost)",
+      "ground_truth_bbox_px": [
+        36,
+        807,
+        478,
+        1017
+      ],
+      "size_category": "large",
+      "area": 92820,
+      "coord_space": "normalized_1000"
+    },
+    "latency_ms": 2787,
+    "input_tokens": 1312,
+    "output_tokens": 20,
+    "api_error": null
+  },
+  {
+    "_key": [
+      "grounding_zero_shot",
+      "gpt-4o",
+      "clock_pixel7",
+      "clock_timer_tab",
+      0
+    ],
+    "experiment": "grounding_zero_shot",
+    "model": "gpt-4o",
+    "cu_trained": true,
+    "provider": "openai",
+    "scene": "clock_pixel7",
+    "target_id": "clock_timer_tab",
+    "run": 0,
+    "predicted_bbox_px": [
+      960,
+      972,
+      1440,
+      1080
+    ],
+    "raw_response": "{\"box_2d\": [900, 400, 1000, 600]}",
+    "parse_error": null,
+    "metrics": {
+      "parse_fail": false,
+      "center_error_px": 128.3627671873741,
+      "hit": false,
+      "iou": 0.14292486371178004
+    },
+    "metadata": {
+      "target_description": "The 'Timer' tab in the bottom navigation bar (center)",
+      "ground_truth_bbox_px": [
+        920,
+        807,
+        1362,
+        1017
+      ],
+      "size_category": "large",
+      "area": 92820,
+      "coord_space": "normalized_1000"
+    },
+    "latency_ms": 1822,
+    "input_tokens": 1566,
+    "output_tokens": 19,
+    "api_error": null
+  },
+  {
+    "_key": [
+      "grounding_zero_shot",
+      "gpt-4o",
+      "clock_pixel7",
+      "clock_bedtime_tab",
+      0
+    ],
+    "experiment": "grounding_zero_shot",
+    "model": "gpt-4o",
+    "cu_trained": true,
+    "provider": "openai",
+    "scene": "clock_pixel7",
+    "target_id": "clock_bedtime_tab",
+    "run": 0,
+    "predicted_bbox_px": [
+      1920,
+      972,
+      2400,
+      1080
+    ],
+    "raw_response": "{\"box_2d\": [900, 800, 1000, 1000]}",
+    "parse_error": null,
+    "metrics": {
+      "parse_fail": false,
+      "center_error_px": 176.69465187152667,
+      "hit": false,
+      "iou": 0.11285483498730671
+    },
+    "metadata": {
+      "target_description": "The 'Bedtime' tab in the bottom navigation bar (rightmost)",
+      "ground_truth_bbox_px": [
+        1804,
+        807,
+        2246,
+        1017
+      ],
+      "size_category": "large",
+      "area": 92820,
+      "coord_space": "normalized_1000"
+    },
+    "latency_ms": 2636,
+    "input_tokens": 1313,
+    "output_tokens": 21,
+    "api_error": null
+  },
+  {
+    "_key": [
+      "grounding_zero_shot",
+      "gpt-4o",
+      "clock_pixel7",
+      "clock_fab_add_city",
+      0
+    ],
+    "experiment": "grounding_zero_shot",
+    "model": "gpt-4o",
+    "cu_trained": true,
+    "provider": "openai",
+    "scene": "clock_pixel7",
+    "target_id": "clock_fab_add_city",
+    "run": 0,
+    "predicted_bbox_px": [
+      1920,
+      540,
+      2280,
+      702
+    ],
+    "raw_response": "{\"box_2d\": [500, 800, 650, 950]}",
+    "parse_error": null,
+    "metrics": {
+      "parse_fail": false,
+      "center_error_px": 142.89856542317,
+      "hit": false,
+      "iou": 0.16527266644362662
+    },
+    "metadata": {
+      "target_description": "The blue circular '+' floating action button (Add city)",
+      "ground_truth_bbox_px": [
+        1902,
+        429,
+        2091,
+        618
+      ],
+      "size_category": "large",
+      "area": 35721,
+      "coord_space": "normalized_1000"
+    },
+    "latency_ms": 3322,
+    "input_tokens": 1309,
+    "output_tokens": 19,
+    "api_error": null
+  },
+  {
+    "_key": [
+      "grounding_zero_shot",
+      "gpt-4o",
+      "clock_pixel7",
+      "clock_more_options",
+      0
+    ],
+    "experiment": "grounding_zero_shot",
+    "model": "gpt-4o",
+    "cu_trained": true,
+    "provider": "openai",
+    "scene": "clock_pixel7",
+    "target_id": "clock_more_options",
+    "run": 0,
+    "predicted_bbox_px": [
+      2280,
+      54,
+      2400,
+      108
+    ],
+    "raw_response": "{\"box_2d\": [50, 950, 100, 1000]}",
+    "parse_error": null,
+    "metrics": {
+      "parse_fail": false,
+      "center_error_px": 135.09256086106296,
+      "hit": false,
+      "iou": 0.0013208697419223735
+    },
+    "metadata": {
+      "target_description": "The three-dot 'More options' menu in the top right corner",
+      "ground_truth_bbox_px": [
+        2177,
+        95,
+        2282,
+        221
+      ],
+      "size_category": "medium",
+      "area": 13230,
+      "coord_space": "normalized_1000"
+    },
+    "latency_ms": 4218,
+    "input_tokens": 1567,
+    "output_tokens": 19,
+    "api_error": null
+  },
+  {
+    "_key": [
+      "grounding_zero_shot",
+      "gpt-4o",
+      "clock_pixel7",
+      "clock_time_display",
+      0
+    ],
+    "experiment": "grounding_zero_shot",
+    "model": "gpt-4o",
+    "cu_trained": true,
+    "provider": "openai",
+    "scene": "clock_pixel7",
+    "target_id": "clock_time_display",
+    "run": 0,
+    "predicted_bbox_px": [
+      120,
+      216,
+      840,
+      432
+    ],
+    "raw_response": "{\"box_2d\": [200, 50, 400, 350]}",
+    "parse_error": null,
+    "metrics": {
+      "parse_fail": false,
+      "center_error_px": 202.74368054269902,
+      "hit": true,
+      "iou": 0.35266429840142094
+    },
+    "metadata": {
+      "target_description": "The large '22:25' time display on the left side",
+      "ground_truth_bbox_px": [
+        41,
+        242,
+        538,
+        542
+      ],
+      "size_category": "large",
+      "area": 149100,
+      "coord_space": "normalized_1000"
+    },
+    "latency_ms": 2377,
+    "input_tokens": 1312,
+    "output_tokens": 19,
+    "api_error": null
+  },
+  {
+    "_key": [
+      "grounding_zero_shot",
+      "gpt-4o",
+      "clock_pixel7",
+      "clock_date_subtitle",
+      0
+    ],
+    "experiment": "grounding_zero_shot",
+    "model": "gpt-4o",
+    "cu_trained": true,
+    "provider": "openai",
+    "scene": "clock_pixel7",
+    "target_id": "clock_date_subtitle",
+    "run": 0,
+    "predicted_bbox_px": [
+      240,
+      292,
+      600,
+      324
+    ],
+    "raw_response": "{\"box_2d\": [270, 100, 300, 250]}",
+    "parse_error": null,
+    "metrics": {
+      "parse_fail": false,
+      "center_error_px": 381.13645850272576,
+      "hit": false,
+      "iou": 0.0
+    },
+    "metadata": {
+      "target_description": "The small date text 'Sat, Apr 11' below the time",
+      "ground_truth_bbox_px": [
+        42,
+        542,
+        256,
+        610
+      ],
+      "size_category": "medium",
+      "area": 14552,
+      "coord_space": "normalized_1000"
+    },
+    "latency_ms": 2207,
+    "input_tokens": 1313,
+    "output_tokens": 19,
+    "api_error": null
+  },
+  {
+    "_key": [
+      "grounding_zero_shot",
+      "gpt-4o",
+      "clock_pixel7",
+      "clock_title_label",
+      0
+    ],
+    "experiment": "grounding_zero_shot",
+    "model": "gpt-4o",
+    "cu_trained": true,
+    "provider": "openai",
+    "scene": "clock_pixel7",
+    "target_id": "clock_title_label",
+    "run": 0,
+    "predicted_bbox_px": [
+      120,
+      54,
+      480,
+      108
+    ],
+    "raw_response": "{\"box_2d\": [50, 50, 100, 200]}",
+    "parse_error": null,
+    "metrics": {
+      "parse_fail": false,
+      "center_error_px": 178.94133116750865,
+      "hit": false,
+      "iou": 0.0
+    },
+    "metadata": {
+      "target_description": "The 'Clock' app title in the top left corner",
+      "ground_truth_bbox_px": [
+        63,
+        115,
+        214,
+        200
+      ],
+      "size_category": "medium",
+      "area": 12835,
+      "coord_space": "normalized_1000"
+    },
+    "latency_ms": 2304,
+    "input_tokens": 1310,
+    "output_tokens": 19,
+    "api_error": null
+  },
+  {
+    "_key": [
+      "grounding_zero_shot",
+      "gpt-4o",
+      "home_pixel7",
+      "home_play_store",
+      0
+    ],
+    "experiment": "grounding_zero_shot",
+    "model": "gpt-4o",
+    "cu_trained": true,
+    "provider": "openai",
+    "scene": "home_pixel7",
+    "target_id": "home_play_store",
+    "run": 0,
+    "predicted_bbox_px": [
+      54,
+      1800,
+      270,
+      2280
+    ],
+    "raw_response": "{\"box_2d\": [750, 50, 950, 250]}",
+    "parse_error": null,
+    "metrics": {
+      "parse_fail": false,
+      "center_error_px": 428.0,
+      "hit": false,
+      "iou": 0.0
+    },
+    "metadata": {
+      "target_description": "The 'Play Store' app icon (first icon in the top row, leftmost)",
+      "ground_truth_bbox_px": [
+        57,
+        1476,
+        267,
+        1748
+      ],
+      "size_category": "large",
+      "area": 57120,
+      "coord_space": "normalized_1000"
+    },
+    "latency_ms": 2366,
+    "input_tokens": 1571,
+    "output_tokens": 18,
+    "api_error": null
+  },
+  {
+    "_key": [
+      "grounding_zero_shot",
+      "gpt-4o",
+      "home_pixel7",
+      "home_gmail",
+      0
+    ],
+    "experiment": "grounding_zero_shot",
+    "model": "gpt-4o",
+    "cu_trained": true,
+    "provider": "openai",
+    "scene": "home_pixel7",
+    "target_id": "home_gmail",
+    "run": 0,
+    "predicted_bbox_px": [
+      238,
+      1632,
+      389,
+      1968
+    ],
+    "raw_response": "{\"box_2d\": [680, 220, 820, 360]}",
+    "parse_error": null,
+    "metrics": {
+      "parse_fail": false,
+      "center_error_px": 213.41274563624359,
+      "hit": false,
+      "iou": 0.09414056159714332
+    },
+    "metadata": {
+      "target_description": "The 'Gmail' app icon (red and white envelope, second in the top row)",
+      "ground_truth_bbox_px": [
+        309,
+        1476,
+        519,
+        1748
+      ],
+      "size_category": "large",
+      "area": 57120,
+      "coord_space": "normalized_1000"
+    },
+    "latency_ms": 2303,
+    "input_tokens": 1572,
+    "output_tokens": 18,
+    "api_error": null
+  },
+  {
+    "_key": [
+      "grounding_zero_shot",
+      "gpt-4o",
+      "home_pixel7",
+      "home_youtube",
+      0
+    ],
+    "experiment": "grounding_zero_shot",
+    "model": "gpt-4o",
+    "cu_trained": true,
+    "provider": "openai",
+    "scene": "home_pixel7",
+    "target_id": "home_youtube",
+    "run": 0,
+    "predicted_bbox_px": [
+      810,
+      1560,
+      1026,
+      2040
+    ],
+    "raw_response": "{\"box_2d\": [650, 750, 850, 950]}",
+    "parse_error": null,
+    "metrics": {
+      "parse_fail": false,
+      "center_error_px": 188.0,
+      "hit": false,
+      "iou": 0.3254203758654797
+    },
+    "metadata": {
+      "target_description": "The 'YouTube' app icon (red play button, rightmost in the top row)",
+      "ground_truth_bbox_px": [
+        813,
+        1476,
+        1023,
+        1748
+      ],
+      "size_category": "large",
+      "area": 57120,
+      "coord_space": "normalized_1000"
+    },
+    "latency_ms": 2492,
+    "input_tokens": 1572,
+    "output_tokens": 18,
+    "api_error": null
+  },
+  {
+    "_key": [
+      "grounding_zero_shot",
+      "gpt-4o",
+      "home_pixel7",
+      "home_phone",
+      0
+    ],
+    "experiment": "grounding_zero_shot",
+    "model": "gpt-4o",
+    "cu_trained": true,
+    "provider": "openai",
+    "scene": "home_pixel7",
+    "target_id": "home_phone",
+    "run": 0,
+    "predicted_bbox_px": [
+      108,
+      2040,
+      216,
+      2280
+    ],
+    "raw_response": "{\"box_2d\": [850, 100, 950, 200]}",
+    "parse_error": null,
+    "metrics": {
+      "parse_fail": false,
+      "center_error_px": 209.0,
+      "hit": false,
+      "iou": 0.016563570369613007
+    },
+    "metadata": {
+      "target_description": "The blue 'Phone' (dialer) icon in the bottom dock row (leftmost blue circle)",
+      "ground_truth_bbox_px": [
+        76,
+        1854,
+        249,
+        2049
+      ],
+      "size_category": "large",
+      "area": 33735,
+      "coord_space": "normalized_1000"
+    },
+    "latency_ms": 4115,
+    "input_tokens": 1319,
+    "output_tokens": 19,
+    "api_error": null
+  },
+  {
+    "_key": [
+      "grounding_zero_shot",
+      "gpt-4o",
+      "home_pixel7",
+      "home_chrome",
+      0
+    ],
+    "experiment": "grounding_zero_shot",
+    "model": "gpt-4o",
+    "cu_trained": true,
+    "provider": "openai",
+    "scene": "home_pixel7",
+    "target_id": "home_chrome",
+    "run": 0,
+    "predicted_bbox_px": [
+      540,
+      2040,
+      648,
+      2280
+    ],
+    "raw_response": "{\"box_2d\": [850, 500, 950, 600]}",
+    "parse_error": null,
+    "metrics": {
+      "parse_fail": false,
+      "center_error_px": 221.05429197371402,
+      "hit": false,
+      "iou": 0.010365326965093237
+    },
+    "metadata": {
+      "target_description": "The colorful Chrome browser icon in the bottom dock (third icon from left)",
+      "ground_truth_bbox_px": [
+        580,
+        1854,
+        753,
+        2049
+      ],
+      "size_category": "large",
+      "area": 33735,
+      "coord_space": "normalized_1000"
+    },
+    "latency_ms": 2665,
+    "input_tokens": 1568,
+    "output_tokens": 18,
+    "api_error": null
+  },
+  {
+    "_key": [
+      "grounding_zero_shot",
+      "gpt-4o",
+      "home_pixel7",
+      "home_camera",
+      0
+    ],
+    "experiment": "grounding_zero_shot",
+    "model": "gpt-4o",
+    "cu_trained": true,
+    "provider": "openai",
+    "scene": "home_pixel7",
+    "target_id": "home_camera",
+    "run": 0,
+    "predicted_bbox_px": [
+      864,
+      2040,
+      972,
+      2280
+    ],
+    "raw_response": "{\"box_2d\": [850, 800, 950, 900]}",
+    "parse_error": null,
+    "metrics": {
+      "parse_fail": false,
+      "center_error_px": 209.0,
+      "hit": false,
+      "iou": 0.01661879359868691
+    },
+    "metadata": {
+      "target_description": "The 'Camera' icon in the bottom dock (rightmost white circle with a black camera)",
+      "ground_truth_bbox_px": [
+        832,
+        1854,
+        1004,
+        2049
+      ],
+      "size_category": "large",
+      "area": 33540,
+      "coord_space": "normalized_1000"
+    },
+    "latency_ms": 4154,
+    "input_tokens": 1317,
+    "output_tokens": 19,
+    "api_error": null
+  },
+  {
+    "_key": [
+      "grounding_zero_shot",
+      "gpt-4o",
+      "home_pixel7",
+      "home_google_search_bar",
+      0
+    ],
+    "experiment": "grounding_zero_shot",
+    "model": "gpt-4o",
+    "cu_trained": true,
+    "provider": "openai",
+    "scene": "home_pixel7",
+    "target_id": "home_google_search_bar",
+    "run": 0,
+    "predicted_bbox_px": [
+      108,
+      2280,
+      972,
+      2400
+    ],
+    "raw_response": "{\"box_2d\": [950, 100, 1000, 900]}",
+    "parse_error": null,
+    "metrics": {
+      "parse_fail": false,
+      "center_error_px": 168.00297616411441,
+      "hit": false,
+      "iou": 0.0
+    },
+    "metadata": {
+      "target_description": "The white Google search bar at the very bottom of the screen",
+      "ground_truth_bbox_px": [
+        75,
+        2125,
+        1003,
+        2219
+      ],
+      "size_category": "large",
+      "area": 87326,
+      "coord_space": "normalized_1000"
+    },
+    "latency_ms": 3987,
+    "input_tokens": 1311,
+    "output_tokens": 20,
+    "api_error": null
+  },
+  {
+    "_key": [
+      "grounding_zero_shot",
+      "gpt-4o",
+      "home_pixel7",
+      "home_voice_search",
+      0
+    ],
+    "experiment": "grounding_zero_shot",
+    "model": "gpt-4o",
+    "cu_trained": true,
+    "provider": "openai",
+    "scene": "home_pixel7",
+    "target_id": "home_voice_search",
+    "run": 0,
+    "predicted_bbox_px": [
+      583,
+      2208,
+      648,
+      2352
+    ],
+    "raw_response": "{\"box_2d\": [920, 540, 980, 600]}",
+    "parse_error": null,
+    "metrics": {
+      "parse_fail": false,
+      "center_error_px": 217.68095920406083,
+      "hit": false,
+      "iou": 0.0
+    },
+    "metadata": {
+      "target_description": "The microphone icon for voice search (inside the bottom search bar)",
+      "ground_truth_bbox_px": [
+        741,
+        2125,
+        867,
+        2219
+      ],
+      "size_category": "medium",
+      "area": 11844,
+      "coord_space": "normalized_1000"
+    },
+    "latency_ms": 2365,
+    "input_tokens": 1566,
+    "output_tokens": 18,
+    "api_error": null
+  },
+  {
+    "_key": [
+      "grounding_zero_shot",
+      "gpt-4o",
+      "home_pixel7",
+      "home_google_lens",
+      0
+    ],
+    "experiment": "grounding_zero_shot",
+    "model": "gpt-4o",
+    "cu_trained": true,
+    "provider": "openai",
+    "scene": "home_pixel7",
+    "target_id": "home_google_lens",
+    "run": 0,
+    "predicted_bbox_px": [
+      950,
+      2208,
+      1037,
+      2400
+    ],
+    "raw_response": "{\"box_2d\": [920, 880, 1000, 960]}",
+    "parse_error": null,
+    "metrics": {
+      "parse_fail": false,
+      "center_error_px": 146.26346091898688,
+      "hit": false,
+      "iou": 0.01684772929652716
+    },
+    "metadata": {
+      "target_description": "The colorful Google Lens camera icon (rightmost icon inside the search bar)",
+      "ground_truth_bbox_px": [
+        867,
+        2125,
+        993,
+        2219
+      ],
+      "size_category": "medium",
+      "area": 11844,
+      "coord_space": "normalized_1000"
+    },
+    "latency_ms": 3684,
+    "input_tokens": 1313,
+    "output_tokens": 20,
+    "api_error": null
+  },
+  {
+    "_key": [
+      "grounding_zero_shot",
+      "gpt-4o",
+      "home_pixel7",
+      "home_date",
+      0
+    ],
+    "experiment": "grounding_zero_shot",
+    "model": "gpt-4o",
+    "cu_trained": true,
+    "provider": "openai",
+    "scene": "home_pixel7",
+    "target_id": "home_date",
+    "run": 0,
+    "predicted_bbox_px": [
+      54,
+      240,
+      324,
+      360
+    ],
+    "raw_response": "{\"box_2d\": [100, 50, 150, 300]}",
+    "parse_error": null,
+    "metrics": {
+      "parse_fail": false,
+      "center_error_px": 373.8355253316624,
+      "hit": false,
+      "iou": 0.15597147950089127
+    },
+    "metadata": {
+      "target_description": "The 'Thu, Apr 16' date text near the top of the screen",
+      "ground_truth_bbox_px": [
+        99,
+        304,
+        1023,
+        370
+      ],
+      "size_category": "large",
+      "area": 60984,
+      "coord_space": "normalized_1000"
+    },
+    "latency_ms": 2659,
+    "input_tokens": 1570,
+    "output_tokens": 18,
+    "api_error": null
+  },
+  {
+    "_key": [
+      "grounding_zero_shot",
+      "gpt-4o",
+      "youtube_pixel7",
+      "youtube_allow_button",
+      0
+    ],
+    "experiment": "grounding_zero_shot",
+    "model": "gpt-4o",
+    "cu_trained": true,
+    "provider": "openai",
+    "scene": "youtube_pixel7",
+    "target_id": "youtube_allow_button",
+    "run": 0,
+    "predicted_bbox_px": [
+      648,
+      508,
+      1752,
+      572
+    ],
+    "raw_response": "{\"box_2d\": [470, 270, 530, 730]}",
+    "parse_error": null,
+    "metrics": {
+      "parse_fail": false,
+      "center_error_px": 76.69419795525604,
+      "hit": true,
+      "iou": 0.3294248859017067
+    },
+    "metadata": {
+      "target_description": "The 'Allow' button in the notifications permission dialog (top blue button)",
+      "ground_truth_bbox_px": [
+        619,
+        511,
+        1900,
+        668
+      ],
+      "size_category": "large",
+      "area": 201117,
+      "coord_space": "normalized_1000"
+    },
+    "latency_ms": 1510,
+    "input_tokens": 1568,
+    "output_tokens": 18,
+    "api_error": null
+  },
+  {
+    "_key": [
+      "grounding_zero_shot",
+      "gpt-4o",
+      "youtube_pixel7",
+      "youtube_dont_allow_button",
+      0
+    ],
+    "experiment": "grounding_zero_shot",
+    "model": "gpt-4o",
+    "cu_trained": true,
+    "provider": "openai",
+    "scene": "youtube_pixel7",
+    "target_id": "youtube_dont_allow_button",
+    "run": 0,
+    "predicted_bbox_px": [
+      624,
+      626,
+      1776,
+      691
+    ],
+    "raw_response": "{\"box_2d\": [580, 260, 640, 740]}",
+    "parse_error": null,
+    "metrics": {
+      "parse_fail": false,
+      "center_error_px": 105.94810050208545,
+      "hit": false,
+      "iou": 0.10619596715043227
+    },
+    "metadata": {
+      "target_description": "The 'Don't allow' button in the notifications permission dialog (bottom blue button)",
+      "ground_truth_bbox_px": [
+        619,
+        668,
+        1900,
+        825
+      ],
+      "size_category": "large",
+      "area": 201117,
+      "coord_space": "normalized_1000"
+    },
+    "latency_ms": 1252,
+    "input_tokens": 1569,
+    "output_tokens": 18,
+    "api_error": null
+  },
+  {
+    "_key": [
+      "grounding_zero_shot",
+      "gpt-4o",
+      "youtube_pixel7",
+      "youtube_bell_icon",
+      0
+    ],
+    "experiment": "grounding_zero_shot",
+    "model": "gpt-4o",
+    "cu_trained": true,
+    "provider": "openai",
+    "scene": "youtube_pixel7",
+    "target_id": "youtube_bell_icon",
+    "run": 0,
+    "predicted_bbox_px": [
+      1128,
+      270,
+      1272,
+      346
+    ],
+    "raw_response": "{\"box_2d\": [250, 470, 320, 530]}",
+    "parse_error": null,
+    "metrics": {
+      "parse_fail": false,
+      "center_error_px": 60.01666435249463,
+      "hit": false,
+      "iou": 0.2977638289525304
+    },
+    "metadata": {
+      "target_description": "The blue notification bell icon at the top of the dialog",
+      "ground_truth_bbox_px": [
+        1206,
+        255,
+        1312,
+        339
+      ],
+      "size_category": "medium",
+      "area": 8904,
+      "coord_space": "normalized_1000"
+    },
+    "latency_ms": 2396,
+    "input_tokens": 1310,
+    "output_tokens": 19,
+    "api_error": null
+  },
+  {
+    "_key": [
+      "grounding_zero_shot",
+      "gpt-4o",
+      "youtube_pixel7",
+      "youtube_dialog_title",
+      0
+    ],
+    "experiment": "grounding_zero_shot",
+    "model": "gpt-4o",
+    "cu_trained": true,
+    "provider": "openai",
+    "scene": "youtube_pixel7",
+    "target_id": "youtube_dialog_title",
+    "run": 0,
+    "predicted_bbox_px": [
+      600,
+      346,
+      1800,
+      410
+    ],
+    "raw_response": "{\"box_2d\": [320, 250, 380, 750]}",
+    "parse_error": null,
+    "metrics": {
+      "parse_fail": false,
+      "center_error_px": 68.0,
+      "hit": true,
+      "iou": 0.3582554517133956
+    },
+    "metadata": {
+      "target_description": "The dialog title text 'Allow YouTube to send you notifications?'",
+      "ground_truth_bbox_px": [
+        650,
+        370,
+        1870,
+        450
+      ],
+      "size_category": "large",
+      "area": 97600,
+      "coord_space": "normalized_1000"
+    },
+    "latency_ms": 2703,
+    "input_tokens": 1312,
+    "output_tokens": 19,
+    "api_error": null
+  },
+  {
+    "_key": [
+      "grounding_zero_shot",
+      "gpt-4o",
+      "youtube_pixel7",
+      "youtube_signin_button",
+      0
+    ],
+    "experiment": "grounding_zero_shot",
+    "model": "gpt-4o",
+    "cu_trained": true,
+    "provider": "openai",
+    "scene": "youtube_pixel7",
+    "target_id": "youtube_signin_button",
+    "run": 0,
+    "predicted_bbox_px": [
+      2040,
+      162,
+      2280,
+      216
+    ],
+    "raw_response": "{\"box_2d\": [150, 850, 200, 950]}",
+    "parse_error": null,
+    "metrics": {
+      "parse_fail": false,
+      "center_error_px": 115.67627241573788,
+      "hit": false,
+      "iou": 0.04664504864055874
+    },
+    "metadata": {
+      "target_description": "The 'Sign in' button/pill visible in the top-right corner (dimmed, behind dialog)",
+      "ground_truth_bbox_px": [
+        1920,
+        205,
+        2210,
+        305
+      ],
+      "size_category": "large",
+      "area": 29000,
+      "coord_space": "normalized_1000"
+    },
+    "latency_ms": 2290,
+    "input_tokens": 1319,
+    "output_tokens": 19,
+    "api_error": null
+  },
+  {
+    "_key": [
+      "grounding_zero_shot",
+      "gpt-4o",
+      "youtube_pixel7",
+      "youtube_logo",
+      0
+    ],
+    "experiment": "grounding_zero_shot",
+    "model": "gpt-4o",
+    "cu_trained": true,
+    "provider": "openai",
+    "scene": "youtube_pixel7",
+    "target_id": "youtube_logo",
+    "run": 0,
+    "predicted_bbox_px": [
+      120,
+      108,
+      720,
+      194
+    ],
+    "raw_response": "{\"box_2d\": [100, 50, 180, 300]}",
+    "parse_error": null,
+    "metrics": {
+      "parse_fail": false,
+      "center_error_px": 105.54619841567009,
+      "hit": false,
+      "iou": 0.0
+    },
+    "metadata": {
+      "target_description": "The 'YouTube' logo in the top-left corner (red play icon + YouTube text, dimmed behind the dialog)",
+      "ground_truth_bbox_px": [
+        250,
+        205,
+        555,
+        305
+      ],
+      "size_category": "large",
+      "area": 30500,
+      "coord_space": "normalized_1000"
+    },
+    "latency_ms": 1282,
+    "input_tokens": 1579,
+    "output_tokens": 18,
+    "api_error": null
+  },
+  {
+    "_key": [
+      "grounding_zero_shot",
+      "gpt-4.1",
+      "clock_pixel7",
+      "clock_alarm_tab",
+      0
+    ],
+    "experiment": "grounding_zero_shot",
+    "model": "gpt-4.1",
+    "cu_trained": true,
+    "provider": "openai",
+    "scene": "clock_pixel7",
+    "target_id": "clock_alarm_tab",
+    "run": 0,
+    "predicted_bbox_px": [
+      96,
+      940,
+      528,
+      1079
+    ],
+    "raw_response": "{\"box_2d\": [870, 40, 999, 220]}",
+    "parse_error": null,
+    "metrics": {
+      "parse_fail": false,
+      "center_error_px": 111.50784725749125,
+      "hit": true,
+      "iou": 0.23825878464853306
+    },
+    "metadata": {
+      "target_description": "The 'Alarm' tab in the bottom navigation bar (leftmost)",
+      "ground_truth_bbox_px": [
+        36,
+        807,
+        478,
+        1017
+      ],
+      "size_category": "large",
+      "area": 92820,
+      "coord_space": "normalized_1000"
+    },
+    "latency_ms": 2204,
+    "input_tokens": 1567,
+    "output_tokens": 19,
+    "api_error": null
+  },
+  {
+    "_key": [
+      "grounding_zero_shot",
+      "gpt-4.1",
+      "clock_pixel7",
+      "clock_timer_tab",
+      0
+    ],
+    "experiment": "grounding_zero_shot",
+    "model": "gpt-4.1",
+    "cu_trained": true,
+    "provider": "openai",
+    "scene": "clock_pixel7",
+    "target_id": "clock_timer_tab",
+    "run": 0,
+    "predicted_bbox_px": [
+      1188,
+      956,
+      1572,
+      1064
+    ],
+    "raw_response": "{\"box_2d\": [885, 495, 985, 655]}",
+    "parse_error": null,
+    "metrics": {
+      "parse_fail": false,
+      "center_error_px": 258.3118270617898,
+      "hit": false,
+      "iou": 0.08581962838985106
+    },
+    "metadata": {
+      "target_description": "The 'Timer' tab in the bottom navigation bar (center)",
+      "ground_truth_bbox_px": [
+        920,
+        807,
+        1362,
+        1017
+      ],
+      "size_category": "large",
+      "area": 92820,
+      "coord_space": "normalized_1000"
+    },
+    "latency_ms": 1715,
+    "input_tokens": 1566,
+    "output_tokens": 19,
+    "api_error": null
+  },
+  {
+    "_key": [
+      "grounding_zero_shot",
+      "gpt-4.1",
+      "clock_pixel7",
+      "clock_bedtime_tab",
+      0
+    ],
+    "experiment": "grounding_zero_shot",
+    "model": "gpt-4.1",
+    "cu_trained": true,
+    "provider": "openai",
+    "scene": "clock_pixel7",
+    "target_id": "clock_bedtime_tab",
+    "run": 0,
+    "predicted_bbox_px": [
+      1968,
+      940,
+      2398,
+      1079
+    ],
+    "raw_response": "{\"box_2d\": [870, 820, 999, 999]}",
+    "parse_error": null,
+    "metrics": {
+      "parse_fail": false,
+      "center_error_px": 185.39956850003725,
+      "hit": true,
+      "iou": 0.16317538724234662
+    },
+    "metadata": {
+      "target_description": "The 'Bedtime' tab in the bottom navigation bar (rightmost)",
+      "ground_truth_bbox_px": [
+        1804,
+        807,
+        2246,
+        1017
+      ],
+      "size_category": "large",
+      "area": 92820,
+      "coord_space": "normalized_1000"
+    },
+    "latency_ms": 1454,
+    "input_tokens": 1568,
+    "output_tokens": 19,
+    "api_error": null
+  },
+  {
+    "_key": [
+      "grounding_zero_shot",
+      "gpt-4.1",
+      "clock_pixel7",
+      "clock_fab_add_city",
+      0
+    ],
+    "experiment": "grounding_zero_shot",
+    "model": "gpt-4.1",
+    "cu_trained": true,
+    "provider": "openai",
+    "scene": "clock_pixel7",
+    "target_id": "clock_fab_add_city",
+    "run": 0,
+    "predicted_bbox_px": [
+      3168,
+      400,
+      3648,
+      616
+    ],
+    "raw_response": "{\"box_2d\": [370, 1320, 570, 1520]}",
+    "parse_error": null,
+    "metrics": {
+      "parse_fail": false,
+      "center_error_px": 1412.0796719732211,
+      "hit": false,
+      "iou": 0.0
+    },
+    "metadata": {
+      "target_description": "The blue circular '+' floating action button (Add city)",
+      "ground_truth_bbox_px": [
+        1902,
+        429,
+        2091,
+        618
+      ],
+      "size_category": "large",
+      "area": 35721,
+      "coord_space": "normalized_1000"
+    },
+    "latency_ms": 1592,
+    "input_tokens": 1564,
+    "output_tokens": 21,
+    "api_error": null
+  },
+  {
+    "_key": [
+      "grounding_zero_shot",
+      "gpt-4.1",
+      "clock_pixel7",
+      "clock_more_options",
+      0
+    ],
+    "experiment": "grounding_zero_shot",
+    "model": "gpt-4.1",
+    "cu_trained": true,
+    "provider": "openai",
+    "scene": "clock_pixel7",
+    "target_id": "clock_more_options",
+    "run": 0,
+    "predicted_bbox_px": [
+      2280,
+      58,
+      2352,
+      130
+    ],
+    "raw_response": "{\"box_2d\": [54, 950, 120, 980]}",
+    "parse_error": null,
+    "metrics": {
+      "parse_fail": false,
+      "center_error_px": 108.00462953040486,
+      "hit": false,
+      "iou": 0.003815961622328827
+    },
+    "metadata": {
+      "target_description": "The three-dot 'More options' menu in the top right corner",
+      "ground_truth_bbox_px": [
+        2177,
+        95,
+        2282,
+        221
+      ],
+      "size_category": "medium",
+      "area": 13230,
+      "coord_space": "normalized_1000"
+    },
+    "latency_ms": 1482,
+    "input_tokens": 1567,
+    "output_tokens": 19,
+    "api_error": null
+  },
+  {
+    "_key": [
+      "grounding_zero_shot",
+      "gpt-4.1",
+      "clock_pixel7",
+      "clock_time_display",
+      0
+    ],
+    "experiment": "grounding_zero_shot",
+    "model": "gpt-4.1",
+    "cu_trained": true,
+    "provider": "openai",
+    "scene": "clock_pixel7",
+    "target_id": "clock_time_display",
+    "run": 0,
+    "predicted_bbox_px": [
+      146,
+      305,
+      1008,
+      523
+    ],
+    "raw_response": "{\"box_2d\": [282, 61, 484, 420]}",
+    "parse_error": null,
+    "metrics": {
+      "parse_fail": false,
+      "center_error_px": 288.8390555309306,
+      "hit": false,
+      "iou": 0.3397042455080299
+    },
+    "metadata": {
+      "target_description": "The large '22:25' time display on the left side",
+      "ground_truth_bbox_px": [
+        41,
+        242,
+        538,
+        542
+      ],
+      "size_category": "large",
+      "area": 149100,
+      "coord_space": "normalized_1000"
+    },
+    "latency_ms": 1396,
+    "input_tokens": 1567,
+    "output_tokens": 19,
+    "api_error": null
+  },
+  {
+    "_key": [
+      "grounding_zero_shot",
+      "gpt-4.1",
+      "clock_pixel7",
+      "clock_date_subtitle",
+      0
+    ],
+    "experiment": "grounding_zero_shot",
+    "model": "gpt-4.1",
+    "cu_trained": true,
+    "provider": "openai",
+    "scene": "clock_pixel7",
+    "target_id": "clock_date_subtitle",
+    "run": 0,
+    "predicted_bbox_px": [
+      264,
+      454,
+      768,
+      508
+    ],
+    "raw_response": "{\"box_2d\": [420, 110, 470, 320]}",
+    "parse_error": null,
+    "metrics": {
+      "parse_fail": false,
+      "center_error_px": 379.09629383574827,
+      "hit": false,
+      "iou": 0.0
+    },
+    "metadata": {
+      "target_description": "The small date text 'Sat, Apr 11' below the time",
+      "ground_truth_bbox_px": [
+        42,
+        542,
+        256,
+        610
+      ],
+      "size_category": "medium",
+      "area": 14552,
+      "coord_space": "normalized_1000"
+    },
+    "latency_ms": 1013,
+    "input_tokens": 1568,
+    "output_tokens": 19,
+    "api_error": null
+  },
+  {
+    "_key": [
+      "grounding_zero_shot",
+      "gpt-4.1",
+      "clock_pixel7",
+      "clock_title_label",
+      0
+    ],
+    "experiment": "grounding_zero_shot",
+    "model": "gpt-4.1",
+    "cu_trained": true,
+    "provider": "openai",
+    "scene": "clock_pixel7",
+    "target_id": "clock_title_label",
+    "run": 0,
+    "predicted_bbox_px": [
+      106,
+      99,
+      434,
+      160
+    ],
+    "raw_response": "{\"box_2d\": [92, 44, 148, 181]}",
+    "parse_error": null,
+    "metrics": {
+      "parse_fail": false,
+      "center_error_px": 134.937022347464,
+      "hit": false,
+      "iou": 0.17367687524568487
+    },
+    "metadata": {
+      "target_description": "The 'Clock' app title in the top left corner",
+      "ground_truth_bbox_px": [
+        63,
+        115,
+        214,
+        200
+      ],
+      "size_category": "medium",
+      "area": 12835,
+      "coord_space": "normalized_1000"
+    },
+    "latency_ms": 1437,
+    "input_tokens": 1565,
+    "output_tokens": 19,
+    "api_error": null
+  },
+  {
+    "_key": [
+      "grounding_zero_shot",
+      "gpt-4.1",
+      "home_pixel7",
+      "home_play_store",
+      0
+    ],
+    "experiment": "grounding_zero_shot",
+    "model": "gpt-4.1",
+    "cu_trained": true,
+    "provider": "openai",
+    "scene": "home_pixel7",
+    "target_id": "home_play_store",
+    "run": 0,
+    "predicted_bbox_px": [
+      59,
+      1968,
+      221,
+      2280
+    ],
+    "raw_response": "{\"box_2d\": [820, 55, 950, 205]}",
+    "parse_error": null,
+    "metrics": {
+      "parse_fail": false,
+      "center_error_px": 512.47243828327,
+      "hit": false,
+      "iou": 0.0
+    },
+    "metadata": {
+      "target_description": "The 'Play Store' app icon (first icon in the top row, leftmost)",
+      "ground_truth_bbox_px": [
+        57,
+        1476,
+        267,
+        1748
+      ],
+      "size_category": "large",
+      "area": 57120,
+      "coord_space": "normalized_1000"
+    },
+    "latency_ms": 2424,
+    "input_tokens": 1571,
+    "output_tokens": 19,
+    "api_error": null
+  },
+  {
+    "_key": [
+      "grounding_zero_shot",
+      "gpt-4.1",
+      "home_pixel7",
+      "home_gmail",
+      0
+    ],
+    "experiment": "grounding_zero_shot",
+    "model": "gpt-4.1",
+    "cu_trained": true,
+    "provider": "openai",
+    "scene": "home_pixel7",
+    "target_id": "home_gmail",
+    "run": 0,
+    "predicted_bbox_px": [
+      308,
+      1836,
+      454,
+      2160
+    ],
+    "raw_response": "{\"box_2d\": [765, 285, 900, 420]}",
+    "parse_error": null,
+    "metrics": {
+      "parse_fail": false,
+      "center_error_px": 387.40805360756247,
+      "hit": false,
+      "iou": 0.0
+    },
+    "metadata": {
+      "target_description": "The 'Gmail' app icon (red and white envelope, second in the top row)",
+      "ground_truth_bbox_px": [
+        309,
+        1476,
+        519,
+        1748
+      ],
+      "size_category": "large",
+      "area": 57120,
+      "coord_space": "normalized_1000"
+    },
+    "latency_ms": 4329,
+    "input_tokens": 1572,
+    "output_tokens": 19,
+    "api_error": null
+  },
+  {
+    "_key": [
+      "grounding_zero_shot",
+      "gpt-4.1",
+      "home_pixel7",
+      "home_youtube",
+      0
+    ],
+    "experiment": "grounding_zero_shot",
+    "model": "gpt-4.1",
+    "cu_trained": true,
+    "provider": "openai",
+    "scene": "home_pixel7",
+    "target_id": "home_youtube",
+    "run": 0,
+    "predicted_bbox_px": [
+      815,
+      1675,
+      949,
+      1973
+    ],
+    "raw_response": "{\"box_2d\": [698, 755, 822, 879]}",
+    "parse_error": null,
+    "metrics": {
+      "parse_fail": false,
+      "center_error_px": 215.0348808914498,
+      "hit": false,
+      "iou": 0.11208891944539934
+    },
+    "metadata": {
+      "target_description": "The 'YouTube' app icon (red play button, rightmost in the top row)",
+      "ground_truth_bbox_px": [
+        813,
+        1476,
+        1023,
+        1748
+      ],
+      "size_category": "large",
+      "area": 57120,
+      "coord_space": "normalized_1000"
+    },
+    "latency_ms": 1720,
+    "input_tokens": 1572,
+    "output_tokens": 19,
+    "api_error": null
+  },
+  {
+    "_key": [
+      "grounding_zero_shot",
+      "gpt-4.1",
+      "home_pixel7",
+      "home_phone",
+      0
+    ],
+    "experiment": "grounding_zero_shot",
+    "model": "gpt-4.1",
+    "cu_trained": true,
+    "provider": "openai",
+    "scene": "home_pixel7",
+    "target_id": "home_phone",
+    "run": 0,
+    "predicted_bbox_px": [
+      76,
+      2076,
+      227,
+      2328
+    ],
+    "raw_response": "{\"box_2d\": [865, 70, 970, 210]}",
+    "parse_error": null,
+    "metrics": {
+      "parse_fail": false,
+      "center_error_px": 251.24092023394596,
+      "hit": false,
+      "iou": 0.0
+    },
+    "metadata": {
+      "target_description": "The blue 'Phone' (dialer) icon in the bottom dock row (leftmost blue circle)",
+      "ground_truth_bbox_px": [
+        76,
+        1854,
+        249,
+        2049
+      ],
+      "size_category": "large",
+      "area": 33735,
+      "coord_space": "normalized_1000"
+    },
+    "latency_ms": 2402,
+    "input_tokens": 1574,
+    "output_tokens": 19,
+    "api_error": null
+  },
+  {
+    "_key": [
+      "grounding_zero_shot",
+      "gpt-4.1",
+      "home_pixel7",
+      "home_chrome",
+      0
+    ],
+    "experiment": "grounding_zero_shot",
+    "model": "gpt-4.1",
+    "cu_trained": true,
+    "provider": "openai",
+    "scene": "home_pixel7",
+    "target_id": "home_chrome",
+    "run": 0,
+    "predicted_bbox_px": [
+      583,
+      2160,
+      702,
+      2388
+    ],
+    "raw_response": "{\"box_2d\": [900, 540, 995, 650]}",
+    "parse_error": null,
+    "metrics": {
+      "parse_fail": false,
+      "center_error_px": 323.8904135660702,
+      "hit": false,
+      "iou": 0.0
+    },
+    "metadata": {
+      "target_description": "The colorful Chrome browser icon in the bottom dock (third icon from left)",
+      "ground_truth_bbox_px": [
+        580,
+        1854,
+        753,
+        2049
+      ],
+      "size_category": "large",
+      "area": 33735,
+      "coord_space": "normalized_1000"
+    },
+    "latency_ms": 2483,
+    "input_tokens": 1568,
+    "output_tokens": 19,
+    "api_error": null
+  },
+  {
+    "_key": [
+      "grounding_zero_shot",
+      "gpt-4.1",
+      "home_pixel7",
+      "home_camera",
+      0
+    ],
+    "experiment": "grounding_zero_shot",
+    "model": "gpt-4.1",
+    "cu_trained": true,
+    "provider": "openai",
+    "scene": "home_pixel7",
+    "target_id": "home_camera",
+    "run": 0,
+    "predicted_bbox_px": [
+      864,
+      2880,
+      1015,
+      3216
+    ],
+    "raw_response": "{\"box_2d\": [1200, 800, 1340, 940]}",
+    "parse_error": null,
+    "metrics": {
+      "parse_fail": false,
+      "center_error_px": 1097.2009843232916,
+      "hit": false,
+      "iou": 0.0
+    },
+    "metadata": {
+      "target_description": "The 'Camera' icon in the bottom dock (rightmost white circle with a black camera)",
+      "ground_truth_bbox_px": [
+        832,
+        1854,
+        1004,
+        2049
+      ],
+      "size_category": "large",
+      "area": 33540,
+      "coord_space": "normalized_1000"
+    },
+    "latency_ms": 2779,
+    "input_tokens": 1572,
+    "output_tokens": 21,
+    "api_error": null
+  },
+  {
+    "_key": [
+      "grounding_zero_shot",
+      "gpt-4.1",
+      "home_pixel7",
+      "home_google_search_bar",
+      0
+    ],
+    "experiment": "grounding_zero_shot",
+    "model": "gpt-4.1",
+    "cu_trained": true,
+    "provider": "openai",
+    "scene": "home_pixel7",
+    "target_id": "home_google_search_bar",
+    "run": 0,
+    "predicted_bbox_px": [
+      52,
+      2246,
+      1026,
+      2364
+    ],
+    "raw_response": "{\"box_2d\": [936, 48, 985, 950]}",
+    "parse_error": null,
+    "metrics": {
+      "parse_fail": false,
+      "center_error_px": 133.0,
+      "hit": false,
+      "iou": 0.0
+    },
+    "metadata": {
+      "target_description": "The white Google search bar at the very bottom of the screen",
+      "ground_truth_bbox_px": [
+        75,
+        2125,
+        1003,
+        2219
+      ],
+      "size_category": "large",
+      "area": 87326,
+      "coord_space": "normalized_1000"
+    },
+    "latency_ms": 2659,
+    "input_tokens": 1566,
+    "output_tokens": 19,
+    "api_error": null
+  },
+  {
+    "_key": [
+      "grounding_zero_shot",
+      "gpt-4.1",
+      "home_pixel7",
+      "home_voice_search",
+      0
+    ],
+    "experiment": "grounding_zero_shot",
+    "model": "gpt-4.1",
+    "cu_trained": true,
+    "provider": "openai",
+    "scene": "home_pixel7",
+    "target_id": "home_voice_search",
+    "run": 0,
+    "predicted_bbox_px": [
+      724,
+      2249,
+      778,
+      2364
+    ],
+    "raw_response": "{\"box_2d\": [937, 670, 985, 720]}",
+    "parse_error": null,
+    "metrics": {
+      "parse_fail": false,
+      "center_error_px": 144.10065926289164,
+      "hit": false,
+      "iou": 0.0
+    },
+    "metadata": {
+      "target_description": "The microphone icon for voice search (inside the bottom search bar)",
+      "ground_truth_bbox_px": [
+        741,
+        2125,
+        867,
+        2219
+      ],
+      "size_category": "medium",
+      "area": 11844,
+      "coord_space": "normalized_1000"
+    },
+    "latency_ms": 2385,
+    "input_tokens": 1566,
+    "output_tokens": 19,
+    "api_error": null
+  },
+  {
+    "_key": [
+      "grounding_zero_shot",
+      "gpt-4.1",
+      "home_pixel7",
+      "home_google_lens",
+      0
+    ],
+    "experiment": "grounding_zero_shot",
+    "model": "gpt-4.1",
+    "cu_trained": true,
+    "provider": "openai",
+    "scene": "home_pixel7",
+    "target_id": "home_google_lens",
+    "run": 0,
+    "predicted_bbox_px": [
+      942,
+      2249,
+      1026,
+      2378
+    ],
+    "raw_response": "{\"box_2d\": [937, 872, 991, 950]}",
+    "parse_error": null,
+    "metrics": {
+      "parse_fail": false,
+      "center_error_px": 150.98675438593943,
+      "hit": false,
+      "iou": 0.0
+    },
+    "metadata": {
+      "target_description": "The colorful Google Lens camera icon (rightmost icon inside the search bar)",
+      "ground_truth_bbox_px": [
+        867,
+        2125,
+        993,
+        2219
+      ],
+      "size_category": "medium",
+      "area": 11844,
+      "coord_space": "normalized_1000"
+    },
+    "latency_ms": 2909,
+    "input_tokens": 1568,
+    "output_tokens": 19,
+    "api_error": null
+  },
+  {
+    "_key": [
+      "grounding_zero_shot",
+      "gpt-4.1",
+      "home_pixel7",
+      "home_date",
+      0
+    ],
+    "experiment": "grounding_zero_shot",
+    "model": "gpt-4.1",
+    "cu_trained": true,
+    "provider": "openai",
+    "scene": "home_pixel7",
+    "target_id": "home_date",
+    "run": 0,
+    "predicted_bbox_px": [
+      87,
+      245,
+      415,
+      343
+    ],
+    "raw_response": "{\"box_2d\": [102, 81, 143, 384]}",
+    "parse_error": null,
+    "metrics": {
+      "parse_fail": false,
+      "center_error_px": 312.96804948748365,
+      "hit": false,
+      "iou": 0.152517202118707
+    },
+    "metadata": {
+      "target_description": "The 'Thu, Apr 16' date text near the top of the screen",
+      "ground_truth_bbox_px": [
+        99,
+        304,
+        1023,
+        370
+      ],
+      "size_category": "large",
+      "area": 60984,
+      "coord_space": "normalized_1000"
+    },
+    "latency_ms": 1799,
+    "input_tokens": 1570,
+    "output_tokens": 19,
+    "api_error": null
+  },
+  {
+    "_key": [
+      "grounding_zero_shot",
+      "gpt-4.1",
+      "youtube_pixel7",
+      "youtube_allow_button",
+      0
+    ],
+    "experiment": "grounding_zero_shot",
+    "model": "gpt-4.1",
+    "cu_trained": true,
+    "provider": "openai",
+    "scene": "youtube_pixel7",
+    "target_id": "youtube_allow_button",
+    "run": 0,
+    "predicted_bbox_px": [
+      749,
+      454,
+      2280,
+      583
+    ],
+    "raw_response": "{\"box_2d\": [420, 312, 540, 950]}",
+    "parse_error": null,
+    "metrics": {
+      "parse_fail": false,
+      "center_error_px": 264.6998299961675,
+      "hit": true,
+      "iou": 0.26246579507449075
+    },
+    "metadata": {
+      "target_description": "The 'Allow' button in the notifications permission dialog (top blue button)",
+      "ground_truth_bbox_px": [
+        619,
+        511,
+        1900,
+        668
+      ],
+      "size_category": "large",
+      "area": 201117,
+      "coord_space": "normalized_1000"
+    },
+    "latency_ms": 1560,
+    "input_tokens": 1568,
+    "output_tokens": 19,
+    "api_error": null
+  },
+  {
+    "_key": [
+      "grounding_zero_shot",
+      "gpt-4.1",
+      "youtube_pixel7",
+      "youtube_dont_allow_button",
+      0
+    ],
+    "experiment": "grounding_zero_shot",
+    "model": "gpt-4.1",
+    "cu_trained": true,
+    "provider": "openai",
+    "scene": "youtube_pixel7",
+    "target_id": "youtube_dont_allow_button",
+    "run": 0,
+    "predicted_bbox_px": [
+      677,
+      630,
+      1721,
+      739
+    ],
+    "raw_response": "{\"box_2d\": [583, 282, 684, 717]}",
+    "parse_error": null,
+    "metrics": {
+      "parse_fail": false,
+      "center_error_px": 86.27861844049197,
+      "hit": true,
+      "iou": 0.307837982632097
+    },
+    "metadata": {
+      "target_description": "The 'Don't allow' button in the notifications permission dialog (bottom blue button)",
+      "ground_truth_bbox_px": [
+        619,
+        668,
+        1900,
+        825
+      ],
+      "size_category": "large",
+      "area": 201117,
+      "coord_space": "normalized_1000"
+    },
+    "latency_ms": 1524,
+    "input_tokens": 1569,
+    "output_tokens": 19,
+    "api_error": null
+  },
+  {
+    "_key": [
+      "grounding_zero_shot",
+      "gpt-4.1",
+      "youtube_pixel7",
+      "youtube_bell_icon",
+      0
+    ],
+    "experiment": "grounding_zero_shot",
+    "model": "gpt-4.1",
+    "cu_trained": true,
+    "provider": "openai",
+    "scene": "youtube_pixel7",
+    "target_id": "youtube_bell_icon",
+    "run": 0,
+    "predicted_bbox_px": [
+      2160,
+      295,
+      2316,
+      367
+    ],
+    "raw_response": "{\"box_2d\": [273, 900, 340, 965]}",
+    "parse_error": null,
+    "metrics": {
+      "parse_fail": false,
+      "center_error_px": 979.5902204493468,
+      "hit": false,
+      "iou": 0.0
+    },
+    "metadata": {
+      "target_description": "The blue notification bell icon at the top of the dialog",
+      "ground_truth_bbox_px": [
+        1206,
+        255,
+        1312,
+        339
+      ],
+      "size_category": "medium",
+      "area": 8904,
+      "coord_space": "normalized_1000"
+    },
+    "latency_ms": 1013,
+    "input_tokens": 1565,
+    "output_tokens": 19,
+    "api_error": null
+  },
+  {
+    "_key": [
+      "grounding_zero_shot",
+      "gpt-4.1",
+      "youtube_pixel7",
+      "youtube_dialog_title",
+      0
+    ],
+    "experiment": "grounding_zero_shot",
+    "model": "gpt-4.1",
+    "cu_trained": true,
+    "provider": "openai",
+    "scene": "youtube_pixel7",
+    "target_id": "youtube_dialog_title",
+    "run": 0,
+    "predicted_bbox_px": [
+      749,
+      316,
+      3305,
+      424
+    ],
+    "raw_response": "{\"box_2d\": [293, 312, 393, 1377]}",
+    "parse_error": null,
+    "metrics": {
+      "parse_fail": false,
+      "center_error_px": 768.0423165425196,
+      "hit": false,
+      "iou": 0.19332894728437566
+    },
+    "metadata": {
+      "target_description": "The dialog title text 'Allow YouTube to send you notifications?'",
+      "ground_truth_bbox_px": [
+        650,
+        370,
+        1870,
+        450
+      ],
+      "size_category": "large",
+      "area": 97600,
+      "coord_space": "normalized_1000"
+    },
+    "latency_ms": 1283,
+    "input_tokens": 1567,
+    "output_tokens": 20,
+    "api_error": null
+  },
+  {
+    "_key": [
+      "grounding_zero_shot",
+      "gpt-4.1",
+      "youtube_pixel7",
+      "youtube_signin_button",
+      0
+    ],
+    "experiment": "grounding_zero_shot",
+    "model": "gpt-4.1",
+    "cu_trained": true,
+    "provider": "openai",
+    "scene": "youtube_pixel7",
+    "target_id": "youtube_signin_button",
+    "run": 0,
+    "predicted_bbox_px": [
+      3408,
+      154,
+      3816,
+      227
+    ],
+    "raw_response": "{\"box_2d\": [143, 1420, 210, 1590]}",
+    "parse_error": null,
+    "metrics": {
+      "parse_fail": false,
+      "center_error_px": 1548.364944061961,
+      "hit": false,
+      "iou": 0.0
+    },
+    "metadata": {
+      "target_description": "The 'Sign in' button/pill visible in the top-right corner (dimmed, behind dialog)",
+      "ground_truth_bbox_px": [
+        1920,
+        205,
+        2210,
+        305
+      ],
+      "size_category": "large",
+      "area": 29000,
+      "coord_space": "normalized_1000"
+    },
+    "latency_ms": 2138,
+    "input_tokens": 1574,
+    "output_tokens": 21,
+    "api_error": null
+  },
+  {
+    "_key": [
+      "grounding_zero_shot",
+      "gpt-4.1",
+      "youtube_pixel7",
+      "youtube_logo",
+      0
+    ],
+    "experiment": "grounding_zero_shot",
+    "model": "gpt-4.1",
+    "cu_trained": true,
+    "provider": "openai",
+    "scene": "youtube_pixel7",
+    "target_id": "youtube_logo",
+    "run": 0,
+    "predicted_bbox_px": [
+      168,
+      130,
+      888,
+      227
+    ],
+    "raw_response": "{\"box_2d\": [120, 70, 210, 370]}",
+    "parse_error": null,
+    "metrics": {
+      "parse_fail": false,
+      "center_error_px": 147.6651617681029,
+      "hit": false,
+      "iou": 0.07166506461604187
+    },
+    "metadata": {
+      "target_description": "The 'YouTube' logo in the top-left corner (red play icon + YouTube text, dimmed behind the dialog)",
+      "ground_truth_bbox_px": [
+        250,
+        205,
+        555,
+        305
+      ],
+      "size_category": "large",
+      "area": 30500,
+      "coord_space": "normalized_1000"
+    },
+    "latency_ms": 1390,
+    "input_tokens": 1579,
+    "output_tokens": 19,
+    "api_error": null
+  },
+  {
+    "_key": [
+      "grounding_zero_shot",
+      "gemini-2.5-pro",
+      "clock_pixel7",
+      "clock_alarm_tab",
+      0
+    ],
+    "experiment": "grounding_zero_shot",
+    "model": "gemini-2.5-pro",
+    "cu_trained": false,
+    "provider": "google",
+    "scene": "clock_pixel7",
+    "target_id": "clock_alarm_tab",
+    "run": 0,
+    "predicted_bbox_px": [
+      0,
+      864,
+      480,
+      999
+    ],
+    "raw_response": "{\"box_2d\": [800, 0, 925, 200]}",
+    "parse_error": null,
+    "metrics": {
+      "parse_fail": false,
+      "center_error_px": 25.495097567963924,
+      "hit": true,
+      "iou": 0.6091883614088821
+    },
+    "metadata": {
+      "target_description": "The 'Alarm' tab in the bottom navigation bar (leftmost)",
+      "ground_truth_bbox_px": [
+        36,
+        807,
+        478,
+        1017
+      ],
+      "size_category": "large",
+      "area": 92820,
+      "coord_space": "normalized_1000"
+    },
+    "latency_ms": 27900,
+    "input_tokens": 2457,
+    "output_tokens": 1668,
+    "api_error": null
+  },
+  {
+    "_key": [
+      "grounding_zero_shot",
+      "gemini-2.5-pro",
+      "clock_pixel7",
+      "clock_timer_tab",
+      0
+    ],
+    "experiment": "grounding_zero_shot",
+    "model": "gemini-2.5-pro",
+    "cu_trained": false,
+    "provider": "google",
+    "scene": "clock_pixel7",
+    "target_id": "clock_timer_tab",
+    "run": 0,
+    "predicted_bbox_px": [
+      960,
+      867,
+      1438,
+      991
+    ],
+    "raw_response": "{\"box_2d\": [803, 400, 918, 599]}",
+    "parse_error": null,
+    "metrics": {
+      "parse_fail": false,
+      "center_error_px": 60.440052945046304,
+      "hit": true,
+      "iou": 0.48753961112632527
+    },
+    "metadata": {
+      "target_description": "The 'Timer' tab in the bottom navigation bar (center)",
+      "ground_truth_bbox_px": [
+        920,
+        807,
+        1362,
+        1017
+      ],
+      "size_category": "large",
+      "area": 92820,
+      "coord_space": "normalized_1000"
+    },
+    "latency_ms": 12868,
+    "input_tokens": 2456,
+    "output_tokens": 985,
+    "api_error": null
+  },
+  {
+    "_key": [
+      "grounding_zero_shot",
+      "gemini-2.5-pro",
+      "clock_pixel7",
+      "clock_bedtime_tab",
+      0
+    ],
+    "experiment": "grounding_zero_shot",
+    "model": "gemini-2.5-pro",
+    "cu_trained": false,
+    "provider": "google",
+    "scene": "clock_pixel7",
+    "target_id": "clock_bedtime_tab",
+    "run": 0,
+    "predicted_bbox_px": [
+      1920,
+      848,
+      2400,
+      994
+    ],
+    "raw_response": "```json\n{\"box_2d\": [785, 800, 920, 1000]}\n```",
+    "parse_error": null,
+    "metrics": {
+      "parse_fail": false,
+      "center_error_px": 135.29966740535616,
+      "hit": true,
+      "iou": 0.412787067230972
+    },
+    "metadata": {
+      "target_description": "The 'Bedtime' tab in the bottom navigation bar (rightmost)",
+      "ground_truth_bbox_px": [
+        1804,
+        807,
+        2246,
+        1017
+      ],
+      "size_category": "large",
+      "area": 92820,
+      "coord_space": "normalized_1000"
+    },
+    "latency_ms": 17078,
+    "input_tokens": 2458,
+    "output_tokens": 1244,
+    "api_error": null
+  },
+  {
+    "_key": [
+      "grounding_zero_shot",
+      "gemini-2.5-pro",
+      "clock_pixel7",
+      "clock_fab_add_city",
+      0
+    ],
+    "experiment": "grounding_zero_shot",
+    "model": "gemini-2.5-pro",
+    "cu_trained": false,
+    "provider": "google",
+    "scene": "clock_pixel7",
+    "target_id": "clock_fab_add_city",
+    "run": 0,
+    "predicted_bbox_px": [
+      1894,
+      429,
+      2230,
+      580
+    ],
+    "raw_response": "{\"box\": [397, 789, 537, 929]}",
+    "parse_error": null,
+    "metrics": {
+      "parse_fail": false,
+      "center_error_px": 68.6804193347711,
+      "hit": true,
+      "iou": 0.49274836838288616
+    },
+    "metadata": {
+      "target_description": "The blue circular '+' floating action button (Add city)",
+      "ground_truth_bbox_px": [
+        1902,
+        429,
+        2091,
+        618
+      ],
+      "size_category": "large",
+      "area": 35721,
+      "coord_space": "normalized_1000"
+    },
+    "latency_ms": 17211,
+    "input_tokens": 2454,
+    "output_tokens": 1267,
+    "api_error": null
+  },
+  {
+    "_key": [
+      "grounding_zero_shot",
+      "gemini-2.5-pro",
+      "clock_pixel7",
+      "clock_more_options",
+      0
+    ],
+    "experiment": "grounding_zero_shot",
+    "model": "gemini-2.5-pro",
+    "cu_trained": false,
+    "provider": "google",
+    "scene": "clock_pixel7",
+    "target_id": "clock_more_options",
+    "run": 0,
+    "predicted_bbox_px": [
+      2179,
+      135,
+      2352,
+      198
+    ],
+    "raw_response": "{\"box_2d\": [125, 908, 183, 980]}",
+    "parse_error": null,
+    "metrics": {
+      "parse_fail": false,
+      "center_error_px": 36.87817782917155,
+      "hit": true,
+      "iou": 0.3678571428571429
+    },
+    "metadata": {
+      "target_description": "The three-dot 'More options' menu in the top right corner",
+      "ground_truth_bbox_px": [
+        2177,
+        95,
+        2282,
+        221
+      ],
+      "size_category": "medium",
+      "area": 13230,
+      "coord_space": "normalized_1000"
+    },
+    "latency_ms": 10389,
+    "input_tokens": 2458,
+    "output_tokens": 784,
+    "api_error": null
+  },
+  {
+    "_key": [
+      "grounding_zero_shot",
+      "gemini-2.5-pro",
+      "clock_pixel7",
+      "clock_time_display",
+      0
+    ],
+    "experiment": "grounding_zero_shot",
+    "model": "gemini-2.5-pro",
+    "cu_trained": false,
+    "provider": "google",
+    "scene": "clock_pixel7",
+    "target_id": "clock_time_display",
+    "run": 0,
+    "predicted_bbox_px": [
+      58,
+      332,
+      1082,
+      487
+    ],
+    "raw_response": "{\"box\": [307, 24, 451, 451]}",
+    "parse_error": null,
+    "metrics": {
+      "parse_fail": false,
+      "center_error_px": 281.51376520518494,
+      "hit": false,
+      "iou": 0.31873875417701997
+    },
+    "metadata": {
+      "target_description": "The large '22:25' time display on the left side",
+      "ground_truth_bbox_px": [
+        41,
+        242,
+        538,
+        542
+      ],
+      "size_category": "large",
+      "area": 149100,
+      "coord_space": "normalized_1000"
+    },
+    "latency_ms": 8922,
+    "input_tokens": 2459,
+    "output_tokens": 569,
+    "api_error": null
+  },
+  {
+    "_key": [
+      "grounding_zero_shot",
+      "gemini-2.5-pro",
+      "clock_pixel7",
+      "clock_date_subtitle",
+      0
+    ],
+    "experiment": "grounding_zero_shot",
+    "model": "gemini-2.5-pro",
+    "cu_trained": false,
+    "provider": "google",
+    "scene": "clock_pixel7",
+    "target_id": "clock_date_subtitle",
+    "run": 0,
+    "predicted_bbox_px": [
+      60,
+      451,
+      506,
+      482
+    ],
+    "raw_response": "{\"box_2d\": [418, 25, 446, 211]}",
+    "parse_error": null,
+    "metrics": {
+      "parse_fail": false,
+      "center_error_px": 173.3666634621547,
+      "hit": false,
+      "iou": 0.0
+    },
+    "metadata": {
+      "target_description": "The small date text 'Sat, Apr 11' below the time",
+      "ground_truth_bbox_px": [
+        42,
+        542,
+        256,
+        610
+      ],
+      "size_category": "medium",
+      "area": 14552,
+      "coord_space": "normalized_1000"
+    },
+    "latency_ms": 9553,
+    "input_tokens": 2459,
+    "output_tokens": 520,
+    "api_error": null
+  },
+  {
+    "_key": [
+      "grounding_zero_shot",
+      "gemini-2.5-pro",
+      "clock_pixel7",
+      "clock_title_label",
+      0
+    ],
+    "experiment": "grounding_zero_shot",
+    "model": "gemini-2.5-pro",
+    "cu_trained": false,
+    "provider": "google",
+    "scene": "clock_pixel7",
+    "target_id": "clock_title_label",
+    "run": 0,
+    "predicted_bbox_px": [
+      101,
+      146,
+      475,
+      195
+    ],
+    "raw_response": "```json\n{\"box_2d\": [135, 42, 181, 198]}\n```",
+    "parse_error": null,
+    "metrics": {
+      "parse_fail": false,
+      "center_error_px": 150.56227947264878,
+      "hit": false,
+      "iou": 0.21608648142366532
+    },
+    "metadata": {
+      "target_description": "The 'Clock' app title in the top left corner",
+      "ground_truth_bbox_px": [
+        63,
+        115,
+        214,
+        200
+      ],
+      "size_category": "medium",
+      "area": 12835,
+      "coord_space": "normalized_1000"
+    },
+    "latency_ms": 8522,
+    "input_tokens": 2455,
+    "output_tokens": 542,
+    "api_error": null
+  },
+  {
+    "_key": [
+      "grounding_zero_shot",
+      "gemini-2.5-pro",
+      "home_pixel7",
+      "home_play_store",
+      0
+    ],
+    "experiment": "grounding_zero_shot",
+    "model": "gemini-2.5-pro",
+    "cu_trained": false,
+    "provider": "google",
+    "scene": "home_pixel7",
+    "target_id": "home_play_store",
+    "run": 0,
+    "predicted_bbox_px": [
+      84,
+      1505,
+      240,
+      1740
+    ],
+    "raw_response": "{\"box_2d\": [627, 78, 725, 222]}",
+    "parse_error": null,
+    "metrics": {
+      "parse_fail": false,
+      "center_error_px": 10.0,
+      "hit": true,
+      "iou": 0.6418067226890757
+    },
+    "metadata": {
+      "target_description": "The 'Play Store' app icon (first icon in the top row, leftmost)",
+      "ground_truth_bbox_px": [
+        57,
+        1476,
+        267,
+        1748
+      ],
+      "size_category": "large",
+      "area": 57120,
+      "coord_space": "normalized_1000"
+    },
+    "latency_ms": 19932,
+    "input_tokens": 2460,
+    "output_tokens": 1520,
+    "api_error": null
+  },
+  {
+    "_key": [
+      "grounding_zero_shot",
+      "gemini-2.5-pro",
+      "home_pixel7",
+      "home_gmail",
+      0
+    ],
+    "experiment": "grounding_zero_shot",
+    "model": "gemini-2.5-pro",
+    "cu_trained": false,
+    "provider": "google",
+    "scene": "home_pixel7",
+    "target_id": "home_gmail",
+    "run": 0,
+    "predicted_bbox_px": [
+      333,
+      1505,
+      510,
+      1730
+    ],
+    "raw_response": "{\"box_2d\": [627, 308, 721, 472]}",
+    "parse_error": null,
+    "metrics": {
+      "parse_fail": false,
+      "center_error_px": 8.602325267042627,
+      "hit": true,
+      "iou": 0.6972163865546218
+    },
+    "metadata": {
+      "target_description": "The 'Gmail' app icon (red and white envelope, second in the top row)",
+      "ground_truth_bbox_px": [
+        309,
+        1476,
+        519,
+        1748
+      ],
+      "size_category": "large",
+      "area": 57120,
+      "coord_space": "normalized_1000"
+    },
+    "latency_ms": 15698,
+    "input_tokens": 2461,
+    "output_tokens": 1043,
+    "api_error": null
+  },
+  {
+    "_key": [
+      "grounding_zero_shot",
+      "gemini-2.5-pro",
+      "home_pixel7",
+      "home_youtube",
+      0
+    ],
+    "experiment": "grounding_zero_shot",
+    "model": "gemini-2.5-pro",
+    "cu_trained": false,
+    "provider": "google",
+    "scene": "home_pixel7",
+    "target_id": "home_youtube",
+    "run": 0,
+    "predicted_bbox_px": [
+      849,
+      1524,
+      1000,
+      1795
+    ],
+    "raw_response": "{\"box_2d\": [635, 786, 748, 926]}",
+    "parse_error": null,
+    "metrics": {
+      "parse_fail": false,
+      "center_error_px": 47.38143096192854,
+      "hit": true,
+      "iou": 0.52671410997088
+    },
+    "metadata": {
+      "target_description": "The 'YouTube' app icon (red play button, rightmost in the top row)",
+      "ground_truth_bbox_px": [
+        813,
+        1476,
+        1023,
+        1748
+      ],
+      "size_category": "large",
+      "area": 57120,
+      "coord_space": "normalized_1000"
+    },
+    "latency_ms": 31397,
+    "input_tokens": 2461,
+    "output_tokens": 1990,
+    "api_error": null
+  },
+  {
+    "_key": [
+      "grounding_zero_shot",
+      "gemini-2.5-pro",
+      "home_pixel7",
+      "home_phone",
+      0
+    ],
+    "experiment": "grounding_zero_shot",
+    "model": "gemini-2.5-pro",
+    "cu_trained": false,
+    "provider": "google",
+    "scene": "home_pixel7",
+    "target_id": "home_phone",
+    "run": 0,
+    "predicted_bbox_px": [
+      86,
+      1867,
+      221,
+      2047
+    ],
+    "raw_response": "{\"box_2d\": [778, 80, 853, 205]}",
+    "parse_error": null,
+    "metrics": {
+      "parse_fail": false,
+      "center_error_px": 10.816653826391969,
+      "hit": true,
+      "iou": 0.7203201422854602
+    },
+    "metadata": {
+      "target_description": "The blue 'Phone' (dialer) icon in the bottom dock row (leftmost blue circle)",
+      "ground_truth_bbox_px": [
+        76,
+        1854,
+        249,
+        2049
+      ],
+      "size_category": "large",
+      "area": 33735,
+      "coord_space": "normalized_1000"
+    },
+    "latency_ms": 23490,
+    "input_tokens": 2464,
+    "output_tokens": 1990,
+    "api_error": null
+  },
+  {
+    "_key": [
+      "grounding_zero_shot",
+      "gemini-2.5-pro",
+      "home_pixel7",
+      "home_chrome",
+      0
+    ],
+    "experiment": "grounding_zero_shot",
+    "model": "gemini-2.5-pro",
+    "cu_trained": false,
+    "provider": "google",
+    "scene": "home_pixel7",
+    "target_id": "home_chrome",
+    "run": 0,
+    "predicted_bbox_px": [
+      600,
+      1867,
+      708,
+      2107
+    ],
+    "raw_response": "{\"box_2d\": [778, 556, 878, 656]}",
+    "parse_error": null,
+    "metrics": {
+      "parse_fail": false,
+      "center_error_px": 37.94733192202055,
+      "hit": true,
+      "iou": 0.49141228530713266
+    },
+    "metadata": {
+      "target_description": "The colorful Chrome browser icon in the bottom dock (third icon from left)",
+      "ground_truth_bbox_px": [
+        580,
+        1854,
+        753,
+        2049
+      ],
+      "size_category": "large",
+      "area": 33735,
+      "coord_space": "normalized_1000"
+    },
+    "latency_ms": 10442,
+    "input_tokens": 2458,
+    "output_tokens": 765,
+    "api_error": null
+  },
+  {
+    "_key": [
+      "grounding_zero_shot",
+      "gemini-2.5-pro",
+      "home_pixel7",
+      "home_camera",
+      0
+    ],
+    "experiment": "grounding_zero_shot",
+    "model": "gemini-2.5-pro",
+    "cu_trained": false,
+    "provider": "google",
+    "scene": "home_pixel7",
+    "target_id": "home_camera",
+    "run": 0,
+    "predicted_bbox_px": null,
+    "raw_response": "\n\n\n\n\n",
+    "parse_error": "parse_failure: ",
+    "metrics": {
+      "parse_fail": true,
+      "center_error_px": null,
+      "hit": false,
+      "iou": 0.0
+    },
+    "metadata": {
+      "target_description": "The 'Camera' icon in the bottom dock (rightmost white circle with a black camera)",
+      "ground_truth_bbox_px": [
+        832,
+        1854,
+        1004,
+        2049
+      ],
+      "size_category": "large",
+      "area": 33540,
+      "coord_space": "normalized_1000"
+    },
+    "latency_ms": 49461,
+    "input_tokens": 399,
+    "output_tokens": 2012,
+    "api_error": null
+  },
+  {
+    "_key": [
+      "grounding_zero_shot",
+      "gemini-2.5-pro",
+      "home_pixel7",
+      "home_google_search_bar",
+      0
+    ],
+    "experiment": "grounding_zero_shot",
+    "model": "gemini-2.5-pro",
+    "cu_trained": false,
+    "provider": "google",
+    "scene": "home_pixel7",
+    "target_id": "home_google_search_bar",
+    "run": 0,
+    "predicted_bbox_px": [
+      35,
+      2143,
+      1045,
+      2268
+    ],
+    "raw_response": "{\"box_2d\": [893, 32, 945, 968]}",
+    "parse_error": null,
+    "metrics": {
+      "parse_fail": false,
+      "center_error_px": 33.015148038438355,
+      "hit": true,
+      "iou": 0.4933615009023882
+    },
+    "metadata": {
+      "target_description": "The white Google search bar at the very bottom of the screen",
+      "ground_truth_bbox_px": [
+        75,
+        2125,
+        1003,
+        2219
+      ],
+      "size_category": "large",
+      "area": 87326,
+      "coord_space": "normalized_1000"
+    },
+    "latency_ms": 20790,
+    "input_tokens": 2456,
+    "output_tokens": 1889,
+    "api_error": null
+  },
+  {
+    "_key": [
+      "grounding_zero_shot",
+      "gemini-2.5-pro",
+      "home_pixel7",
+      "home_voice_search",
+      0
+    ],
+    "experiment": "grounding_zero_shot",
+    "model": "gemini-2.5-pro",
+    "cu_trained": false,
+    "provider": "google",
+    "scene": "home_pixel7",
+    "target_id": "home_voice_search",
+    "run": 0,
+    "predicted_bbox_px": [
+      766,
+      2167,
+      828,
+      2258
+    ],
+    "raw_response": "{\"box_2d\": [903, 709, 941, 767]}",
+    "parse_error": null,
+    "metrics": {
+      "parse_fail": false,
+      "center_error_px": 40.607881008493905,
+      "hit": true,
+      "iou": 0.22605525171785162
+    },
+    "metadata": {
+      "target_description": "The microphone icon for voice search (inside the bottom search bar)",
+      "ground_truth_bbox_px": [
+        741,
+        2125,
+        867,
+        2219
+      ],
+      "size_category": "medium",
+      "area": 11844,
+      "coord_space": "normalized_1000"
+    },
+    "latency_ms": 12317,
+    "input_tokens": 2456,
+    "output_tokens": 844,
+    "api_error": null
+  },
+  {
+    "_key": [
+      "grounding_zero_shot",
+      "gemini-2.5-pro",
+      "home_pixel7",
+      "home_google_lens",
+      0
+    ],
+    "experiment": "grounding_zero_shot",
+    "model": "gemini-2.5-pro",
+    "cu_trained": false,
+    "provider": "google",
+    "scene": "home_pixel7",
+    "target_id": "home_google_lens",
+    "run": 0,
+    "predicted_bbox_px": [
+      877,
+      2172,
+      959,
+      2254
+    ],
+    "raw_response": "{\"box_2d\": [905, 812, 939, 888]}",
+    "parse_error": null,
+    "metrics": {
+      "parse_fail": false,
+      "center_error_px": 42.720018726587654,
+      "hit": true,
+      "iou": 0.2619274160663314
+    },
+    "metadata": {
+      "target_description": "The colorful Google Lens camera icon (rightmost icon inside the search bar)",
+      "ground_truth_bbox_px": [
+        867,
+        2125,
+        993,
+        2219
+      ],
+      "size_category": "medium",
+      "area": 11844,
+      "coord_space": "normalized_1000"
+    },
+    "latency_ms": 21082,
+    "input_tokens": 2458,
+    "output_tokens": 1988,
+    "api_error": null
+  },
+  {
+    "_key": [
+      "grounding_zero_shot",
+      "gemini-2.5-pro",
+      "home_pixel7",
+      "home_date",
+      0
+    ],
+    "experiment": "grounding_zero_shot",
+    "model": "gemini-2.5-pro",
+    "cu_trained": false,
+    "provider": "google",
+    "scene": "home_pixel7",
+    "target_id": "home_date",
+    "run": 0,
+    "predicted_bbox_px": [
+      91,
+      326,
+      399,
+      408
+    ],
+    "raw_response": "{\"box_2d\": [136, 84, 170, 369]}",
+    "parse_error": null,
+    "metrics": {
+      "parse_fail": false,
+      "center_error_px": 317.42085627759246,
+      "hit": true,
+      "iou": 0.18072289156626506
+    },
+    "metadata": {
+      "target_description": "The 'Thu, Apr 16' date text near the top of the screen",
+      "ground_truth_bbox_px": [
+        99,
+        304,
+        1023,
+        370
+      ],
+      "size_category": "large",
+      "area": 60984,
+      "coord_space": "normalized_1000"
+    },
+    "latency_ms": 9078,
+    "input_tokens": 2461,
+    "output_tokens": 582,
+    "api_error": null
+  },
+  {
+    "_key": [
+      "grounding_zero_shot",
+      "gemini-2.5-pro",
+      "youtube_pixel7",
+      "youtube_allow_button",
+      0
+    ],
+    "experiment": "grounding_zero_shot",
+    "model": "gemini-2.5-pro",
+    "cu_trained": false,
+    "provider": "google",
+    "scene": "youtube_pixel7",
+    "target_id": "youtube_allow_button",
+    "run": 0,
+    "predicted_bbox_px": [
+      600,
+      514,
+      1800,
+      642
+    ],
+    "raw_response": "{\"box_2d\": [476, 250, 594, 750]}",
+    "parse_error": null,
+    "metrics": {
+      "parse_fail": false,
+      "center_error_px": 60.01666435249463,
+      "hit": true,
+      "iou": 0.7426614721762328
+    },
+    "metadata": {
+      "target_description": "The 'Allow' button in the notifications permission dialog (top blue button)",
+      "ground_truth_bbox_px": [
+        619,
+        511,
+        1900,
+        668
+      ],
+      "size_category": "large",
+      "area": 201117,
+      "coord_space": "normalized_1000"
+    },
+    "latency_ms": 14122,
+    "input_tokens": 2458,
+    "output_tokens": 1089,
+    "api_error": null
+  },
+  {
+    "_key": [
+      "grounding_zero_shot",
+      "gemini-2.5-pro",
+      "youtube_pixel7",
+      "youtube_dont_allow_button",
+      0
+    ],
+    "experiment": "grounding_zero_shot",
+    "model": "gemini-2.5-pro",
+    "cu_trained": false,
+    "provider": "google",
+    "scene": "youtube_pixel7",
+    "target_id": "youtube_dont_allow_button",
+    "run": 0,
+    "predicted_bbox_px": [
+      672,
+      670,
+      1728,
+      778
+    ],
+    "raw_response": "{\"box_2d\": [620, 280, 720, 720]}",
+    "parse_error": null,
+    "metrics": {
+      "parse_fail": false,
+      "center_error_px": 62.96824596572466,
+      "hit": true,
+      "iou": 0.5670728978654216
+    },
+    "metadata": {
+      "target_description": "The 'Don't allow' button in the notifications permission dialog (bottom blue button)",
+      "ground_truth_bbox_px": [
+        619,
+        668,
+        1900,
+        825
+      ],
+      "size_category": "large",
+      "area": 201117,
+      "coord_space": "normalized_1000"
+    },
+    "latency_ms": 13026,
+    "input_tokens": 2461,
+    "output_tokens": 870,
+    "api_error": null
+  },
+  {
+    "_key": [
+      "grounding_zero_shot",
+      "gemini-2.5-pro",
+      "youtube_pixel7",
+      "youtube_bell_icon",
+      0
+    ],
+    "experiment": "grounding_zero_shot",
+    "model": "gemini-2.5-pro",
+    "cu_trained": false,
+    "provider": "google",
+    "scene": "youtube_pixel7",
+    "target_id": "youtube_bell_icon",
+    "run": 0,
+    "predicted_bbox_px": [
+      1118,
+      266,
+      1279,
+      327
+    ],
+    "raw_response": "{\"box\": [246, 466, 303, 533]}",
+    "parse_error": null,
+    "metrics": {
+      "parse_fail": false,
+      "center_error_px": 61.00819617067857,
+      "hit": false,
+      "iou": 0.3120095291479821
+    },
+    "metadata": {
+      "target_description": "The blue notification bell icon at the top of the dialog",
+      "ground_truth_bbox_px": [
+        1206,
+        255,
+        1312,
+        339
+      ],
+      "size_category": "medium",
+      "area": 8904,
+      "coord_space": "normalized_1000"
+    },
+    "latency_ms": 16813,
+    "input_tokens": 2455,
+    "output_tokens": 1750,
+    "api_error": null
+  },
+  {
+    "_key": [
+      "grounding_zero_shot",
+      "gemini-2.5-pro",
+      "youtube_pixel7",
+      "youtube_dialog_title",
+      0
+    ],
+    "experiment": "grounding_zero_shot",
+    "model": "gemini-2.5-pro",
+    "cu_trained": false,
+    "provider": "google",
+    "scene": "youtube_pixel7",
+    "target_id": "youtube_dialog_title",
+    "run": 0,
+    "predicted_bbox_px": [
+      612,
+      376,
+      1788,
+      423
+    ],
+    "raw_response": "```json\n{\"box_2d\": [348, 255, 392, 745]}\n```",
+    "parse_error": null,
+    "metrics": {
+      "parse_fail": false,
+      "center_error_px": 61.0,
+      "hit": true,
+      "iou": 0.5381643289799368
+    },
+    "metadata": {
+      "target_description": "The dialog title text 'Allow YouTube to send you notifications?'",
+      "ground_truth_bbox_px": [
+        650,
+        370,
+        1870,
+        450
+      ],
+      "size_category": "large",
+      "area": 97600,
+      "coord_space": "normalized_1000"
+    },
+    "latency_ms": 10005,
+    "input_tokens": 2456,
+    "output_tokens": 833,
+    "api_error": null
+  },
+  {
+    "_key": [
+      "grounding_zero_shot",
+      "gemini-2.5-pro",
+      "youtube_pixel7",
+      "youtube_signin_button",
+      0
+    ],
+    "experiment": "grounding_zero_shot",
+    "model": "gemini-2.5-pro",
+    "cu_trained": false,
+    "provider": "google",
+    "scene": "youtube_pixel7",
+    "target_id": "youtube_signin_button",
+    "run": 0,
+    "predicted_bbox_px": [
+      1958,
+      228,
+      2225,
+      269
+    ],
+    "raw_response": "{\"box_2d\": [211, 816, 249, 927]}",
+    "parse_error": null,
+    "metrics": {
+      "parse_fail": false,
+      "center_error_px": 26.92582403567252,
+      "hit": true,
+      "iou": 0.3488772581462097
+    },
+    "metadata": {
+      "target_description": "The 'Sign in' button/pill visible in the top-right corner (dimmed, behind dialog)",
+      "ground_truth_bbox_px": [
+        1920,
+        205,
+        2210,
+        305
+      ],
+      "size_category": "large",
+      "area": 29000,
+      "coord_space": "normalized_1000"
+    },
+    "latency_ms": 9140,
+    "input_tokens": 2465,
+    "output_tokens": 779,
+    "api_error": null
+  },
+  {
+    "_key": [
+      "grounding_zero_shot",
+      "gemini-2.5-pro",
+      "youtube_pixel7",
+      "youtube_logo",
+      0
+    ],
+    "experiment": "grounding_zero_shot",
+    "model": "gemini-2.5-pro",
+    "cu_trained": false,
+    "provider": "google",
+    "scene": "youtube_pixel7",
+    "target_id": "youtube_logo",
+    "run": 0,
+    "predicted_bbox_px": [
+      276,
+      231,
+      797,
+      271
+    ],
+    "raw_response": "{\"box_2d\": [214, 115, 251, 332]}",
+    "parse_error": null,
+    "metrics": {
+      "parse_fail": false,
+      "center_error_px": 134.05968819895114,
+      "hit": true,
+      "iou": 0.2777501244400199
+    },
+    "metadata": {
+      "target_description": "The 'YouTube' logo in the top-left corner (red play icon + YouTube text, dimmed behind the dialog)",
+      "ground_truth_bbox_px": [
+        250,
+        205,
+        555,
+        305
+      ],
+      "size_category": "large",
+      "area": 30500,
+      "coord_space": "normalized_1000"
+    },
+    "latency_ms": 7848,
+    "input_tokens": 2467,
+    "output_tokens": 640,
+    "api_error": null
+  }
+]

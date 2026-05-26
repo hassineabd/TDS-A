@@ -18,6 +18,7 @@ from __future__ import annotations
 
 import argparse
 import json
+import sys
 from pathlib import Path
 
 import matplotlib
@@ -27,8 +28,10 @@ import numpy as np
 import pandas as pd
 
 
-# Visual style — consistent palette across all charts; non-CU-trained
-# distinguished from CU-trained via a separate hue.
+# Visual style — consistent palette across all charts; models marketed
+# for computer-use distinguished from general-purpose VLMs via hue. (No
+# model in this study is actually CU-trained per its provider's primary
+# sources — see benchmark/models/openrouter.py docstring.)
 plt.rcParams.update({
     "font.family": "sans-serif",
     "font.sans-serif": ["Helvetica Neue", "Arial", "DejaVu Sans"],
@@ -270,19 +273,49 @@ def chart_scatter(df: pd.DataFrame, out: Path) -> None:
 
 # Entry point
 
+def latest_run_dir(experiment: str, results_root: Path = Path("results")) -> Path | None:
+    """Return the most recent <results_root>/<experiment>/<timestamp_*> dir.
+
+    Sorted by directory name (lexicographic — works because we use
+    YYYYMMDD-HHMMSS prefix), not by mtime, so renames don't reorder.
+    Returns None if no subdirectory contains a raw_predictions.json.
+    """
+    exp_dir = results_root / experiment
+    if not exp_dir.is_dir():
+        return None
+    candidates = [
+        d for d in exp_dir.iterdir()
+        if d.is_dir() and (d / "raw_predictions.json").exists()
+    ]
+    if not candidates:
+        return None
+    return sorted(candidates)[-1]
+
+
 def main() -> None:
     parser = argparse.ArgumentParser()
     parser.add_argument("--in", dest="inp", type=Path, default=None,
                         help="Path to raw_predictions.json")
     parser.add_argument("--experiment", default=None,
-                        help="Shortcut: --experiment grounding_zero_shot "
-                             "is equivalent to --in results/grounding_zero_shot/raw_predictions.json")
+                        help="Shortcut: pick the most recent run dir under "
+                             "results/<experiment>/")
+    parser.add_argument("--run-dir", type=Path, default=None,
+                        help="Explicit run directory, e.g. "
+                             "results/grounding_zero_shot/20260512-022021_baseline-6models")
     args = parser.parse_args()
 
-    if args.inp is None:
+    if args.run_dir is not None:
+        args.inp = args.run_dir / "raw_predictions.json"
+    elif args.inp is None:
         if args.experiment is None:
-            parser.error("Provide --in or --experiment")
-        args.inp = Path("results") / args.experiment / "raw_predictions.json"
+            parser.error("Provide --in, --run-dir, or --experiment")
+        latest = latest_run_dir(args.experiment)
+        if latest is None:
+            print(f"ERROR: no runs found under results/{args.experiment}/",
+                  file=sys.stderr)
+            return
+        args.inp = latest / "raw_predictions.json"
+        print(f"Using most recent run: {latest}")
 
     if not args.inp.exists():
         print(f"ERROR: {args.inp} does not exist")

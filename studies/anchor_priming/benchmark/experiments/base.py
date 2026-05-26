@@ -104,17 +104,34 @@ class Prediction:
 # Experiment ABC
 
 class Experiment(ABC):
-    """Base class. Subclasses set `name` and implement the three methods."""
+    """Base class. Subclasses set `name` and implement the three methods.
+
+    `coord_space` is passed through from the runner (it reads it off each
+    model) so the experiment can render the prompt and parse the response
+    in whichever coordinate convention the model was trained for. The
+    selected coord_space is also persisted into `Call.metadata` so that
+    `parse_response` and downstream analysis are self-contained when
+    re-run from a JSON dump.
+    """
 
     name: str
 
     @abstractmethod
-    def iter_calls(self, scenes: list[Scene]) -> Iterator[Call]:
+    def iter_calls(
+        self, scenes: list[Scene], coord_space: str = "normalized_1000",
+    ) -> Iterator[Call]:
         """Yield one Call per unit of work for this experiment."""
 
     @abstractmethod
-    def parse_response(self, raw_text: str, scene: Scene, call: Call) -> Prediction:
-        """Convert raw model output into pixel-space PredictedItems."""
+    def parse_response(
+        self, raw_text: str, scene: Scene, call: Call,
+        coord_space: str | None = None,
+    ) -> Prediction:
+        """Convert raw model output into pixel-space PredictedItems.
+
+        If `coord_space` is None, the method should fall back to
+        `call.metadata['coord_space']`.
+        """
 
     @abstractmethod
     def evaluate(
@@ -122,7 +139,9 @@ class Experiment(ABC):
     ) -> dict[str, Any]:
         """Per-call metrics. Returned dict is serialized into the result row."""
 
-    def total_calls(self, scenes: list[Scene]) -> int:
+    def total_calls(
+        self, scenes: list[Scene], coord_space: str = "normalized_1000",
+    ) -> int:
         """Default count by materializing iter_calls. Subclasses can override
         for a faster O(1) estimate without building images."""
-        return sum(1 for _ in self.iter_calls(scenes))
+        return sum(1 for _ in self.iter_calls(scenes, coord_space=coord_space))

@@ -1,0 +1,91 @@
+[
+  {
+    "id": "clock_alarm_tab",
+    "description": "The 'Alarm' tab in the bottom navigation bar (leftmost)",
+    "bounds": [36, 807, 478, 1017],
+    "center": [257, 912],
+    "width": 442,
+    "height": 210,
+    "area": 92820,
+    "size_category": "large",
+    "clickable": true,
+    "notes": "Full tab area including icon + label"
+  },
+  {
+    "id": "clock_timer_tab",
+    "description": "The 'Timer' tab in the bottom navigation bar (center)",
+    "bounds": [920, 807, 1362, 1017],
+    "center": [1141, 912],
+    "width": 442,
+    "height": 210,
+    "area": 92820,
+    "size_category": "large",
+    "clickable": true
+  },
+  {
+    "id": "clock_bedtime_tab",
+    "description": "The 'Bedtime' tab in the bottom navigation bar (rightmost)",
+    "bounds": [1804, 807, 2246, 1017],
+    "center": [2025, 912],
+    "width": 442,
+    "height": 210,
+    "area": 92820,
+    "size_category": "large",
+    "clickable": true
+  },
+  {
+    "id": "clock_fab_add_city",
+    "description": "The blue circular '+' floating action button (Add city)",
+    "bounds": [1902, 429, 2091, 618],
+    "center": [1997, 524],
+    "width": 189,
+    "height": 189,
+    "area": 35721,
+    "size_category": "large",
+    "clickable": true
+  },
+  {
+    "id": "clock_more_options",
+    "description": "The three-dot 'More options' menu in the top right corner",
+    "bounds": [2177, 95, 2282, 221],
+    "center": [2229, 158],
+    "width": 105,
+    "height": 126,
+    "area": 13230,
+    "size_category": "medium",
+    "clickable": true
+  },
+  {
+    "id": "clock_time_display",
+    "description": "The large '22:25' time display on the left side",
+    "bounds": [41, 242, 538, 542],
+    "center": [290, 392],
+    "width": 497,
+    "height": 300,
+    "area": 149100,
+    "size_category": "large",
+    "clickable": false
+  },
+  {
+    "id": "clock_date_subtitle",
+    "description": "The small date text 'Sat, Apr 11' below the time",
+    "bounds": [42, 542, 256, 610],
+    "center": [149, 576],
+    "width": 214,
+    "height": 68,
+    "area": 14552,
+    "size_category": "medium",
+    "clickable": false
+  },
+  {
+    "id": "clock_title_label",
+    "description": "The 'Clock' app title in the top left corner",
+    "bounds": [63, 115, 214, 200],
+    "center": [138, 157],
+    "width": 151,
+    "height": 85,
+    "area": 12835,
+    "size_category": "medium",
+    "clickable": false
+  }
+]

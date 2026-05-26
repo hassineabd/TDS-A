@@ -63,11 +63,33 @@ def encode_image(
 
 
 class GroundingModel(ABC):
-    """Subclasses set name/cu_trained/provider and implement `call`."""
+    """Subclasses set name/provider/marketed_for_cu/source_url and implement
+    `call`.
+
+    On `marketed_for_cu`: this flag captures whether the provider publicly
+    markets the model for "computer use" or "agentic UI / GUI" tasks — NOT
+    whether the model was demonstrably trained on those tasks. No primary
+    source for any of the six models we benchmark explicitly states that
+    THIS model was trained on computer-use / GUI-grounding data. The truly
+    CU-trained models (OpenAI's `computer-use-preview`, Google's
+    `gemini-2.5-computer-use-preview-10-2025`) are SEPARATE model snapshots
+    not exposed via OpenRouter. We therefore use a deliberately weaker label
+    ("marketed_for_cu") and keep `source_url` next to it so the claim is
+    audit-able.
+
+    `coord_space` declares the model's preferred output coordinate convention:
+      - "normalized_1000": [y_min, x_min, y_max, x_max] in 0-1000 (Gemini's
+        documented native format; default for everyone except Opus 4.7).
+      - "pixel_yx": [y_min, x_min, y_max, x_max] in pixel-absolute coords
+        (Anthropic documents Claude Opus 4.7 as returning 1:1 pixel coords).
+    """
 
     name: str
-    cu_trained: bool
     provider: str
+    marketed_for_cu: bool
+    source_url: str          # primary-source URL backing the marketed_for_cu claim
+    cu_training_claim: str   # short quote/paraphrase of what the source actually says
+    coord_space: str = "normalized_1000"
 
     @abstractmethod
     def call(
