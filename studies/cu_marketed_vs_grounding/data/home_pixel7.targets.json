@@ -1,0 +1,112 @@
+[
+  {
+    "id": "home_play_store",
+    "description": "The 'Play Store' app icon (first icon in the top row, leftmost)",
+    "bounds": [57, 1476, 267, 1748],
+    "center": [162, 1612],
+    "width": 210,
+    "height": 272,
+    "area": 57120,
+    "size_category": "large",
+    "clickable": true
+  },
+  {
+    "id": "home_gmail",
+    "description": "The 'Gmail' app icon (red and white envelope, second in the top row)",
+    "bounds": [309, 1476, 519, 1748],
+    "center": [414, 1612],
+    "width": 210,
+    "height": 272,
+    "area": 57120,
+    "size_category": "large",
+    "clickable": true
+  },
+  {
+    "id": "home_youtube",
+    "description": "The 'YouTube' app icon (red play button, rightmost in the top row)",
+    "bounds": [813, 1476, 1023, 1748],
+    "center": [918, 1612],
+    "width": 210,
+    "height": 272,
+    "area": 57120,
+    "size_category": "large",
+    "clickable": true
+  },
+  {
+    "id": "home_phone",
+    "description": "The blue 'Phone' (dialer) icon in the bottom dock row (leftmost blue circle)",
+    "bounds": [76, 1854, 249, 2049],
+    "center": [162, 1951],
+    "width": 173,
+    "height": 195,
+    "area": 33735,
+    "size_category": "large",
+    "clickable": true
+  },
+  {
+    "id": "home_chrome",
+    "description": "The colorful Chrome browser icon in the bottom dock (third icon from left)",
+    "bounds": [580, 1854, 753, 2049],
+    "center": [666, 1951],
+    "width": 173,
+    "height": 195,
+    "area": 33735,
+    "size_category": "large",
+    "clickable": true
+  },
+  {
+    "id": "home_camera",
+    "description": "The 'Camera' icon in the bottom dock (rightmost white circle with a black camera)",
+    "bounds": [832, 1854, 1004, 2049],
+    "center": [918, 1951],
+    "width": 172,
+    "height": 195,
+    "area": 33540,
+    "size_category": "large",
+    "clickable": true
+  },
+  {
+    "id": "home_google_search_bar",
+    "description": "The white Google search bar at the very bottom of the screen",
+    "bounds": [75, 2125, 1003, 2219],
+    "center": [539, 2172],
+    "width": 929,
+    "height": 94,
+    "area": 87326,
+    "size_category": "large",
+    "clickable": true
+  },
+  {
+    "id": "home_voice_search",
+    "description": "The microphone icon for voice search (inside the bottom search bar)",
+    "bounds": [741, 2125, 867, 2219],
+    "center": [804, 2172],
+    "width": 126,
+    "height": 94,
+    "area": 11844,
+    "size_category": "medium",
+    "clickable": true
+  },
+  {
+    "id": "home_google_lens",
+    "description": "The colorful Google Lens camera icon (rightmost icon inside the search bar)",
+    "bounds": [867, 2125, 993, 2219],
+    "center": [930, 2172],
+    "width": 126,
+    "height": 94,
+    "area": 11844,
+    "size_category": "medium",
+    "clickable": true
+  },
+  {
+    "id": "home_date",
+    "description": "The 'Thu, Apr 16' date text near the top of the screen",
+    "bounds": [99, 304, 1023, 370],
+    "center": [561, 337],
+    "width": 924,
+    "height": 66,
+    "area": 60984,
+    "size_category": "large",
+    "clickable": true
+  }
+]

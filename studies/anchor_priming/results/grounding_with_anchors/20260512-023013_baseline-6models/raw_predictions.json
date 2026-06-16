@@ -1,0 +1,7022 @@
+[
+  {
+    "_key": [
+      "grounding_with_anchors",
+      "claude-sonnet-4.5",
+      "clock_pixel7",
+      "clock_alarm_tab",
+      0
+    ],
+    "experiment": "grounding_with_anchors",
+    "model": "claude-sonnet-4.5",
+    "cu_trained": true,
+    "provider": "anthropic",
+    "scene": "clock_pixel7",
+    "target_id": "clock_alarm_tab",
+    "run": 0,
+    "predicted_bbox_px": [
+      1322,
+      571,
+      1546,
+      729
+    ],
+    "raw_response": "```json\n{\"box_2d\": [529, 551, 675, 644]}\n```",
+    "parse_error": null,
+    "metrics": {
+      "parse_fail": false,
+      "center_error_px": 1205.8080278385942,
+      "hit": false,
+      "iou": 0.0
+    },
+    "metadata": {
+      "target_description": "The 'Alarm' tab in the bottom navigation bar (leftmost)",
+      "ground_truth_bbox_px": [
+        36,
+        807,
+        478,
+        1017
+      ],
+      "size_category": "large",
+      "area": 92820,
+      "anchors": [
+        {
+          "id": "clock_timer_tab",
+          "bbox_px": [
+            920,
+            807,
+            1362,
+            1017
+          ],
+          "description": "The 'Timer' tab in the bottom navigation bar (center)"
+        },
+        {
+          "id": "clock_more_options",
+          "bbox_px": [
+            2177,
+            95,
+            2282,
+            221
+          ],
+          "description": "The three-dot 'More options' menu in the top right corner"
+        },
+        {
+          "id": "clock_title_label",
+          "bbox_px": [
+            63,
+            115,
+            214,
+            200
+          ],
+          "description": "The 'Clock' app title in the top left corner"
+        }
+      ],
+      "coord_space": "normalized_1000"
+    },
+    "latency_ms": 4421,
+    "input_tokens": 1802,
+    "output_tokens": 26,
+    "api_error": null
+  },
+  {
+    "_key": [
+      "grounding_with_anchors",
+      "claude-sonnet-4.5",
+      "clock_pixel7",
+      "clock_bedtime_tab",
+      0
+    ],
+    "experiment": "grounding_with_anchors",
+    "model": "claude-sonnet-4.5",
+    "cu_trained": true,
+    "provider": "anthropic",
+    "scene": "clock_pixel7",
+    "target_id": "clock_bedtime_tab",
+    "run": 0,
+    "predicted_bbox_px": [
+      1267,
+      1342,
+      1603,
+      1513
+    ],
+    "raw_response": "```json\n{\"box_2d\": [1243, 528, 1401, 668]}\n```",
+    "parse_error": null,
+    "metrics": {
+      "parse_fail": false,
+      "center_error_px": 783.1506879266595,
+      "hit": false,
+      "iou": 0.0
+    },
+    "metadata": {
+      "target_description": "The 'Bedtime' tab in the bottom navigation bar (rightmost)",
+      "ground_truth_bbox_px": [
+        1804,
+        807,
+        2246,
+        1017
+      ],
+      "size_category": "large",
+      "area": 92820,
+      "anchors": [
+        {
+          "id": "clock_timer_tab",
+          "bbox_px": [
+            920,
+            807,
+            1362,
+            1017
+          ],
+          "description": "The 'Timer' tab in the bottom navigation bar (center)"
+        },
+        {
+          "id": "clock_more_options",
+          "bbox_px": [
+            2177,
+            95,
+            2282,
+            221
+          ],
+          "description": "The three-dot 'More options' menu in the top right corner"
+        },
+        {
+          "id": "clock_title_label",
+          "bbox_px": [
+            63,
+            115,
+            214,
+            200
+          ],
+          "description": "The 'Clock' app title in the top left corner"
+        }
+      ],
+      "coord_space": "normalized_1000"
+    },
+    "latency_ms": 3839,
+    "input_tokens": 1803,
+    "output_tokens": 28,
+    "api_error": null
+  },
+  {
+    "_key": [
+      "grounding_with_anchors",
+      "claude-sonnet-4.5",
+      "clock_pixel7",
+      "clock_fab_add_city",
+      0
+    ],
+    "experiment": "grounding_with_anchors",
+    "model": "claude-sonnet-4.5",
+    "cu_trained": true,
+    "provider": "anthropic",
+    "scene": "clock_pixel7",
+    "target_id": "clock_fab_add_city",
+    "run": 0,
+    "predicted_bbox_px": [
+      2986,
+      305,
+      974,
+      1477
+    ],
+    "raw_response": "{\"box_2d\": [282, 1244, 1368, 406]}",
+    "parse_error": null,
+    "metrics": {
+      "parse_fail": false,
+      "center_error_px": 368.3476618630828,
+      "hit": false,
+      "iou": 0.0
+    },
+    "metadata": {
+      "target_description": "The blue circular '+' floating action button (Add city)",
+      "ground_truth_bbox_px": [
+        1902,
+        429,
+        2091,
+        618
+      ],
+      "size_category": "large",
+      "area": 35721,
+      "anchors": [
+        {
+          "id": "clock_timer_tab",
+          "bbox_px": [
+            920,
+            807,
+            1362,
+            1017
+          ],
+          "description": "The 'Timer' tab in the bottom navigation bar (center)"
+        },
+        {
+          "id": "clock_more_options",
+          "bbox_px": [
+            2177,
+            95,
+            2282,
+            221
+          ],
+          "description": "The three-dot 'More options' menu in the top right corner"
+        },
+        {
+          "id": "clock_title_label",
+          "bbox_px": [
+            63,
+            115,
+            214,
+            200
+          ],
+          "description": "The 'Clock' app title in the top left corner"
+        }
+      ],
+      "coord_space": "normalized_1000"
+    },
+    "latency_ms": 3644,
+    "input_tokens": 1798,
+    "output_tokens": 23,
+    "api_error": null
+  },
+  {
+    "_key": [
+      "grounding_with_anchors",
+      "claude-sonnet-4.5",
+      "clock_pixel7",
+      "clock_time_display",
+      0
+    ],
+    "experiment": "grounding_with_anchors",
+    "model": "claude-sonnet-4.5",
+    "cu_trained": true,
+    "provider": "anthropic",
+    "scene": "clock_pixel7",
+    "target_id": "clock_time_display",
+    "run": 0,
+    "predicted_bbox_px": [
+      67,
+      207,
+      797,
+      378
+    ],
+    "raw_response": "{\"box_2d\": [192, 28, 350, 332]}",
+    "parse_error": null,
+    "metrics": {
+      "parse_fail": false,
+      "center_error_px": 174.49641830135081,
+      "hit": true,
+      "iou": 0.30521169844764
+    },
+    "metadata": {
+      "target_description": "The large '22:25' time display on the left side",
+      "ground_truth_bbox_px": [
+        41,
+        242,
+        538,
+        542
+      ],
+      "size_category": "large",
+      "area": 149100,
+      "anchors": [
+        {
+          "id": "clock_timer_tab",
+          "bbox_px": [
+            920,
+            807,
+            1362,
+            1017
+          ],
+          "description": "The 'Timer' tab in the bottom navigation bar (center)"
+        },
+        {
+          "id": "clock_more_options",
+          "bbox_px": [
+            2177,
+            95,
+            2282,
+            221
+          ],
+          "description": "The three-dot 'More options' menu in the top right corner"
+        },
+        {
+          "id": "clock_title_label",
+          "bbox_px": [
+            63,
+            115,
+            214,
+            200
+          ],
+          "description": "The 'Clock' app title in the top left corner"
+        }
+      ],
+      "coord_space": "normalized_1000"
+    },
+    "latency_ms": 3920,
+    "input_tokens": 1800,
+    "output_tokens": 21,
+    "api_error": null
+  },
+  {
+    "_key": [
+      "grounding_with_anchors",
+      "claude-sonnet-4.5",
+      "clock_pixel7",
+      "clock_date_subtitle",
+      0
+    ],
+    "experiment": "grounding_with_anchors",
+    "model": "claude-sonnet-4.5",
+    "cu_trained": true,
+    "provider": "anthropic",
+    "scene": "clock_pixel7",
+    "target_id": "clock_date_subtitle",
+    "run": 0,
+    "predicted_bbox_px": [
+      67,
+      387,
+      958,
+      183
+    ],
+    "raw_response": "```json\n{\"box_2d\": [358, 28, 169, 399]}\n```",
+    "parse_error": null,
+    "metrics": {
+      "parse_fail": false,
+      "center_error_px": 465.2418725781247,
+      "hit": false,
+      "iou": 0.0
+    },
+    "metadata": {
+      "target_description": "The small date text 'Sat, Apr 11' below the time",
+      "ground_truth_bbox_px": [
+        42,
+        542,
+        256,
+        610
+      ],
+      "size_category": "medium",
+      "area": 14552,
+      "anchors": [
+        {
+          "id": "clock_timer_tab",
+          "bbox_px": [
+            920,
+            807,
+            1362,
+            1017
+          ],
+          "description": "The 'Timer' tab in the bottom navigation bar (center)"
+        },
+        {
+          "id": "clock_more_options",
+          "bbox_px": [
+            2177,
+            95,
+            2282,
+            221
+          ],
+          "description": "The three-dot 'More options' menu in the top right corner"
+        },
+        {
+          "id": "clock_title_label",
+          "bbox_px": [
+            63,
+            115,
+            214,
+            200
+          ],
+          "description": "The 'Clock' app title in the top left corner"
+        }
+      ],
+      "coord_space": "normalized_1000"
+    },
+    "latency_ms": 3089,
+    "input_tokens": 1803,
+    "output_tokens": 26,
+    "api_error": null
+  },
+  {
+    "_key": [
+      "grounding_with_anchors",
+      "claude-sonnet-4.5",
+      "home_pixel7",
+      "home_gmail",
+      0
+    ],
+    "experiment": "grounding_with_anchors",
+    "model": "claude-sonnet-4.5",
+    "cu_trained": true,
+    "provider": "anthropic",
+    "scene": "home_pixel7",
+    "target_id": "home_gmail",
+    "run": 0,
+    "predicted_bbox_px": [
+      1058,
+      2354,
+      1236,
+      811
+    ],
+    "raw_response": "{\"box_2d\": [981, 980, 338, 1144]}",
+    "parse_error": null,
+    "metrics": {
+      "parse_fail": false,
+      "center_error_px": 733.6136585424238,
+      "hit": false,
+      "iou": 0.0
+    },
+    "metadata": {
+      "target_description": "The 'Gmail' app icon (red and white envelope, second in the top row)",
+      "ground_truth_bbox_px": [
+        309,
+        1476,
+        519,
+        1748
+      ],
+      "size_category": "large",
+      "area": 57120,
+      "anchors": [
+        {
+          "id": "home_play_store",
+          "bbox_px": [
+            57,
+            1476,
+            267,
+            1748
+          ],
+          "description": "The 'Play Store' app icon (first icon in the top row, leftmost)"
+        },
+        {
+          "id": "home_google_lens",
+          "bbox_px": [
+            867,
+            2125,
+            993,
+            2219
+          ],
+          "description": "The colorful Google Lens camera icon (rightmost icon inside the search bar)"
+        },
+        {
+          "id": "home_date",
+          "bbox_px": [
+            99,
+            304,
+            1023,
+            370
+          ],
+          "description": "The 'Thu, Apr 16' date text near the top of the screen"
+        }
+      ],
+      "coord_space": "normalized_1000"
+    },
+    "latency_ms": 5409,
+    "input_tokens": 1816,
+    "output_tokens": 22,
+    "api_error": null
+  },
+  {
+    "_key": [
+      "grounding_with_anchors",
+      "claude-sonnet-4.5",
+      "home_pixel7",
+      "home_youtube",
+      0
+    ],
+    "experiment": "grounding_with_anchors",
+    "model": "claude-sonnet-4.5",
+    "cu_trained": true,
+    "provider": "anthropic",
+    "scene": "home_pixel7",
+    "target_id": "home_youtube",
+    "run": 0,
+    "predicted_bbox_px": [
+      1057,
+      2354,
+      1234,
+      1565
+    ],
+    "raw_response": "{\"box_2d\": [981, 979, 652, 1143]}",
+    "parse_error": null,
+    "metrics": {
+      "parse_fail": false,
+      "center_error_px": 414.65407269192474,
+      "hit": false,
+      "iou": 0.0
+    },
+    "metadata": {
+      "target_description": "The 'YouTube' app icon (red play button, rightmost in the top row)",
+      "ground_truth_bbox_px": [
+        813,
+        1476,
+        1023,
+        1748
+      ],
+      "size_category": "large",
+      "area": 57120,
+      "anchors": [
+        {
+          "id": "home_play_store",
+          "bbox_px": [
+            57,
+            1476,
+            267,
+            1748
+          ],
+          "description": "The 'Play Store' app icon (first icon in the top row, leftmost)"
+        },
+        {
+          "id": "home_google_lens",
+          "bbox_px": [
+            867,
+            2125,
+            993,
+            2219
+          ],
+          "description": "The colorful Google Lens camera icon (rightmost icon inside the search bar)"
+        },
+        {
+          "id": "home_date",
+          "bbox_px": [
+            99,
+            304,
+            1023,
+            370
+          ],
+          "description": "The 'Thu, Apr 16' date text near the top of the screen"
+        }
+      ],
+      "coord_space": "normalized_1000"
+    },
+    "latency_ms": 6583,
+    "input_tokens": 1816,
+    "output_tokens": 22,
+    "api_error": null
+  },
+  {
+    "_key": [
+      "grounding_with_anchors",
+      "claude-sonnet-4.5",
+      "home_pixel7",
+      "home_phone",
+      0
+    ],
+    "experiment": "grounding_with_anchors",
+    "model": "claude-sonnet-4.5",
+    "cu_trained": true,
+    "provider": "anthropic",
+    "scene": "home_pixel7",
+    "target_id": "home_phone",
+    "run": 0,
+    "predicted_bbox_px": [
+      1315,
+      2933,
+      1433,
+      3197
+    ],
+    "raw_response": "{\"box_2d\": [1222, 1218, 1332, 1327]}",
+    "parse_error": null,
+    "metrics": {
+      "parse_fail": false,
+      "center_error_px": 1646.1895395123856,
+      "hit": false,
+      "iou": 0.0
+    },
+    "metadata": {
+      "target_description": "The blue 'Phone' (dialer) icon in the bottom dock row (leftmost blue circle)",
+      "ground_truth_bbox_px": [
+        76,
+        1854,
+        249,
+        2049
+      ],
+      "size_category": "large",
+      "area": 33735,
+      "anchors": [
+        {
+          "id": "home_play_store",
+          "bbox_px": [
+            57,
+            1476,
+            267,
+            1748
+          ],
+          "description": "The 'Play Store' app icon (first icon in the top row, leftmost)"
+        },
+        {
+          "id": "home_google_lens",
+          "bbox_px": [
+            867,
+            2125,
+            993,
+            2219
+          ],
+          "description": "The colorful Google Lens camera icon (rightmost icon inside the search bar)"
+        },
+        {
+          "id": "home_date",
+          "bbox_px": [
+            99,
+            304,
+            1023,
+            370
+          ],
+          "description": "The 'Thu, Apr 16' date text near the top of the screen"
+        }
+      ],
+      "coord_space": "normalized_1000"
+    },
+    "latency_ms": 6368,
+    "input_tokens": 1819,
+    "output_tokens": 25,
+    "api_error": null
+  },
+  {
+    "_key": [
+      "grounding_with_anchors",
+      "claude-sonnet-4.5",
+      "home_pixel7",
+      "home_chrome",
+      0
+    ],
+    "experiment": "grounding_with_anchors",
+    "model": "claude-sonnet-4.5",
+    "cu_trained": true,
+    "provider": "anthropic",
+    "scene": "home_pixel7",
+    "target_id": "home_chrome",
+    "run": 0,
+    "predicted_bbox_px": [
+      1314,
+      2933,
+      1450,
+      3235
+    ],
+    "raw_response": "{\"box_2d\": [1222, 1217, 1348, 1343]}",
+    "parse_error": null,
+    "metrics": {
+      "parse_fail": false,
+      "center_error_px": 1340.27795624639,
+      "hit": false,
+      "iou": 0.0
+    },
+    "metadata": {
+      "target_description": "The colorful Chrome browser icon in the bottom dock (third icon from left)",
+      "ground_truth_bbox_px": [
+        580,
+        1854,
+        753,
+        2049
+      ],
+      "size_category": "large",
+      "area": 33735,
+      "anchors": [
+        {
+          "id": "home_play_store",
+          "bbox_px": [
+            57,
+            1476,
+            267,
+            1748
+          ],
+          "description": "The 'Play Store' app icon (first icon in the top row, leftmost)"
+        },
+        {
+          "id": "home_google_lens",
+          "bbox_px": [
+            867,
+            2125,
+            993,
+            2219
+          ],
+          "description": "The colorful Google Lens camera icon (rightmost icon inside the search bar)"
+        },
+        {
+          "id": "home_date",
+          "bbox_px": [
+            99,
+            304,
+            1023,
+            370
+          ],
+          "description": "The 'Thu, Apr 16' date text near the top of the screen"
+        }
+      ],
+      "coord_space": "normalized_1000"
+    },
+    "latency_ms": 5855,
+    "input_tokens": 1813,
+    "output_tokens": 25,
+    "api_error": null
+  },
+  {
+    "_key": [
+      "grounding_with_anchors",
+      "claude-sonnet-4.5",
+      "home_pixel7",
+      "home_camera",
+      0
+    ],
+    "experiment": "grounding_with_anchors",
+    "model": "claude-sonnet-4.5",
+    "cu_trained": true,
+    "provider": "anthropic",
+    "scene": "home_pixel7",
+    "target_id": "home_camera",
+    "run": 0,
+    "predicted_bbox_px": [
+      1315,
+      2933,
+      1434,
+      3197
+    ],
+    "raw_response": "{\"box_2d\": [1222, 1218, 1332, 1328]}",
+    "parse_error": null,
+    "metrics": {
+      "parse_fail": false,
+      "center_error_px": 1203.71591332839,
+      "hit": false,
+      "iou": 0.0
+    },
+    "metadata": {
+      "target_description": "The 'Camera' icon in the bottom dock (rightmost white circle with a black camera)",
+      "ground_truth_bbox_px": [
+        832,
+        1854,
+        1004,
+        2049
+      ],
+      "size_category": "large",
+      "area": 33540,
+      "anchors": [
+        {
+          "id": "home_play_store",
+          "bbox_px": [
+            57,
+            1476,
+            267,
+            1748
+          ],
+          "description": "The 'Play Store' app icon (first icon in the top row, leftmost)"
+        },
+        {
+          "id": "home_google_lens",
+          "bbox_px": [
+            867,
+            2125,
+            993,
+            2219
+          ],
+          "description": "The colorful Google Lens camera icon (rightmost icon inside the search bar)"
+        },
+        {
+          "id": "home_date",
+          "bbox_px": [
+            99,
+            304,
+            1023,
+            370
+          ],
+          "description": "The 'Thu, Apr 16' date text near the top of the screen"
+        }
+      ],
+      "coord_space": "normalized_1000"
+    },
+    "latency_ms": 4964,
+    "input_tokens": 1817,
+    "output_tokens": 25,
+    "api_error": null
+  },
+  {
+    "_key": [
+      "grounding_with_anchors",
+      "claude-sonnet-4.5",
+      "home_pixel7",
+      "home_google_search_bar",
+      0
+    ],
+    "experiment": "grounding_with_anchors",
+    "model": "claude-sonnet-4.5",
+    "cu_trained": true,
+    "provider": "anthropic",
+    "scene": "home_pixel7",
+    "target_id": "home_google_search_bar",
+    "run": 0,
+    "predicted_bbox_px": [
+      1504,
+      3319,
+      1608,
+      3574
+    ],
+    "raw_response": "{\"box_2d\": [1383, 1393, 1489, 1489]}",
+    "parse_error": null,
+    "metrics": {
+      "parse_fail": false,
+      "center_error_px": 1630.1426317963715,
+      "hit": false,
+      "iou": 0.0
+    },
+    "metadata": {
+      "target_description": "The white Google search bar at the very bottom of the screen",
+      "ground_truth_bbox_px": [
+        75,
+        2125,
+        1003,
+        2219
+      ],
+      "size_category": "large",
+      "area": 87326,
+      "anchors": [
+        {
+          "id": "home_play_store",
+          "bbox_px": [
+            57,
+            1476,
+            267,
+            1748
+          ],
+          "description": "The 'Play Store' app icon (first icon in the top row, leftmost)"
+        },
+        {
+          "id": "home_google_lens",
+          "bbox_px": [
+            867,
+            2125,
+            993,
+            2219
+          ],
+          "description": "The colorful Google Lens camera icon (rightmost icon inside the search bar)"
+        },
+        {
+          "id": "home_date",
+          "bbox_px": [
+            99,
+            304,
+            1023,
+            370
+          ],
+          "description": "The 'Thu, Apr 16' date text near the top of the screen"
+        }
+      ],
+      "coord_space": "normalized_1000"
+    },
+    "latency_ms": 5009,
+    "input_tokens": 1810,
+    "output_tokens": 25,
+    "api_error": null
+  },
+  {
+    "_key": [
+      "grounding_with_anchors",
+      "claude-sonnet-4.5",
+      "home_pixel7",
+      "home_voice_search",
+      0
+    ],
+    "experiment": "grounding_with_anchors",
+    "model": "claude-sonnet-4.5",
+    "cu_trained": true,
+    "provider": "anthropic",
+    "scene": "home_pixel7",
+    "target_id": "home_voice_search",
+    "run": 0,
+    "predicted_bbox_px": [
+      1520,
+      3401,
+      1585,
+      3727
+    ],
+    "raw_response": "{\"box_2d\": [1417, 1407, 1553, 1468]}",
+    "parse_error": null,
+    "metrics": {
+      "parse_fail": false,
+      "center_error_px": 1580.243019285325,
+      "hit": false,
+      "iou": 0.0
+    },
+    "metadata": {
+      "target_description": "The microphone icon for voice search (inside the bottom search bar)",
+      "ground_truth_bbox_px": [
+        741,
+        2125,
+        867,
+        2219
+      ],
+      "size_category": "medium",
+      "area": 11844,
+      "anchors": [
+        {
+          "id": "home_play_store",
+          "bbox_px": [
+            57,
+            1476,
+            267,
+            1748
+          ],
+          "description": "The 'Play Store' app icon (first icon in the top row, leftmost)"
+        },
+        {
+          "id": "home_google_lens",
+          "bbox_px": [
+            867,
+            2125,
+            993,
+            2219
+          ],
+          "description": "The colorful Google Lens camera icon (rightmost icon inside the search bar)"
+        },
+        {
+          "id": "home_date",
+          "bbox_px": [
+            99,
+            304,
+            1023,
+            370
+          ],
+          "description": "The 'Thu, Apr 16' date text near the top of the screen"
+        }
+      ],
+      "coord_space": "normalized_1000"
+    },
+    "latency_ms": 5206,
+    "input_tokens": 1811,
+    "output_tokens": 25,
+    "api_error": null
+  },
+  {
+    "_key": [
+      "grounding_with_anchors",
+      "claude-sonnet-4.5",
+      "youtube_pixel7",
+      "youtube_allow_button",
+      0
+    ],
+    "experiment": "grounding_with_anchors",
+    "model": "claude-sonnet-4.5",
+    "cu_trained": true,
+    "provider": "anthropic",
+    "scene": "youtube_pixel7",
+    "target_id": "youtube_allow_button",
+    "run": 0,
+    "predicted_bbox_px": [
+      809,
+      366,
+      1046,
+      1337
+    ],
+    "raw_response": "```json\n{\"box_2d\": [339, 337, 1238, 436]}\n```",
+    "parse_error": null,
+    "metrics": {
+      "parse_fail": false,
+      "center_error_px": 422.927889834662,
+      "hit": false,
+      "iou": 0.09443069778065401
+    },
+    "metadata": {
+      "target_description": "The 'Allow' button in the notifications permission dialog (top blue button)",
+      "ground_truth_bbox_px": [
+        619,
+        511,
+        1900,
+        668
+      ],
+      "size_category": "large",
+      "area": 201117,
+      "anchors": [
+        {
+          "id": "youtube_dont_allow_button",
+          "bbox_px": [
+            619,
+            668,
+            1900,
+            825
+          ],
+          "description": "The 'Don't allow' button in the notifications permission dialog (bottom blue button)"
+        },
+        {
+          "id": "youtube_signin_button",
+          "bbox_px": [
+            1920,
+            205,
+            2210,
+            305
+          ],
+          "description": "The 'Sign in' button/pill visible in the top-right corner (dimmed, behind dialog)"
+        },
+        {
+          "id": "youtube_logo",
+          "bbox_px": [
+            250,
+            205,
+            555,
+            305
+          ],
+          "description": "The 'YouTube' logo in the top-left corner (red play icon + YouTube text, dimmed behind the dialog)"
+        }
+      ],
+      "coord_space": "normalized_1000"
+    },
+    "latency_ms": 3871,
+    "input_tokens": 1826,
+    "output_tokens": 27,
+    "api_error": null
+  },
+  {
+    "_key": [
+      "grounding_with_anchors",
+      "claude-sonnet-4.5",
+      "youtube_pixel7",
+      "youtube_bell_icon",
+      0
+    ],
+    "experiment": "grounding_with_anchors",
+    "model": "claude-sonnet-4.5",
+    "cu_trained": true,
+    "provider": "anthropic",
+    "scene": "youtube_pixel7",
+    "target_id": "youtube_bell_icon",
+    "run": 0,
+    "predicted_bbox_px": [
+      523,
+      183,
+      523,
+      913
+    ],
+    "raw_response": "```json\n{\"box_2d\": [169, 218, 845, 218]}\n```",
+    "parse_error": null,
+    "metrics": {
+      "parse_fail": false,
+      "center_error_px": 777.6226591348789,
+      "hit": false,
+      "iou": 0.0
+    },
+    "metadata": {
+      "target_description": "The blue notification bell icon at the top of the dialog",
+      "ground_truth_bbox_px": [
+        1206,
+        255,
+        1312,
+        339
+      ],
+      "size_category": "medium",
+      "area": 8904,
+      "anchors": [
+        {
+          "id": "youtube_dont_allow_button",
+          "bbox_px": [
+            619,
+            668,
+            1900,
+            825
+          ],
+          "description": "The 'Don't allow' button in the notifications permission dialog (bottom blue button)"
+        },
+        {
+          "id": "youtube_signin_button",
+          "bbox_px": [
+            1920,
+            205,
+            2210,
+            305
+          ],
+          "description": "The 'Sign in' button/pill visible in the top-right corner (dimmed, behind dialog)"
+        },
+        {
+          "id": "youtube_logo",
+          "bbox_px": [
+            250,
+            205,
+            555,
+            305
+          ],
+          "description": "The 'YouTube' logo in the top-left corner (red play icon + YouTube text, dimmed behind the dialog)"
+        }
+      ],
+      "coord_space": "normalized_1000"
+    },
+    "latency_ms": 3222,
+    "input_tokens": 1822,
+    "output_tokens": 26,
+    "api_error": null
+  },
+  {
+    "_key": [
+      "grounding_with_anchors",
+      "claude-sonnet-4.5",
+      "youtube_pixel7",
+      "youtube_dialog_title",
+      0
+    ],
+    "experiment": "grounding_with_anchors",
+    "model": "claude-sonnet-4.5",
+    "cu_trained": true,
+    "provider": "anthropic",
+    "scene": "youtube_pixel7",
+    "target_id": "youtube_dialog_title",
+    "run": 0,
+    "predicted_bbox_px": [
+      1186,
+      266,
+      686,
+      1243
+    ],
+    "raw_response": "```json\n{\"box_2d\": [246, 494, 1151, 286]}\n```",
+    "parse_error": null,
+    "metrics": {
+      "parse_fail": false,
+      "center_error_px": 472.5589910265172,
+      "hit": false,
+      "iou": 0.0
+    },
+    "metadata": {
+      "target_description": "The dialog title text 'Allow YouTube to send you notifications?'",
+      "ground_truth_bbox_px": [
+        650,
+        370,
+        1870,
+        450
+      ],
+      "size_category": "large",
+      "area": 97600,
+      "anchors": [
+        {
+          "id": "youtube_dont_allow_button",
+          "bbox_px": [
+            619,
+            668,
+            1900,
+            825
+          ],
+          "description": "The 'Don't allow' button in the notifications permission dialog (bottom blue button)"
+        },
+        {
+          "id": "youtube_signin_button",
+          "bbox_px": [
+            1920,
+            205,
+            2210,
+            305
+          ],
+          "description": "The 'Sign in' button/pill visible in the top-right corner (dimmed, behind dialog)"
+        },
+        {
+          "id": "youtube_logo",
+          "bbox_px": [
+            250,
+            205,
+            555,
+            305
+          ],
+          "description": "The 'YouTube' logo in the top-left corner (red play icon + YouTube text, dimmed behind the dialog)"
+        }
+      ],
+      "coord_space": "normalized_1000"
+    },
+    "latency_ms": 3212,
+    "input_tokens": 1824,
+    "output_tokens": 27,
+    "api_error": null
+  },
+  {
+    "_key": [
+      "grounding_with_anchors",
+      "claude-opus-4.6",
+      "clock_pixel7",
+      "clock_alarm_tab",
+      0
+    ],
+    "experiment": "grounding_with_anchors",
+    "model": "claude-opus-4.6",
+    "cu_trained": true,
+    "provider": "anthropic",
+    "scene": "clock_pixel7",
+    "target_id": "clock_alarm_tab",
+    "run": 0,
+    "predicted_bbox_px": [
+      163,
+      841,
+      629,
+      1017
+    ],
+    "raw_response": "{\"box_2d\": [779, 68, 942, 262]}",
+    "parse_error": null,
+    "metrics": {
+      "parse_fail": false,
+      "center_error_px": 140.03570973148243,
+      "hit": true,
+      "iou": 0.46433716372407785
+    },
+    "metadata": {
+      "target_description": "The 'Alarm' tab in the bottom navigation bar (leftmost)",
+      "ground_truth_bbox_px": [
+        36,
+        807,
+        478,
+        1017
+      ],
+      "size_category": "large",
+      "area": 92820,
+      "anchors": [
+        {
+          "id": "clock_timer_tab",
+          "bbox_px": [
+            920,
+            807,
+            1362,
+            1017
+          ],
+          "description": "The 'Timer' tab in the bottom navigation bar (center)"
+        },
+        {
+          "id": "clock_more_options",
+          "bbox_px": [
+            2177,
+            95,
+            2282,
+            221
+          ],
+          "description": "The three-dot 'More options' menu in the top right corner"
+        },
+        {
+          "id": "clock_title_label",
+          "bbox_px": [
+            63,
+            115,
+            214,
+            200
+          ],
+          "description": "The 'Clock' app title in the top left corner"
+        }
+      ],
+      "coord_space": "normalized_1000"
+    },
+    "latency_ms": 3732,
+    "input_tokens": 1802,
+    "output_tokens": 21,
+    "api_error": null
+  },
+  {
+    "_key": [
+      "grounding_with_anchors",
+      "claude-opus-4.6",
+      "clock_pixel7",
+      "clock_bedtime_tab",
+      0
+    ],
+    "experiment": "grounding_with_anchors",
+    "model": "claude-opus-4.6",
+    "cu_trained": true,
+    "provider": "anthropic",
+    "scene": "clock_pixel7",
+    "target_id": "clock_bedtime_tab",
+    "run": 0,
+    "predicted_bbox_px": [
+      2868,
+      853,
+      3384,
+      1015
+    ],
+    "raw_response": "{\"box_2d\": [790, 1195, 940, 1410]}",
+    "parse_error": null,
+    "metrics": {
+      "parse_fail": false,
+      "center_error_px": 1101.2197782459232,
+      "hit": false,
+      "iou": 0.0
+    },
+    "metadata": {
+      "target_description": "The 'Bedtime' tab in the bottom navigation bar (rightmost)",
+      "ground_truth_bbox_px": [
+        1804,
+        807,
+        2246,
+        1017
+      ],
+      "size_category": "large",
+      "area": 92820,
+      "anchors": [
+        {
+          "id": "clock_timer_tab",
+          "bbox_px": [
+            920,
+            807,
+            1362,
+            1017
+          ],
+          "description": "The 'Timer' tab in the bottom navigation bar (center)"
+        },
+        {
+          "id": "clock_more_options",
+          "bbox_px": [
+            2177,
+            95,
+            2282,
+            221
+          ],
+          "description": "The three-dot 'More options' menu in the top right corner"
+        },
+        {
+          "id": "clock_title_label",
+          "bbox_px": [
+            63,
+            115,
+            214,
+            200
+          ],
+          "description": "The 'Clock' app title in the top left corner"
+        }
+      ],
+      "coord_space": "normalized_1000"
+    },
+    "latency_ms": 2832,
+    "input_tokens": 1803,
+    "output_tokens": 23,
+    "api_error": null
+  },
+  {
+    "_key": [
+      "grounding_with_anchors",
+      "claude-opus-4.6",
+      "clock_pixel7",
+      "clock_fab_add_city",
+      0
+    ],
+    "experiment": "grounding_with_anchors",
+    "model": "claude-opus-4.6",
+    "cu_trained": true,
+    "provider": "anthropic",
+    "scene": "clock_pixel7",
+    "target_id": "clock_fab_add_city",
+    "run": 0,
+    "predicted_bbox_px": [
+      1963,
+      443,
+      2172,
+      572
+    ],
+    "raw_response": "{\"box_2d\": [410, 818, 530, 905]}",
+    "parse_error": null,
+    "metrics": {
+      "parse_fail": false,
+      "center_error_px": 72.78049189171504,
+      "hit": true,
+      "iou": 0.3576348278102664
+    },
+    "metadata": {
+      "target_description": "The blue circular '+' floating action button (Add city)",
+      "ground_truth_bbox_px": [
+        1902,
+        429,
+        2091,
+        618
+      ],
+      "size_category": "large",
+      "area": 35721,
+      "anchors": [
+        {
+          "id": "clock_timer_tab",
+          "bbox_px": [
+            920,
+            807,
+            1362,
+            1017
+          ],
+          "description": "The 'Timer' tab in the bottom navigation bar (center)"
+        },
+        {
+          "id": "clock_more_options",
+          "bbox_px": [
+            2177,
+            95,
+            2282,
+            221
+          ],
+          "description": "The three-dot 'More options' menu in the top right corner"
+        },
+        {
+          "id": "clock_title_label",
+          "bbox_px": [
+            63,
+            115,
+            214,
+            200
+          ],
+          "description": "The 'Clock' app title in the top left corner"
+        }
+      ],
+      "coord_space": "normalized_1000"
+    },
+    "latency_ms": 3082,
+    "input_tokens": 1798,
+    "output_tokens": 21,
+    "api_error": null
+  },
+  {
+    "_key": [
+      "grounding_with_anchors",
+      "claude-opus-4.6",
+      "clock_pixel7",
+      "clock_time_display",
+      0
+    ],
+    "experiment": "grounding_with_anchors",
+    "model": "claude-opus-4.6",
+    "cu_trained": true,
+    "provider": "anthropic",
+    "scene": "clock_pixel7",
+    "target_id": "clock_time_display",
+    "run": 0,
+    "predicted_bbox_px": [
+      43,
+      243,
+      840,
+      508
+    ],
+    "raw_response": "{\"box_2d\": [225, 18, 470, 350]}",
+    "parse_error": null,
+    "metrics": {
+      "parse_fail": false,
+      "center_error_px": 152.9477034806342,
+      "hit": true,
+      "iou": 0.5724915986557849
+    },
+    "metadata": {
+      "target_description": "The large '22:25' time display on the left side",
+      "ground_truth_bbox_px": [
+        41,
+        242,
+        538,
+        542
+      ],
+      "size_category": "large",
+      "area": 149100,
+      "anchors": [
+        {
+          "id": "clock_timer_tab",
+          "bbox_px": [
+            920,
+            807,
+            1362,
+            1017
+          ],
+          "description": "The 'Timer' tab in the bottom navigation bar (center)"
+        },
+        {
+          "id": "clock_more_options",
+          "bbox_px": [
+            2177,
+            95,
+            2282,
+            221
+          ],
+          "description": "The three-dot 'More options' menu in the top right corner"
+        },
+        {
+          "id": "clock_title_label",
+          "bbox_px": [
+            63,
+            115,
+            214,
+            200
+          ],
+          "description": "The 'Clock' app title in the top left corner"
+        }
+      ],
+      "coord_space": "normalized_1000"
+    },
+    "latency_ms": 2888,
+    "input_tokens": 1800,
+    "output_tokens": 21,
+    "api_error": null
+  },
+  {
+    "_key": [
+      "grounding_with_anchors",
+      "claude-opus-4.6",
+      "clock_pixel7",
+      "clock_date_subtitle",
+      0
+    ],
+    "experiment": "grounding_with_anchors",
+    "model": "claude-opus-4.6",
+    "cu_trained": true,
+    "provider": "anthropic",
+    "scene": "clock_pixel7",
+    "target_id": "clock_date_subtitle",
+    "run": 0,
+    "predicted_bbox_px": [
+      41,
+      551,
+      408,
+      616
+    ],
+    "raw_response": "{\"box_2d\": [510, 17, 570, 170]}",
+    "parse_error": null,
+    "metrics": {
+      "parse_fail": false,
+      "center_error_px": 75.32595834106593,
+      "hit": true,
+      "iou": 0.4897405065746092
+    },
+    "metadata": {
+      "target_description": "The small date text 'Sat, Apr 11' below the time",
+      "ground_truth_bbox_px": [
+        42,
+        542,
+        256,
+        610
+      ],
+      "size_category": "medium",
+      "area": 14552,
+      "anchors": [
+        {
+          "id": "clock_timer_tab",
+          "bbox_px": [
+            920,
+            807,
+            1362,
+            1017
+          ],
+          "description": "The 'Timer' tab in the bottom navigation bar (center)"
+        },
+        {
+          "id": "clock_more_options",
+          "bbox_px": [
+            2177,
+            95,
+            2282,
+            221
+          ],
+          "description": "The three-dot 'More options' menu in the top right corner"
+        },
+        {
+          "id": "clock_title_label",
+          "bbox_px": [
+            63,
+            115,
+            214,
+            200
+          ],
+          "description": "The 'Clock' app title in the top left corner"
+        }
+      ],
+      "coord_space": "normalized_1000"
+    },
+    "latency_ms": 2764,
+    "input_tokens": 1803,
+    "output_tokens": 21,
+    "api_error": null
+  },
+  {
+    "_key": [
+      "grounding_with_anchors",
+      "claude-opus-4.6",
+      "home_pixel7",
+      "home_gmail",
+      0
+    ],
+    "experiment": "grounding_with_anchors",
+    "model": "claude-opus-4.6",
+    "cu_trained": true,
+    "provider": "anthropic",
+    "scene": "home_pixel7",
+    "target_id": "home_gmail",
+    "run": 0,
+    "predicted_bbox_px": [
+      230,
+      1476,
+      440,
+      1747
+    ],
+    "raw_response": "{\"box_2d\": [615, 213, 728, 407]}",
+    "parse_error": null,
+    "metrics": {
+      "parse_fail": false,
+      "center_error_px": 79.00632886041473,
+      "hit": true,
+      "iou": 0.4520750296068968
+    },
+    "metadata": {
+      "target_description": "The 'Gmail' app icon (red and white envelope, second in the top row)",
+      "ground_truth_bbox_px": [
+        309,
+        1476,
+        519,
+        1748
+      ],
+      "size_category": "large",
+      "area": 57120,
+      "anchors": [
+        {
+          "id": "home_play_store",
+          "bbox_px": [
+            57,
+            1476,
+            267,
+            1748
+          ],
+          "description": "The 'Play Store' app icon (first icon in the top row, leftmost)"
+        },
+        {
+          "id": "home_google_lens",
+          "bbox_px": [
+            867,
+            2125,
+            993,
+            2219
+          ],
+          "description": "The colorful Google Lens camera icon (rightmost icon inside the search bar)"
+        },
+        {
+          "id": "home_date",
+          "bbox_px": [
+            99,
+            304,
+            1023,
+            370
+          ],
+          "description": "The 'Thu, Apr 16' date text near the top of the screen"
+        }
+      ],
+      "coord_space": "normalized_1000"
+    },
+    "latency_ms": 5750,
+    "input_tokens": 1816,
+    "output_tokens": 21,
+    "api_error": null
+  },
+  {
+    "_key": [
+      "grounding_with_anchors",
+      "claude-opus-4.6",
+      "home_pixel7",
+      "home_youtube",
+      0
+    ],
+    "experiment": "grounding_with_anchors",
+    "model": "claude-opus-4.6",
+    "cu_trained": true,
+    "provider": "anthropic",
+    "scene": "home_pixel7",
+    "target_id": "home_youtube",
+    "run": 0,
+    "predicted_bbox_px": [
+      572,
+      1476,
+      778,
+      1747
+    ],
+    "raw_response": "{\"box_2d\": [615, 530, 728, 720]}",
+    "parse_error": null,
+    "metrics": {
+      "parse_fail": false,
+      "center_error_px": 243.00205760445732,
+      "hit": false,
+      "iou": 0.0
+    },
+    "metadata": {
+      "target_description": "The 'YouTube' app icon (red play button, rightmost in the top row)",
+      "ground_truth_bbox_px": [
+        813,
+        1476,
+        1023,
+        1748
+      ],
+      "size_category": "large",
+      "area": 57120,
+      "anchors": [
+        {
+          "id": "home_play_store",
+          "bbox_px": [
+            57,
+            1476,
+            267,
+            1748
+          ],
+          "description": "The 'Play Store' app icon (first icon in the top row, leftmost)"
+        },
+        {
+          "id": "home_google_lens",
+          "bbox_px": [
+            867,
+            2125,
+            993,
+            2219
+          ],
+          "description": "The colorful Google Lens camera icon (rightmost icon inside the search bar)"
+        },
+        {
+          "id": "home_date",
+          "bbox_px": [
+            99,
+            304,
+            1023,
+            370
+          ],
+          "description": "The 'Thu, Apr 16' date text near the top of the screen"
+        }
+      ],
+      "coord_space": "normalized_1000"
+    },
+    "latency_ms": 3573,
+    "input_tokens": 1816,
+    "output_tokens": 21,
+    "api_error": null
+  },
+  {
+    "_key": [
+      "grounding_with_anchors",
+      "claude-opus-4.6",
+      "home_pixel7",
+      "home_phone",
+      0
+    ],
+    "experiment": "grounding_with_anchors",
+    "model": "claude-opus-4.6",
+    "cu_trained": true,
+    "provider": "anthropic",
+    "scene": "home_pixel7",
+    "target_id": "home_phone",
+    "run": 0,
+    "predicted_bbox_px": [
+      57,
+      1870,
+      213,
+      2088
+    ],
+    "raw_response": "{\"box_2d\": [779, 53, 870, 197]}",
+    "parse_error": null,
+    "metrics": {
+      "parse_fail": false,
+      "center_error_px": 38.897300677553446,
+      "hit": true,
+      "iou": 0.5673993521517816
+    },
+    "metadata": {
+      "target_description": "The blue 'Phone' (dialer) icon in the bottom dock row (leftmost blue circle)",
+      "ground_truth_bbox_px": [
+        76,
+        1854,
+        249,
+        2049
+      ],
+      "size_category": "large",
+      "area": 33735,
+      "anchors": [
+        {
+          "id": "home_play_store",
+          "bbox_px": [
+            57,
+            1476,
+            267,
+            1748
+          ],
+          "description": "The 'Play Store' app icon (first icon in the top row, leftmost)"
+        },
+        {
+          "id": "home_google_lens",
+          "bbox_px": [
+            867,
+            2125,
+            993,
+            2219
+          ],
+          "description": "The colorful Google Lens camera icon (rightmost icon inside the search bar)"
+        },
+        {
+          "id": "home_date",
+          "bbox_px": [
+            99,
+            304,
+            1023,
+            370
+          ],
+          "description": "The 'Thu, Apr 16' date text near the top of the screen"
+        }
+      ],
+      "coord_space": "normalized_1000"
+    },
+    "latency_ms": 3453,
+    "input_tokens": 1819,
+    "output_tokens": 21,
+    "api_error": null
+  },
+  {
+    "_key": [
+      "grounding_with_anchors",
+      "claude-opus-4.6",
+      "home_pixel7",
+      "home_chrome",
+      0
+    ],
+    "experiment": "grounding_with_anchors",
+    "model": "claude-opus-4.6",
+    "cu_trained": true,
+    "provider": "anthropic",
+    "scene": "home_pixel7",
+    "target_id": "home_chrome",
+    "run": 0,
+    "predicted_bbox_px": [
+      400,
+      1903,
+      562,
+      2107
+    ],
+    "raw_response": "{\"box_2d\": [793, 370, 878, 520]}",
+    "parse_error": null,
+    "metrics": {
+      "parse_fail": false,
+      "center_error_px": 192.7200041511,
+      "hit": false,
+      "iou": 0.0
+    },
+    "metadata": {
+      "target_description": "The colorful Chrome browser icon in the bottom dock (third icon from left)",
+      "ground_truth_bbox_px": [
+        580,
+        1854,
+        753,
+        2049
+      ],
+      "size_category": "large",
+      "area": 33735,
+      "anchors": [
+        {
+          "id": "home_play_store",
+          "bbox_px": [
+            57,
+            1476,
+            267,
+            1748
+          ],
+          "description": "The 'Play Store' app icon (first icon in the top row, leftmost)"
+        },
+        {
+          "id": "home_google_lens",
+          "bbox_px": [
+            867,
+            2125,
+            993,
+            2219
+          ],
+          "description": "The colorful Google Lens camera icon (rightmost icon inside the search bar)"
+        },
+        {
+          "id": "home_date",
+          "bbox_px": [
+            99,
+            304,
+            1023,
+            370
+          ],
+          "description": "The 'Thu, Apr 16' date text near the top of the screen"
+        }
+      ],
+      "coord_space": "normalized_1000"
+    },
+    "latency_ms": 4517,
+    "input_tokens": 1813,
+    "output_tokens": 21,
+    "api_error": null
+  },
+  {
+    "_key": [
+      "grounding_with_anchors",
+      "claude-opus-4.6",
+      "home_pixel7",
+      "home_camera",
+      0
+    ],
+    "experiment": "grounding_with_anchors",
+    "model": "claude-opus-4.6",
+    "cu_trained": true,
+    "provider": "anthropic",
+    "scene": "home_pixel7",
+    "target_id": "home_camera",
+    "run": 0,
+    "predicted_bbox_px": [
+      813,
+      1870,
+      1023,
+      2088
+    ],
+    "raw_response": "{\"box_2d\": [779, 753, 870, 947]}",
+    "parse_error": null,
+    "metrics": {
+      "parse_fail": false,
+      "center_error_px": 28.0,
+      "hit": true,
+      "iou": 0.6343855600428583
+    },
+    "metadata": {
+      "target_description": "The 'Camera' icon in the bottom dock (rightmost white circle with a black camera)",
+      "ground_truth_bbox_px": [
+        832,
+        1854,
+        1004,
+        2049
+      ],
+      "size_category": "large",
+      "area": 33540,
+      "anchors": [
+        {
+          "id": "home_play_store",
+          "bbox_px": [
+            57,
+            1476,
+            267,
+            1748
+          ],
+          "description": "The 'Play Store' app icon (first icon in the top row, leftmost)"
+        },
+        {
+          "id": "home_google_lens",
+          "bbox_px": [
+            867,
+            2125,
+            993,
+            2219
+          ],
+          "description": "The colorful Google Lens camera icon (rightmost icon inside the search bar)"
+        },
+        {
+          "id": "home_date",
+          "bbox_px": [
+            99,
+            304,
+            1023,
+            370
+          ],
+          "description": "The 'Thu, Apr 16' date text near the top of the screen"
+        }
+      ],
+      "coord_space": "normalized_1000"
+    },
+    "latency_ms": 3095,
+    "input_tokens": 1817,
+    "output_tokens": 21,
+    "api_error": null
+  },
+  {
+    "_key": [
+      "grounding_with_anchors",
+      "claude-opus-4.6",
+      "home_pixel7",
+      "home_google_search_bar",
+      0
+    ],
+    "experiment": "grounding_with_anchors",
+    "model": "claude-opus-4.6",
+    "cu_trained": true,
+    "provider": "anthropic",
+    "scene": "home_pixel7",
+    "target_id": "home_google_search_bar",
+    "run": 0,
+    "predicted_bbox_px": [
+      57,
+      2107,
+      1026,
+      2256
+    ],
+    "raw_response": "{\"box_2d\": [878, 53, 940, 950]}",
+    "parse_error": null,
+    "metrics": {
+      "parse_fail": false,
+      "center_error_px": 9.219544457292887,
+      "hit": true,
+      "iou": 0.6041792202575131
+    },
+    "metadata": {
+      "target_description": "The white Google search bar at the very bottom of the screen",
+      "ground_truth_bbox_px": [
+        75,
+        2125,
+        1003,
+        2219
+      ],
+      "size_category": "large",
+      "area": 87326,
+      "anchors": [
+        {
+          "id": "home_play_store",
+          "bbox_px": [
+            57,
+            1476,
+            267,
+            1748
+          ],
+          "description": "The 'Play Store' app icon (first icon in the top row, leftmost)"
+        },
+        {
+          "id": "home_google_lens",
+          "bbox_px": [
+            867,
+            2125,
+            993,
+            2219
+          ],
+          "description": "The colorful Google Lens camera icon (rightmost icon inside the search bar)"
+        },
+        {
+          "id": "home_date",
+          "bbox_px": [
+            99,
+            304,
+            1023,
+            370
+          ],
+          "description": "The 'Thu, Apr 16' date text near the top of the screen"
+        }
+      ],
+      "coord_space": "normalized_1000"
+    },
+    "latency_ms": 4889,
+    "input_tokens": 1810,
+    "output_tokens": 21,
+    "api_error": null
+  },
+  {
+    "_key": [
+      "grounding_with_anchors",
+      "claude-opus-4.6",
+      "home_pixel7",
+      "home_voice_search",
+      0
+    ],
+    "experiment": "grounding_with_anchors",
+    "model": "claude-opus-4.6",
+    "cu_trained": true,
+    "provider": "anthropic",
+    "scene": "home_pixel7",
+    "target_id": "home_voice_search",
+    "run": 0,
+    "predicted_bbox_px": [
+      771,
+      2124,
+      849,
+      2220
+    ],
+    "raw_response": "{\"box_2d\": [885, 714, 925, 786]}",
+    "parse_error": null,
+    "metrics": {
+      "parse_fail": false,
+      "center_error_px": 6.0,
+      "hit": true,
+      "iou": 0.611
+    },
+    "metadata": {
+      "target_description": "The microphone icon for voice search (inside the bottom search bar)",
+      "ground_truth_bbox_px": [
+        741,
+        2125,
+        867,
+        2219
+      ],
+      "size_category": "medium",
+      "area": 11844,
+      "anchors": [
+        {
+          "id": "home_play_store",
+          "bbox_px": [
+            57,
+            1476,
+            267,
+            1748
+          ],
+          "description": "The 'Play Store' app icon (first icon in the top row, leftmost)"
+        },
+        {
+          "id": "home_google_lens",
+          "bbox_px": [
+            867,
+            2125,
+            993,
+            2219
+          ],
+          "description": "The colorful Google Lens camera icon (rightmost icon inside the search bar)"
+        },
+        {
+          "id": "home_date",
+          "bbox_px": [
+            99,
+            304,
+            1023,
+            370
+          ],
+          "description": "The 'Thu, Apr 16' date text near the top of the screen"
+        }
+      ],
+      "coord_space": "normalized_1000"
+    },
+    "latency_ms": 6116,
+    "input_tokens": 1811,
+    "output_tokens": 21,
+    "api_error": null
+  },
+  {
+    "_key": [
+      "grounding_with_anchors",
+      "claude-opus-4.6",
+      "youtube_pixel7",
+      "youtube_allow_button",
+      0
+    ],
+    "experiment": "grounding_with_anchors",
+    "model": "claude-opus-4.6",
+    "cu_trained": true,
+    "provider": "anthropic",
+    "scene": "youtube_pixel7",
+    "target_id": "youtube_allow_button",
+    "run": 0,
+    "predicted_bbox_px": [
+      619,
+      537,
+      1901,
+      648
+    ],
+    "raw_response": "{\"box_2d\": [497, 258, 600, 792]}",
+    "parse_error": null,
+    "metrics": {
+      "parse_fail": false,
+      "center_error_px": 3.1622776601683795,
+      "hit": true,
+      "iou": 0.7066163754547081
+    },
+    "metadata": {
+      "target_description": "The 'Allow' button in the notifications permission dialog (top blue button)",
+      "ground_truth_bbox_px": [
+        619,
+        511,
+        1900,
+        668
+      ],
+      "size_category": "large",
+      "area": 201117,
+      "anchors": [
+        {
+          "id": "youtube_dont_allow_button",
+          "bbox_px": [
+            619,
+            668,
+            1900,
+            825
+          ],
+          "description": "The 'Don't allow' button in the notifications permission dialog (bottom blue button)"
+        },
+        {
+          "id": "youtube_signin_button",
+          "bbox_px": [
+            1920,
+            205,
+            2210,
+            305
+          ],
+          "description": "The 'Sign in' button/pill visible in the top-right corner (dimmed, behind dialog)"
+        },
+        {
+          "id": "youtube_logo",
+          "bbox_px": [
+            250,
+            205,
+            555,
+            305
+          ],
+          "description": "The 'YouTube' logo in the top-left corner (red play icon + YouTube text, dimmed behind the dialog)"
+        }
+      ],
+      "coord_space": "normalized_1000"
+    },
+    "latency_ms": 3145,
+    "input_tokens": 1826,
+    "output_tokens": 21,
+    "api_error": null
+  },
+  {
+    "_key": [
+      "grounding_with_anchors",
+      "claude-opus-4.6",
+      "youtube_pixel7",
+      "youtube_bell_icon",
+      0
+    ],
+    "experiment": "grounding_with_anchors",
+    "model": "claude-opus-4.6",
+    "cu_trained": true,
+    "provider": "anthropic",
+    "scene": "youtube_pixel7",
+    "target_id": "youtube_bell_icon",
+    "run": 0,
+    "predicted_bbox_px": [
+      1224,
+      256,
+      1368,
+      324
+    ],
+    "raw_response": "{\"box_2d\": [237, 510, 300, 570]}",
+    "parse_error": null,
+    "metrics": {
+      "parse_fail": false,
+      "center_error_px": 37.656340767525464,
+      "hit": true,
+      "iou": 0.47073631214600375
+    },
+    "metadata": {
+      "target_description": "The blue notification bell icon at the top of the dialog",
+      "ground_truth_bbox_px": [
+        1206,
+        255,
+        1312,
+        339
+      ],
+      "size_category": "medium",
+      "area": 8904,
+      "anchors": [
+        {
+          "id": "youtube_dont_allow_button",
+          "bbox_px": [
+            619,
+            668,
+            1900,
+            825
+          ],
+          "description": "The 'Don't allow' button in the notifications permission dialog (bottom blue button)"
+        },
+        {
+          "id": "youtube_signin_button",
+          "bbox_px": [
+            1920,
+            205,
+            2210,
+            305
+          ],
+          "description": "The 'Sign in' button/pill visible in the top-right corner (dimmed, behind dialog)"
+        },
+        {
+          "id": "youtube_logo",
+          "bbox_px": [
+            250,
+            205,
+            555,
+            305
+          ],
+          "description": "The 'YouTube' logo in the top-left corner (red play icon + YouTube text, dimmed behind the dialog)"
+        }
+      ],
+      "coord_space": "normalized_1000"
+    },
+    "latency_ms": 2808,
+    "input_tokens": 1822,
+    "output_tokens": 21,
+    "api_error": null
+  },
+  {
+    "_key": [
+      "grounding_with_anchors",
+      "claude-opus-4.6",
+      "youtube_pixel7",
+      "youtube_dialog_title",
+      0
+    ],
+    "experiment": "grounding_with_anchors",
+    "model": "claude-opus-4.6",
+    "cu_trained": true,
+    "provider": "anthropic",
+    "scene": "youtube_pixel7",
+    "target_id": "youtube_dialog_title",
+    "run": 0,
+    "predicted_bbox_px": [
+      744,
+      378,
+      2088,
+      443
+    ],
+    "raw_response": "{\"box_2d\": [350, 310, 410, 870]}",
+    "parse_error": null,
+    "metrics": {
+      "parse_fail": false,
+      "center_error_px": 156.0,
+      "hit": true,
+      "iou": 0.6548268766216337
+    },
+    "metadata": {
+      "target_description": "The dialog title text 'Allow YouTube to send you notifications?'",
+      "ground_truth_bbox_px": [
+        650,
+        370,
+        1870,
+        450
+      ],
+      "size_category": "large",
+      "area": 97600,
+      "anchors": [
+        {
+          "id": "youtube_dont_allow_button",
+          "bbox_px": [
+            619,
+            668,
+            1900,
+            825
+          ],
+          "description": "The 'Don't allow' button in the notifications permission dialog (bottom blue button)"
+        },
+        {
+          "id": "youtube_signin_button",
+          "bbox_px": [
+            1920,
+            205,
+            2210,
+            305
+          ],
+          "description": "The 'Sign in' button/pill visible in the top-right corner (dimmed, behind dialog)"
+        },
+        {
+          "id": "youtube_logo",
+          "bbox_px": [
+            250,
+            205,
+            555,
+            305
+          ],
+          "description": "The 'YouTube' logo in the top-left corner (red play icon + YouTube text, dimmed behind the dialog)"
+        }
+      ],
+      "coord_space": "normalized_1000"
+    },
+    "latency_ms": 3485,
+    "input_tokens": 1824,
+    "output_tokens": 21,
+    "api_error": null
+  },
+  {
+    "_key": [
+      "grounding_with_anchors",
+      "claude-opus-4.7",
+      "clock_pixel7",
+      "clock_alarm_tab",
+      0
+    ],
+    "experiment": "grounding_with_anchors",
+    "model": "claude-opus-4.7",
+    "cu_trained": true,
+    "provider": "anthropic",
+    "scene": "clock_pixel7",
+    "target_id": "clock_alarm_tab",
+    "run": 0,
+    "predicted_bbox_px": [
+      37,
+      807,
+      479,
+      1017
+    ],
+    "raw_response": "{\"box_2d\":[807,37,1017,479]}",
+    "parse_error": null,
+    "metrics": {
+      "parse_fail": false,
+      "center_error_px": 1.0,
+      "hit": true,
+      "iou": 0.9954853273137697
+    },
+    "metadata": {
+      "target_description": "The 'Alarm' tab in the bottom navigation bar (leftmost)",
+      "ground_truth_bbox_px": [
+        36,
+        807,
+        478,
+        1017
+      ],
+      "size_category": "large",
+      "area": 92820,
+      "anchors": [
+        {
+          "id": "clock_timer_tab",
+          "bbox_px": [
+            920,
+            807,
+            1362,
+            1017
+          ],
+          "description": "The 'Timer' tab in the bottom navigation bar (center)"
+        },
+        {
+          "id": "clock_more_options",
+          "bbox_px": [
+            2177,
+            95,
+            2282,
+            221
+          ],
+          "description": "The three-dot 'More options' menu in the top right corner"
+        },
+        {
+          "id": "clock_title_label",
+          "bbox_px": [
+            63,
+            115,
+            214,
+            200
+          ],
+          "description": "The 'Clock' app title in the top left corner"
+        }
+      ],
+      "coord_space": "pixel_yx"
+    },
+    "latency_ms": 4102,
+    "input_tokens": 3815,
+    "output_tokens": 22,
+    "api_error": null
+  },
+  {
+    "_key": [
+      "grounding_with_anchors",
+      "claude-opus-4.7",
+      "clock_pixel7",
+      "clock_bedtime_tab",
+      0
+    ],
+    "experiment": "grounding_with_anchors",
+    "model": "claude-opus-4.7",
+    "cu_trained": true,
+    "provider": "anthropic",
+    "scene": "clock_pixel7",
+    "target_id": "clock_bedtime_tab",
+    "run": 0,
+    "predicted_bbox_px": [
+      1810,
+      838,
+      2240,
+      985
+    ],
+    "raw_response": "{\"box_2d\":[838,1810,985,2240]}",
+    "parse_error": null,
+    "metrics": {
+      "parse_fail": false,
+      "center_error_px": 1.0,
+      "hit": true,
+      "iou": 0.6809954751131222
+    },
+    "metadata": {
+      "target_description": "The 'Bedtime' tab in the bottom navigation bar (rightmost)",
+      "ground_truth_bbox_px": [
+        1804,
+        807,
+        2246,
+        1017
+      ],
+      "size_category": "large",
+      "area": 92820,
+      "anchors": [
+        {
+          "id": "clock_timer_tab",
+          "bbox_px": [
+            920,
+            807,
+            1362,
+            1017
+          ],
+          "description": "The 'Timer' tab in the bottom navigation bar (center)"
+        },
+        {
+          "id": "clock_more_options",
+          "bbox_px": [
+            2177,
+            95,
+            2282,
+            221
+          ],
+          "description": "The three-dot 'More options' menu in the top right corner"
+        },
+        {
+          "id": "clock_title_label",
+          "bbox_px": [
+            63,
+            115,
+            214,
+            200
+          ],
+          "description": "The 'Clock' app title in the top left corner"
+        }
+      ],
+      "coord_space": "pixel_yx"
+    },
+    "latency_ms": 3568,
+    "input_tokens": 3816,
+    "output_tokens": 23,
+    "api_error": null
+  },
+  {
+    "_key": [
+      "grounding_with_anchors",
+      "claude-opus-4.7",
+      "clock_pixel7",
+      "clock_fab_add_city",
+      0
+    ],
+    "experiment": "grounding_with_anchors",
+    "model": "claude-opus-4.7",
+    "cu_trained": true,
+    "provider": "anthropic",
+    "scene": "clock_pixel7",
+    "target_id": "clock_fab_add_city",
+    "run": 0,
+    "predicted_bbox_px": [
+      1881,
+      428,
+      2110,
+      628
+    ],
+    "raw_response": "{\"box_2d\":[428,1881,628,2110]}",
+    "parse_error": null,
+    "metrics": {
+      "parse_fail": false,
+      "center_error_px": 5.0990195135927845,
+      "hit": true,
+      "iou": 0.7799344978165939
+    },
+    "metadata": {
+      "target_description": "The blue circular '+' floating action button (Add city)",
+      "ground_truth_bbox_px": [
+        1902,
+        429,
+        2091,
+        618
+      ],
+      "size_category": "large",
+      "area": 35721,
+      "anchors": [
+        {
+          "id": "clock_timer_tab",
+          "bbox_px": [
+            920,
+            807,
+            1362,
+            1017
+          ],
+          "description": "The 'Timer' tab in the bottom navigation bar (center)"
+        },
+        {
+          "id": "clock_more_options",
+          "bbox_px": [
+            2177,
+            95,
+            2282,
+            221
+          ],
+          "description": "The three-dot 'More options' menu in the top right corner"
+        },
+        {
+          "id": "clock_title_label",
+          "bbox_px": [
+            63,
+            115,
+            214,
+            200
+          ],
+          "description": "The 'Clock' app title in the top left corner"
+        }
+      ],
+      "coord_space": "pixel_yx"
+    },
+    "latency_ms": 3715,
+    "input_tokens": 3806,
+    "output_tokens": 23,
+    "api_error": null
+  },
+  {
+    "_key": [
+      "grounding_with_anchors",
+      "claude-opus-4.7",
+      "clock_pixel7",
+      "clock_time_display",
+      0
+    ],
+    "experiment": "grounding_with_anchors",
+    "model": "claude-opus-4.7",
+    "cu_trained": true,
+    "provider": "anthropic",
+    "scene": "clock_pixel7",
+    "target_id": "clock_time_display",
+    "run": 0,
+    "predicted_bbox_px": [
+      57,
+      330,
+      535,
+      510
+    ],
+    "raw_response": "{\"box_2d\":[330,57,510,535]}",
+    "parse_error": null,
+    "metrics": {
+      "parse_fail": false,
+      "center_error_px": 28.861739379323623,
+      "hit": true,
+      "iou": 0.5770623742454728
+    },
+    "metadata": {
+      "target_description": "The large '22:25' time display on the left side",
+      "ground_truth_bbox_px": [
+        41,
+        242,
+        538,
+        542
+      ],
+      "size_category": "large",
+      "area": 149100,
+      "anchors": [
+        {
+          "id": "clock_timer_tab",
+          "bbox_px": [
+            920,
+            807,
+            1362,
+            1017
+          ],
+          "description": "The 'Timer' tab in the bottom navigation bar (center)"
+        },
+        {
+          "id": "clock_more_options",
+          "bbox_px": [
+            2177,
+            95,
+            2282,
+            221
+          ],
+          "description": "The three-dot 'More options' menu in the top right corner"
+        },
+        {
+          "id": "clock_title_label",
+          "bbox_px": [
+            63,
+            115,
+            214,
+            200
+          ],
+          "description": "The 'Clock' app title in the top left corner"
+        }
+      ],
+      "coord_space": "pixel_yx"
+    },
+    "latency_ms": 3591,
+    "input_tokens": 3802,
+    "output_tokens": 21,
+    "api_error": null
+  },
+  {
+    "_key": [
+      "grounding_with_anchors",
+      "claude-opus-4.7",
+      "clock_pixel7",
+      "clock_date_subtitle",
+      0
+    ],
+    "experiment": "grounding_with_anchors",
+    "model": "claude-opus-4.7",
+    "cu_trained": true,
+    "provider": "anthropic",
+    "scene": "clock_pixel7",
+    "target_id": "clock_date_subtitle",
+    "run": 0,
+    "predicted_bbox_px": [
+      57,
+      543,
+      267,
+      609
+    ],
+    "raw_response": "{\"box_2d\":[543,57,609,267]}",
+    "parse_error": null,
+    "metrics": {
+      "parse_fail": false,
+      "center_error_px": 13.0,
+      "hit": true,
+      "iou": 0.8596674957455164
+    },
+    "metadata": {
+      "target_description": "The small date text 'Sat, Apr 11' below the time",
+      "ground_truth_bbox_px": [
+        42,
+        542,
+        256,
+        610
+      ],
+      "size_category": "medium",
+      "area": 14552,
+      "anchors": [
+        {
+          "id": "clock_timer_tab",
+          "bbox_px": [
+            920,
+            807,
+            1362,
+            1017
+          ],
+          "description": "The 'Timer' tab in the bottom navigation bar (center)"
+        },
+        {
+          "id": "clock_more_options",
+          "bbox_px": [
+            2177,
+            95,
+            2282,
+            221
+          ],
+          "description": "The three-dot 'More options' menu in the top right corner"
+        },
+        {
+          "id": "clock_title_label",
+          "bbox_px": [
+            63,
+            115,
+            214,
+            200
+          ],
+          "description": "The 'Clock' app title in the top left corner"
+        }
+      ],
+      "coord_space": "pixel_yx"
+    },
+    "latency_ms": 4279,
+    "input_tokens": 3808,
+    "output_tokens": 21,
+    "api_error": null
+  },
+  {
+    "_key": [
+      "grounding_with_anchors",
+      "claude-opus-4.7",
+      "home_pixel7",
+      "home_gmail",
+      0
+    ],
+    "experiment": "grounding_with_anchors",
+    "model": "claude-opus-4.7",
+    "cu_trained": true,
+    "provider": "anthropic",
+    "scene": "home_pixel7",
+    "target_id": "home_gmail",
+    "run": 0,
+    "predicted_bbox_px": [
+      400,
+      1476,
+      610,
+      1748
+    ],
+    "raw_response": "{\"box_2d\":[1476,400,1748,610]}",
+    "parse_error": null,
+    "metrics": {
+      "parse_fail": false,
+      "center_error_px": 91.0,
+      "hit": true,
+      "iou": 0.3953488372093023
+    },
+    "metadata": {
+      "target_description": "The 'Gmail' app icon (red and white envelope, second in the top row)",
+      "ground_truth_bbox_px": [
+        309,
+        1476,
+        519,
+        1748
+      ],
+      "size_category": "large",
+      "area": 57120,
+      "anchors": [
+        {
+          "id": "home_play_store",
+          "bbox_px": [
+            57,
+            1476,
+            267,
+            1748
+          ],
+          "description": "The 'Play Store' app icon (first icon in the top row, leftmost)"
+        },
+        {
+          "id": "home_google_lens",
+          "bbox_px": [
+            867,
+            2125,
+            993,
+            2219
+          ],
+          "description": "The colorful Google Lens camera icon (rightmost icon inside the search bar)"
+        },
+        {
+          "id": "home_date",
+          "bbox_px": [
+            99,
+            304,
+            1023,
+            370
+          ],
+          "description": "The 'Thu, Apr 16' date text near the top of the screen"
+        }
+      ],
+      "coord_space": "pixel_yx"
+    },
+    "latency_ms": 4966,
+    "input_tokens": 3834,
+    "output_tokens": 23,
+    "api_error": null
+  },
+  {
+    "_key": [
+      "grounding_with_anchors",
+      "claude-opus-4.7",
+      "home_pixel7",
+      "home_youtube",
+      0
+    ],
+    "experiment": "grounding_with_anchors",
+    "model": "claude-opus-4.7",
+    "cu_trained": true,
+    "provider": "anthropic",
+    "scene": "home_pixel7",
+    "target_id": "home_youtube",
+    "run": 0,
+    "predicted_bbox_px": [
+      813,
+      1476,
+      1023,
+      1748
+    ],
+    "raw_response": "{\"box_2d\":[1476,813,1748,1023]}",
+    "parse_error": null,
+    "metrics": {
+      "parse_fail": false,
+      "center_error_px": 0.0,
+      "hit": true,
+      "iou": 1.0
+    },
+    "metadata": {
+      "target_description": "The 'YouTube' app icon (red play button, rightmost in the top row)",
+      "ground_truth_bbox_px": [
+        813,
+        1476,
+        1023,
+        1748
+      ],
+      "size_category": "large",
+      "area": 57120,
+      "anchors": [
+        {
+          "id": "home_play_store",
+          "bbox_px": [
+            57,
+            1476,
+            267,
+            1748
+          ],
+          "description": "The 'Play Store' app icon (first icon in the top row, leftmost)"
+        },
+        {
+          "id": "home_google_lens",
+          "bbox_px": [
+            867,
+            2125,
+            993,
+            2219
+          ],
+          "description": "The colorful Google Lens camera icon (rightmost icon inside the search bar)"
+        },
+        {
+          "id": "home_date",
+          "bbox_px": [
+            99,
+            304,
+            1023,
+            370
+          ],
+          "description": "The 'Thu, Apr 16' date text near the top of the screen"
+        }
+      ],
+      "coord_space": "pixel_yx"
+    },
+    "latency_ms": 5052,
+    "input_tokens": 3834,
+    "output_tokens": 24,
+    "api_error": null
+  },
+  {
+    "_key": [
+      "grounding_with_anchors",
+      "claude-opus-4.7",
+      "home_pixel7",
+      "home_phone",
+      0
+    ],
+    "experiment": "grounding_with_anchors",
+    "model": "claude-opus-4.7",
+    "cu_trained": true,
+    "provider": "anthropic",
+    "scene": "home_pixel7",
+    "target_id": "home_phone",
+    "run": 0,
+    "predicted_bbox_px": [
+      89,
+      1843,
+      295,
+      2049
+    ],
+    "raw_response": "{\"box_2d\":[1843,89,2049,295]}",
+    "parse_error": null,
+    "metrics": {
+      "parse_fail": false,
+      "center_error_px": 30.4138126514911,
+      "hit": true,
+      "iou": 0.6937804362811589
+    },
+    "metadata": {
+      "target_description": "The blue 'Phone' (dialer) icon in the bottom dock row (leftmost blue circle)",
+      "ground_truth_bbox_px": [
+        76,
+        1854,
+        249,
+        2049
+      ],
+      "size_category": "large",
+      "area": 33735,
+      "anchors": [
+        {
+          "id": "home_play_store",
+          "bbox_px": [
+            57,
+            1476,
+            267,
+            1748
+          ],
+          "description": "The 'Play Store' app icon (first icon in the top row, leftmost)"
+        },
+        {
+          "id": "home_google_lens",
+          "bbox_px": [
+            867,
+            2125,
+            993,
+            2219
+          ],
+          "description": "The colorful Google Lens camera icon (rightmost icon inside the search bar)"
+        },
+        {
+          "id": "home_date",
+          "bbox_px": [
+            99,
+            304,
+            1023,
+            370
+          ],
+          "description": "The 'Thu, Apr 16' date text near the top of the screen"
+        }
+      ],
+      "coord_space": "pixel_yx"
+    },
+    "latency_ms": 5445,
+    "input_tokens": 3843,
+    "output_tokens": 23,
+    "api_error": null
+  },
+  {
+    "_key": [
+      "grounding_with_anchors",
+      "claude-opus-4.7",
+      "home_pixel7",
+      "home_chrome",
+      0
+    ],
+    "experiment": "grounding_with_anchors",
+    "model": "claude-opus-4.7",
+    "cu_trained": true,
+    "provider": "anthropic",
+    "scene": "home_pixel7",
+    "target_id": "home_chrome",
+    "run": 0,
+    "predicted_bbox_px": [
+      567,
+      1827,
+      789,
+      2049
+    ],
+    "raw_response": "{\"box_2d\":[1827,567,2049,789]}",
+    "parse_error": null,
+    "metrics": {
+      "parse_fail": false,
+      "center_error_px": 17.69180601295413,
+      "hit": true,
+      "iou": 0.6845020696372047
+    },
+    "metadata": {
+      "target_description": "The colorful Chrome browser icon in the bottom dock (third icon from left)",
+      "ground_truth_bbox_px": [
+        580,
+        1854,
+        753,
+        2049
+      ],
+      "size_category": "large",
+      "area": 33735,
+      "anchors": [
+        {
+          "id": "home_play_store",
+          "bbox_px": [
+            57,
+            1476,
+            267,
+            1748
+          ],
+          "description": "The 'Play Store' app icon (first icon in the top row, leftmost)"
+        },
+        {
+          "id": "home_google_lens",
+          "bbox_px": [
+            867,
+            2125,
+            993,
+            2219
+          ],
+          "description": "The colorful Google Lens camera icon (rightmost icon inside the search bar)"
+        },
+        {
+          "id": "home_date",
+          "bbox_px": [
+            99,
+            304,
+            1023,
+            370
+          ],
+          "description": "The 'Thu, Apr 16' date text near the top of the screen"
+        }
+      ],
+      "coord_space": "pixel_yx"
+    },
+    "latency_ms": 5998,
+    "input_tokens": 3835,
+    "output_tokens": 23,
+    "api_error": null
+  },
+  {
+    "_key": [
+      "grounding_with_anchors",
+      "claude-opus-4.7",
+      "home_pixel7",
+      "home_camera",
+      0
+    ],
+    "experiment": "grounding_with_anchors",
+    "model": "claude-opus-4.7",
+    "cu_trained": true,
+    "provider": "anthropic",
+    "scene": "home_pixel7",
+    "target_id": "home_camera",
+    "run": 0,
+    "predicted_bbox_px": [
+      837,
+      1812,
+      1043,
+      2042
+    ],
+    "raw_response": "{\"box_2d\":[1812,837,2042,1043]}",
+    "parse_error": null,
+    "metrics": {
+      "parse_fail": false,
+      "center_error_px": 32.55764119219941,
+      "hit": true,
+      "iou": 0.6339552540182538
+    },
+    "metadata": {
+      "target_description": "The 'Camera' icon in the bottom dock (rightmost white circle with a black camera)",
+      "ground_truth_bbox_px": [
+        832,
+        1854,
+        1004,
+        2049
+      ],
+      "size_category": "large",
+      "area": 33540,
+      "anchors": [
+        {
+          "id": "home_play_store",
+          "bbox_px": [
+            57,
+            1476,
+            267,
+            1748
+          ],
+          "description": "The 'Play Store' app icon (first icon in the top row, leftmost)"
+        },
+        {
+          "id": "home_google_lens",
+          "bbox_px": [
+            867,
+            2125,
+            993,
+            2219
+          ],
+          "description": "The colorful Google Lens camera icon (rightmost icon inside the search bar)"
+        },
+        {
+          "id": "home_date",
+          "bbox_px": [
+            99,
+            304,
+            1023,
+            370
+          ],
+          "description": "The 'Thu, Apr 16' date text near the top of the screen"
+        }
+      ],
+      "coord_space": "pixel_yx"
+    },
+    "latency_ms": 5235,
+    "input_tokens": 3839,
+    "output_tokens": 24,
+    "api_error": null
+  },
+  {
+    "_key": [
+      "grounding_with_anchors",
+      "claude-opus-4.7",
+      "home_pixel7",
+      "home_google_search_bar",
+      0
+    ],
+    "experiment": "grounding_with_anchors",
+    "model": "claude-opus-4.7",
+    "cu_trained": true,
+    "provider": "anthropic",
+    "scene": "home_pixel7",
+    "target_id": "home_google_search_bar",
+    "run": 0,
+    "predicted_bbox_px": [
+      57,
+      2070,
+      1023,
+      2270
+    ],
+    "raw_response": "{\"box_2d\":[2070,57,2270,1023]}",
+    "parse_error": null,
+    "metrics": {
+      "parse_fail": false,
+      "center_error_px": 2.23606797749979,
+      "hit": true,
+      "iou": 0.4515113871635611
+    },
+    "metadata": {
+      "target_description": "The white Google search bar at the very bottom of the screen",
+      "ground_truth_bbox_px": [
+        75,
+        2125,
+        1003,
+        2219
+      ],
+      "size_category": "large",
+      "area": 87326,
+      "anchors": [
+        {
+          "id": "home_play_store",
+          "bbox_px": [
+            57,
+            1476,
+            267,
+            1748
+          ],
+          "description": "The 'Play Store' app icon (first icon in the top row, leftmost)"
+        },
+        {
+          "id": "home_google_lens",
+          "bbox_px": [
+            867,
+            2125,
+            993,
+            2219
+          ],
+          "description": "The colorful Google Lens camera icon (rightmost icon inside the search bar)"
+        },
+        {
+          "id": "home_date",
+          "bbox_px": [
+            99,
+            304,
+            1023,
+            370
+          ],
+          "description": "The 'Thu, Apr 16' date text near the top of the screen"
+        }
+      ],
+      "coord_space": "pixel_yx"
+    },
+    "latency_ms": 4811,
+    "input_tokens": 3826,
+    "output_tokens": 24,
+    "api_error": null
+  },
+  {
+    "_key": [
+      "grounding_with_anchors",
+      "claude-opus-4.7",
+      "home_pixel7",
+      "home_voice_search",
+      0
+    ],
+    "experiment": "grounding_with_anchors",
+    "model": "claude-opus-4.7",
+    "cu_trained": true,
+    "provider": "anthropic",
+    "scene": "home_pixel7",
+    "target_id": "home_voice_search",
+    "run": 0,
+    "predicted_bbox_px": [
+      772,
+      2127,
+      884,
+      2218
+    ],
+    "raw_response": "{\"box_2d\":[2127,772,2218,884]}",
+    "parse_error": null,
+    "metrics": {
+      "parse_fail": false,
+      "center_error_px": 24.0,
+      "hit": true,
+      "iou": 0.6455828541557763
+    },
+    "metadata": {
+      "target_description": "The microphone icon for voice search (inside the bottom search bar)",
+      "ground_truth_bbox_px": [
+        741,
+        2125,
+        867,
+        2219
+      ],
+      "size_category": "medium",
+      "area": 11844,
+      "anchors": [
+        {
+          "id": "home_play_store",
+          "bbox_px": [
+            57,
+            1476,
+            267,
+            1748
+          ],
+          "description": "The 'Play Store' app icon (first icon in the top row, leftmost)"
+        },
+        {
+          "id": "home_google_lens",
+          "bbox_px": [
+            867,
+            2125,
+            993,
+            2219
+          ],
+          "description": "The colorful Google Lens camera icon (rightmost icon inside the search bar)"
+        },
+        {
+          "id": "home_date",
+          "bbox_px": [
+            99,
+            304,
+            1023,
+            370
+          ],
+          "description": "The 'Thu, Apr 16' date text near the top of the screen"
+        }
+      ],
+      "coord_space": "pixel_yx"
+    },
+    "latency_ms": 5040,
+    "input_tokens": 3830,
+    "output_tokens": 23,
+    "api_error": null
+  },
+  {
+    "_key": [
+      "grounding_with_anchors",
+      "claude-opus-4.7",
+      "youtube_pixel7",
+      "youtube_allow_button",
+      0
+    ],
+    "experiment": "grounding_with_anchors",
+    "model": "claude-opus-4.7",
+    "cu_trained": true,
+    "provider": "anthropic",
+    "scene": "youtube_pixel7",
+    "target_id": "youtube_allow_button",
+    "run": 0,
+    "predicted_bbox_px": [
+      619,
+      510,
+      1900,
+      667
+    ],
+    "raw_response": "{\"box_2d\":[510,619,667,1900]}",
+    "parse_error": null,
+    "metrics": {
+      "parse_fail": false,
+      "center_error_px": 1.0,
+      "hit": true,
+      "iou": 0.9873417721518988
+    },
+    "metadata": {
+      "target_description": "The 'Allow' button in the notifications permission dialog (top blue button)",
+      "ground_truth_bbox_px": [
+        619,
+        511,
+        1900,
+        668
+      ],
+      "size_category": "large",
+      "area": 201117,
+      "anchors": [
+        {
+          "id": "youtube_dont_allow_button",
+          "bbox_px": [
+            619,
+            668,
+            1900,
+            825
+          ],
+          "description": "The 'Don't allow' button in the notifications permission dialog (bottom blue button)"
+        },
+        {
+          "id": "youtube_signin_button",
+          "bbox_px": [
+            1920,
+            205,
+            2210,
+            305
+          ],
+          "description": "The 'Sign in' button/pill visible in the top-right corner (dimmed, behind dialog)"
+        },
+        {
+          "id": "youtube_logo",
+          "bbox_px": [
+            250,
+            205,
+            555,
+            305
+          ],
+          "description": "The 'YouTube' logo in the top-left corner (red play icon + YouTube text, dimmed behind the dialog)"
+        }
+      ],
+      "coord_space": "pixel_yx"
+    },
+    "latency_ms": 3248,
+    "input_tokens": 3858,
+    "output_tokens": 22,
+    "api_error": null
+  },
+  {
+    "_key": [
+      "grounding_with_anchors",
+      "claude-opus-4.7",
+      "youtube_pixel7",
+      "youtube_bell_icon",
+      0
+    ],
+    "experiment": "grounding_with_anchors",
+    "model": "claude-opus-4.7",
+    "cu_trained": true,
+    "provider": "anthropic",
+    "scene": "youtube_pixel7",
+    "target_id": "youtube_bell_icon",
+    "run": 0,
+    "predicted_bbox_px": [
+      1208,
+      252,
+      1316,
+      348
+    ],
+    "raw_response": "{\"box_2d\":[252,1208,348,1316]}",
+    "parse_error": null,
+    "metrics": {
+      "parse_fail": false,
+      "center_error_px": 4.242640687119285,
+      "hit": true,
+      "iou": 0.8291571753986332
+    },
+    "metadata": {
+      "target_description": "The blue notification bell icon at the top of the dialog",
+      "ground_truth_bbox_px": [
+        1206,
+        255,
+        1312,
+        339
+      ],
+      "size_category": "medium",
+      "area": 8904,
+      "anchors": [
+        {
+          "id": "youtube_dont_allow_button",
+          "bbox_px": [
+            619,
+            668,
+            1900,
+            825
+          ],
+          "description": "The 'Don't allow' button in the notifications permission dialog (bottom blue button)"
+        },
+        {
+          "id": "youtube_signin_button",
+          "bbox_px": [
+            1920,
+            205,
+            2210,
+            305
+          ],
+          "description": "The 'Sign in' button/pill visible in the top-right corner (dimmed, behind dialog)"
+        },
+        {
+          "id": "youtube_logo",
+          "bbox_px": [
+            250,
+            205,
+            555,
+            305
+          ],
+          "description": "The 'YouTube' logo in the top-left corner (red play icon + YouTube text, dimmed behind the dialog)"
+        }
+      ],
+      "coord_space": "pixel_yx"
+    },
+    "latency_ms": 3823,
+    "input_tokens": 3851,
+    "output_tokens": 23,
+    "api_error": null
+  },
+  {
+    "_key": [
+      "grounding_with_anchors",
+      "claude-opus-4.7",
+      "youtube_pixel7",
+      "youtube_dialog_title",
+      0
+    ],
+    "experiment": "grounding_with_anchors",
+    "model": "claude-opus-4.7",
+    "cu_trained": true,
+    "provider": "anthropic",
+    "scene": "youtube_pixel7",
+    "target_id": "youtube_dialog_title",
+    "run": 0,
+    "predicted_bbox_px": [
+      720,
+      378,
+      1798,
+      438
+    ],
+    "raw_response": "{\"box_2d\":[378,720,438,1798]}",
+    "parse_error": null,
+    "metrics": {
+      "parse_fail": false,
+      "center_error_px": 2.23606797749979,
+      "hit": true,
+      "iou": 0.6627049180327869
+    },
+    "metadata": {
+      "target_description": "The dialog title text 'Allow YouTube to send you notifications?'",
+      "ground_truth_bbox_px": [
+        650,
+        370,
+        1870,
+        450
+      ],
+      "size_category": "large",
+      "area": 97600,
+      "anchors": [
+        {
+          "id": "youtube_dont_allow_button",
+          "bbox_px": [
+            619,
+            668,
+            1900,
+            825
+          ],
+          "description": "The 'Don't allow' button in the notifications permission dialog (bottom blue button)"
+        },
+        {
+          "id": "youtube_signin_button",
+          "bbox_px": [
+            1920,
+            205,
+            2210,
+            305
+          ],
+          "description": "The 'Sign in' button/pill visible in the top-right corner (dimmed, behind dialog)"
+        },
+        {
+          "id": "youtube_logo",
+          "bbox_px": [
+            250,
+            205,
+            555,
+            305
+          ],
+          "description": "The 'YouTube' logo in the top-left corner (red play icon + YouTube text, dimmed behind the dialog)"
+        }
+      ],
+      "coord_space": "pixel_yx"
+    },
+    "latency_ms": 3983,
+    "input_tokens": 3857,
+    "output_tokens": 22,
+    "api_error": null
+  },
+  {
+    "_key": [
+      "grounding_with_anchors",
+      "gpt-4o",
+      "clock_pixel7",
+      "clock_alarm_tab",
+      0
+    ],
+    "experiment": "grounding_with_anchors",
+    "model": "gpt-4o",
+    "cu_trained": true,
+    "provider": "openai",
+    "scene": "clock_pixel7",
+    "target_id": "clock_alarm_tab",
+    "run": 0,
+    "predicted_bbox_px": [
+      475,
+      807,
+      919,
+      1017
+    ],
+    "raw_response": "{\"box_2d\": [747, 198, 942, 383]}",
+    "parse_error": null,
+    "metrics": {
+      "parse_fail": false,
+      "center_error_px": 440.0,
+      "hit": false,
+      "iou": 0.0033975084937712344
+    },
+    "metadata": {
+      "target_description": "The 'Alarm' tab in the bottom navigation bar (leftmost)",
+      "ground_truth_bbox_px": [
+        36,
+        807,
+        478,
+        1017
+      ],
+      "size_category": "large",
+      "area": 92820,
+      "anchors": [
+        {
+          "id": "clock_timer_tab",
+          "bbox_px": [
+            920,
+            807,
+            1362,
+            1017
+          ],
+          "description": "The 'Timer' tab in the bottom navigation bar (center)"
+        },
+        {
+          "id": "clock_more_options",
+          "bbox_px": [
+            2177,
+            95,
+            2282,
+            221
+          ],
+          "description": "The three-dot 'More options' menu in the top right corner"
+        },
+        {
+          "id": "clock_title_label",
+          "bbox_px": [
+            63,
+            115,
+            214,
+            200
+          ],
+          "description": "The 'Clock' app title in the top left corner"
+        }
+      ],
+      "coord_space": "normalized_1000"
+    },
+    "latency_ms": 3432,
+    "input_tokens": 1485,
+    "output_tokens": 19,
+    "api_error": null
+  },
+  {
+    "_key": [
+      "grounding_with_anchors",
+      "gpt-4o",
+      "clock_pixel7",
+      "clock_bedtime_tab",
+      0
+    ],
+    "experiment": "grounding_with_anchors",
+    "model": "gpt-4o",
+    "cu_trained": true,
+    "provider": "openai",
+    "scene": "clock_pixel7",
+    "target_id": "clock_bedtime_tab",
+    "run": 0,
+    "predicted_bbox_px": [
+      1819,
+      807,
+      2263,
+      1017
+    ],
+    "raw_response": "{\"box_2d\": [747, 758, 942, 943]}",
+    "parse_error": null,
+    "metrics": {
+      "parse_fail": false,
+      "center_error_px": 16.0,
+      "hit": true,
+      "iou": 0.9302832244008714
+    },
+    "metadata": {
+      "target_description": "The 'Bedtime' tab in the bottom navigation bar (rightmost)",
+      "ground_truth_bbox_px": [
+        1804,
+        807,
+        2246,
+        1017
+      ],
+      "size_category": "large",
+      "area": 92820,
+      "anchors": [
+        {
+          "id": "clock_timer_tab",
+          "bbox_px": [
+            920,
+            807,
+            1362,
+            1017
+          ],
+          "description": "The 'Timer' tab in the bottom navigation bar (center)"
+        },
+        {
+          "id": "clock_more_options",
+          "bbox_px": [
+            2177,
+            95,
+            2282,
+            221
+          ],
+          "description": "The three-dot 'More options' menu in the top right corner"
+        },
+        {
+          "id": "clock_title_label",
+          "bbox_px": [
+            63,
+            115,
+            214,
+            200
+          ],
+          "description": "The 'Clock' app title in the top left corner"
+        }
+      ],
+      "coord_space": "normalized_1000"
+    },
+    "latency_ms": 2446,
+    "input_tokens": 1486,
+    "output_tokens": 19,
+    "api_error": null
+  },
+  {
+    "_key": [
+      "grounding_with_anchors",
+      "gpt-4o",
+      "clock_pixel7",
+      "clock_fab_add_city",
+      0
+    ],
+    "experiment": "grounding_with_anchors",
+    "model": "gpt-4o",
+    "cu_trained": true,
+    "provider": "openai",
+    "scene": "clock_pixel7",
+    "target_id": "clock_fab_add_city",
+    "run": 0,
+    "predicted_bbox_px": [
+      1920,
+      540,
+      2280,
+      702
+    ],
+    "raw_response": "{\"box_2d\": [500, 800, 650, 950]}",
+    "parse_error": null,
+    "metrics": {
+      "parse_fail": false,
+      "center_error_px": 142.89856542317,
+      "hit": false,
+      "iou": 0.16527266644362662
+    },
+    "metadata": {
+      "target_description": "The blue circular '+' floating action button (Add city)",
+      "ground_truth_bbox_px": [
+        1902,
+        429,
+        2091,
+        618
+      ],
+      "size_category": "large",
+      "area": 35721,
+      "anchors": [
+        {
+          "id": "clock_timer_tab",
+          "bbox_px": [
+            920,
+            807,
+            1362,
+            1017
+          ],
+          "description": "The 'Timer' tab in the bottom navigation bar (center)"
+        },
+        {
+          "id": "clock_more_options",
+          "bbox_px": [
+            2177,
+            95,
+            2282,
+            221
+          ],
+          "description": "The three-dot 'More options' menu in the top right corner"
+        },
+        {
+          "id": "clock_title_label",
+          "bbox_px": [
+            63,
+            115,
+            214,
+            200
+          ],
+          "description": "The 'Clock' app title in the top left corner"
+        }
+      ],
+      "coord_space": "normalized_1000"
+    },
+    "latency_ms": 1448,
+    "input_tokens": 1737,
+    "output_tokens": 18,
+    "api_error": null
+  },
+  {
+    "_key": [
+      "grounding_with_anchors",
+      "gpt-4o",
+      "clock_pixel7",
+      "clock_time_display",
+      0
+    ],
+    "experiment": "grounding_with_anchors",
+    "model": "gpt-4o",
+    "cu_trained": true,
+    "provider": "openai",
+    "scene": "clock_pixel7",
+    "target_id": "clock_time_display",
+    "run": 0,
+    "predicted_bbox_px": [
+      120,
+      270,
+      960,
+      486
+    ],
+    "raw_response": "{\"box_2d\": [250, 50, 450, 400]}",
+    "parse_error": null,
+    "metrics": {
+      "parse_fail": false,
+      "center_error_px": 251.3901350490906,
+      "hit": false,
+      "iou": 0.3758054043254583
+    },
+    "metadata": {
+      "target_description": "The large '22:25' time display on the left side",
+      "ground_truth_bbox_px": [
+        41,
+        242,
+        538,
+        542
+      ],
+      "size_category": "large",
+      "area": 149100,
+      "anchors": [
+        {
+          "id": "clock_timer_tab",
+          "bbox_px": [
+            920,
+            807,
+            1362,
+            1017
+          ],
+          "description": "The 'Timer' tab in the bottom navigation bar (center)"
+        },
+        {
+          "id": "clock_more_options",
+          "bbox_px": [
+            2177,
+            95,
+            2282,
+            221
+          ],
+          "description": "The three-dot 'More options' menu in the top right corner"
+        },
+        {
+          "id": "clock_title_label",
+          "bbox_px": [
+            63,
+            115,
+            214,
+            200
+          ],
+          "description": "The 'Clock' app title in the top left corner"
+        }
+      ],
+      "coord_space": "normalized_1000"
+    },
+    "latency_ms": 2128,
+    "input_tokens": 1485,
+    "output_tokens": 19,
+    "api_error": null
+  },
+  {
+    "_key": [
+      "grounding_with_anchors",
+      "gpt-4o",
+      "clock_pixel7",
+      "clock_date_subtitle",
+      0
+    ],
+    "experiment": "grounding_with_anchors",
+    "model": "gpt-4o",
+    "cu_trained": true,
+    "provider": "openai",
+    "scene": "clock_pixel7",
+    "target_id": "clock_date_subtitle",
+    "run": 0,
+    "predicted_bbox_px": [
+      360,
+      346,
+      720,
+      389
+    ],
+    "raw_response": "{\"box_2d\": [320, 150, 360, 300]}",
+    "parse_error": null,
+    "metrics": {
+      "parse_fail": false,
+      "center_error_px": 443.35313238997196,
+      "hit": false,
+      "iou": 0.0
+    },
+    "metadata": {
+      "target_description": "The small date text 'Sat, Apr 11' below the time",
+      "ground_truth_bbox_px": [
+        42,
+        542,
+        256,
+        610
+      ],
+      "size_category": "medium",
+      "area": 14552,
+      "anchors": [
+        {
+          "id": "clock_timer_tab",
+          "bbox_px": [
+            920,
+            807,
+            1362,
+            1017
+          ],
+          "description": "The 'Timer' tab in the bottom navigation bar (center)"
+        },
+        {
+          "id": "clock_more_options",
+          "bbox_px": [
+            2177,
+            95,
+            2282,
+            221
+          ],
+          "description": "The three-dot 'More options' menu in the top right corner"
+        },
+        {
+          "id": "clock_title_label",
+          "bbox_px": [
+            63,
+            115,
+            214,
+            200
+          ],
+          "description": "The 'Clock' app title in the top left corner"
+        }
+      ],
+      "coord_space": "normalized_1000"
+    },
+    "latency_ms": 1593,
+    "input_tokens": 1741,
+    "output_tokens": 18,
+    "api_error": null
+  },
+  {
+    "_key": [
+      "grounding_with_anchors",
+      "gpt-4o",
+      "home_pixel7",
+      "home_gmail",
+      0
+    ],
+    "experiment": "grounding_with_anchors",
+    "model": "gpt-4o",
+    "cu_trained": true,
+    "provider": "openai",
+    "scene": "home_pixel7",
+    "target_id": "home_gmail",
+    "run": 0,
+    "predicted_bbox_px": [
+      267,
+      1476,
+      476,
+      1747
+    ],
+    "raw_response": "{\"box_2d\": [615, 247, 728, 441]}",
+    "parse_error": null,
+    "metrics": {
+      "parse_fail": false,
+      "center_error_px": 43.01162633521314,
+      "hit": true,
+      "iou": 0.6606668418440338
+    },
+    "metadata": {
+      "target_description": "The 'Gmail' app icon (red and white envelope, second in the top row)",
+      "ground_truth_bbox_px": [
+        309,
+        1476,
+        519,
+        1748
+      ],
+      "size_category": "large",
+      "area": 57120,
+      "anchors": [
+        {
+          "id": "home_play_store",
+          "bbox_px": [
+            57,
+            1476,
+            267,
+            1748
+          ],
+          "description": "The 'Play Store' app icon (first icon in the top row, leftmost)"
+        },
+        {
+          "id": "home_google_lens",
+          "bbox_px": [
+            867,
+            2125,
+            993,
+            2219
+          ],
+          "description": "The colorful Google Lens camera icon (rightmost icon inside the search bar)"
+        },
+        {
+          "id": "home_date",
+          "bbox_px": [
+            99,
+            304,
+            1023,
+            370
+          ],
+          "description": "The 'Thu, Apr 16' date text near the top of the screen"
+        }
+      ],
+      "coord_space": "normalized_1000"
+    },
+    "latency_ms": 2516,
+    "input_tokens": 1756,
+    "output_tokens": 18,
+    "api_error": null
+  },
+  {
+    "_key": [
+      "grounding_with_anchors",
+      "gpt-4o",
+      "home_pixel7",
+      "home_youtube",
+      0
+    ],
+    "experiment": "grounding_with_anchors",
+    "model": "gpt-4o",
+    "cu_trained": true,
+    "provider": "openai",
+    "scene": "home_pixel7",
+    "target_id": "home_youtube",
+    "run": 0,
+    "predicted_bbox_px": [
+      692,
+      1476,
+      902,
+      1747
+    ],
+    "raw_response": "{\"box_2d\": [615, 641, 728, 835]}",
+    "parse_error": null,
+    "metrics": {
+      "parse_fail": false,
+      "center_error_px": 121.00413216084813,
+      "hit": false,
+      "iou": 0.26825416244953343
+    },
+    "metadata": {
+      "target_description": "The 'YouTube' app icon (red play button, rightmost in the top row)",
+      "ground_truth_bbox_px": [
+        813,
+        1476,
+        1023,
+        1748
+      ],
+      "size_category": "large",
+      "area": 57120,
+      "anchors": [
+        {
+          "id": "home_play_store",
+          "bbox_px": [
+            57,
+            1476,
+            267,
+            1748
+          ],
+          "description": "The 'Play Store' app icon (first icon in the top row, leftmost)"
+        },
+        {
+          "id": "home_google_lens",
+          "bbox_px": [
+            867,
+            2125,
+            993,
+            2219
+          ],
+          "description": "The colorful Google Lens camera icon (rightmost icon inside the search bar)"
+        },
+        {
+          "id": "home_date",
+          "bbox_px": [
+            99,
+            304,
+            1023,
+            370
+          ],
+          "description": "The 'Thu, Apr 16' date text near the top of the screen"
+        }
+      ],
+      "coord_space": "normalized_1000"
+    },
+    "latency_ms": 2619,
+    "input_tokens": 1756,
+    "output_tokens": 18,
+    "api_error": null
+  },
+  {
+    "_key": [
+      "grounding_with_anchors",
+      "gpt-4o",
+      "home_pixel7",
+      "home_phone",
+      0
+    ],
+    "experiment": "grounding_with_anchors",
+    "model": "gpt-4o",
+    "cu_trained": true,
+    "provider": "openai",
+    "scene": "home_pixel7",
+    "target_id": "home_phone",
+    "run": 0,
+    "predicted_bbox_px": [
+      57,
+      2124,
+      267,
+      2400
+    ],
+    "raw_response": "{\"box_2d\": [885, 53, 1000, 247]}",
+    "parse_error": null,
+    "metrics": {
+      "parse_fail": false,
+      "center_error_px": 311.0,
+      "hit": false,
+      "iou": 0.0
+    },
+    "metadata": {
+      "target_description": "The blue 'Phone' (dialer) icon in the bottom dock row (leftmost blue circle)",
+      "ground_truth_bbox_px": [
+        76,
+        1854,
+        249,
+        2049
+      ],
+      "size_category": "large",
+      "area": 33735,
+      "anchors": [
+        {
+          "id": "home_play_store",
+          "bbox_px": [
+            57,
+            1476,
+            267,
+            1748
+          ],
+          "description": "The 'Play Store' app icon (first icon in the top row, leftmost)"
+        },
+        {
+          "id": "home_google_lens",
+          "bbox_px": [
+            867,
+            2125,
+            993,
+            2219
+          ],
+          "description": "The colorful Google Lens camera icon (rightmost icon inside the search bar)"
+        },
+        {
+          "id": "home_date",
+          "bbox_px": [
+            99,
+            304,
+            1023,
+            370
+          ],
+          "description": "The 'Thu, Apr 16' date text near the top of the screen"
+        }
+      ],
+      "coord_space": "normalized_1000"
+    },
+    "latency_ms": 3842,
+    "input_tokens": 1758,
+    "output_tokens": 19,
+    "api_error": null
+  },
+  {
+    "_key": [
+      "grounding_with_anchors",
+      "gpt-4o",
+      "home_pixel7",
+      "home_chrome",
+      0
+    ],
+    "experiment": "grounding_with_anchors",
+    "model": "gpt-4o",
+    "cu_trained": true,
+    "provider": "openai",
+    "scene": "home_pixel7",
+    "target_id": "home_chrome",
+    "run": 0,
+    "predicted_bbox_px": [
+      573,
+      2124,
+      692,
+      2220
+    ],
+    "raw_response": "{\"box_2d\": [885, 531, 925, 641]}",
+    "parse_error": null,
+    "metrics": {
+      "parse_fail": false,
+      "center_error_px": 223.6000894454204,
+      "hit": false,
+      "iou": 0.0
+    },
+    "metadata": {
+      "target_description": "The colorful Chrome browser icon in the bottom dock (third icon from left)",
+      "ground_truth_bbox_px": [
+        580,
+        1854,
+        753,
+        2049
+      ],
+      "size_category": "large",
+      "area": 33735,
+      "anchors": [
+        {
+          "id": "home_play_store",
+          "bbox_px": [
+            57,
+            1476,
+            267,
+            1748
+          ],
+          "description": "The 'Play Store' app icon (first icon in the top row, leftmost)"
+        },
+        {
+          "id": "home_google_lens",
+          "bbox_px": [
+            867,
+            2125,
+            993,
+            2219
+          ],
+          "description": "The colorful Google Lens camera icon (rightmost icon inside the search bar)"
+        },
+        {
+          "id": "home_date",
+          "bbox_px": [
+            99,
+            304,
+            1023,
+            370
+          ],
+          "description": "The 'Thu, Apr 16' date text near the top of the screen"
+        }
+      ],
+      "coord_space": "normalized_1000"
+    },
+    "latency_ms": 4386,
+    "input_tokens": 1497,
+    "output_tokens": 19,
+    "api_error": null
+  },
+  {
+    "_key": [
+      "grounding_with_anchors",
+      "gpt-4o",
+      "home_pixel7",
+      "home_camera",
+      0
+    ],
+    "experiment": "grounding_with_anchors",
+    "model": "gpt-4o",
+    "cu_trained": true,
+    "provider": "openai",
+    "scene": "home_pixel7",
+    "target_id": "home_camera",
+    "run": 0,
+    "predicted_bbox_px": [
+      867,
+      2124,
+      993,
+      2220
+    ],
+    "raw_response": "{\"box_2d\": [885, 803, 925, 919]}",
+    "parse_error": null,
+    "metrics": {
+      "parse_fail": false,
+      "center_error_px": 221.32555207205516,
+      "hit": false,
+      "iou": 0.0
+    },
+    "metadata": {
+      "target_description": "The 'Camera' icon in the bottom dock (rightmost white circle with a black camera)",
+      "ground_truth_bbox_px": [
+        832,
+        1854,
+        1004,
+        2049
+      ],
+      "size_category": "large",
+      "area": 33540,
+      "anchors": [
+        {
+          "id": "home_play_store",
+          "bbox_px": [
+            57,
+            1476,
+            267,
+            1748
+          ],
+          "description": "The 'Play Store' app icon (first icon in the top row, leftmost)"
+        },
+        {
+          "id": "home_google_lens",
+          "bbox_px": [
+            867,
+            2125,
+            993,
+            2219
+          ],
+          "description": "The colorful Google Lens camera icon (rightmost icon inside the search bar)"
+        },
+        {
+          "id": "home_date",
+          "bbox_px": [
+            99,
+            304,
+            1023,
+            370
+          ],
+          "description": "The 'Thu, Apr 16' date text near the top of the screen"
+        }
+      ],
+      "coord_space": "normalized_1000"
+    },
+    "latency_ms": 3482,
+    "input_tokens": 1501,
+    "output_tokens": 19,
+    "api_error": null
+  },
+  {
+    "_key": [
+      "grounding_with_anchors",
+      "gpt-4o",
+      "home_pixel7",
+      "home_google_search_bar",
+      0
+    ],
+    "experiment": "grounding_with_anchors",
+    "model": "gpt-4o",
+    "cu_trained": true,
+    "provider": "openai",
+    "scene": "home_pixel7",
+    "target_id": "home_google_search_bar",
+    "run": 0,
+    "predicted_bbox_px": [
+      57,
+      2256,
+      1023,
+      2364
+    ],
+    "raw_response": "{\"box_2d\": [940, 53, 985, 947]}",
+    "parse_error": null,
+    "metrics": {
+      "parse_fail": false,
+      "center_error_px": 138.00362314084367,
+      "hit": false,
+      "iou": 0.0
+    },
+    "metadata": {
+      "target_description": "The white Google search bar at the very bottom of the screen",
+      "ground_truth_bbox_px": [
+        75,
+        2125,
+        1003,
+        2219
+      ],
+      "size_category": "large",
+      "area": 87326,
+      "anchors": [
+        {
+          "id": "home_play_store",
+          "bbox_px": [
+            57,
+            1476,
+            267,
+            1748
+          ],
+          "description": "The 'Play Store' app icon (first icon in the top row, leftmost)"
+        },
+        {
+          "id": "home_google_lens",
+          "bbox_px": [
+            867,
+            2125,
+            993,
+            2219
+          ],
+          "description": "The colorful Google Lens camera icon (rightmost icon inside the search bar)"
+        },
+        {
+          "id": "home_date",
+          "bbox_px": [
+            99,
+            304,
+            1023,
+            370
+          ],
+          "description": "The 'Thu, Apr 16' date text near the top of the screen"
+        }
+      ],
+      "coord_space": "normalized_1000"
+    },
+    "latency_ms": 2407,
+    "input_tokens": 1750,
+    "output_tokens": 18,
+    "api_error": null
+  },
+  {
+    "_key": [
+      "grounding_with_anchors",
+      "gpt-4o",
+      "home_pixel7",
+      "home_voice_search",
+      0
+    ],
+    "experiment": "grounding_with_anchors",
+    "model": "gpt-4o",
+    "cu_trained": true,
+    "provider": "openai",
+    "scene": "home_pixel7",
+    "target_id": "home_voice_search",
+    "run": 0,
+    "predicted_bbox_px": [
+      734,
+      2124,
+      842,
+      2220
+    ],
+    "raw_response": "{\"box_2d\": [885, 680, 925, 780]}",
+    "parse_error": null,
+    "metrics": {
+      "parse_fail": false,
+      "center_error_px": 16.0,
+      "hit": true,
+      "iou": 0.7465010221732977
+    },
+    "metadata": {
+      "target_description": "The microphone icon for voice search (inside the bottom search bar)",
+      "ground_truth_bbox_px": [
+        741,
+        2125,
+        867,
+        2219
+      ],
+      "size_category": "medium",
+      "area": 11844,
+      "anchors": [
+        {
+          "id": "home_play_store",
+          "bbox_px": [
+            57,
+            1476,
+            267,
+            1748
+          ],
+          "description": "The 'Play Store' app icon (first icon in the top row, leftmost)"
+        },
+        {
+          "id": "home_google_lens",
+          "bbox_px": [
+            867,
+            2125,
+            993,
+            2219
+          ],
+          "description": "The colorful Google Lens camera icon (rightmost icon inside the search bar)"
+        },
+        {
+          "id": "home_date",
+          "bbox_px": [
+            99,
+            304,
+            1023,
+            370
+          ],
+          "description": "The 'Thu, Apr 16' date text near the top of the screen"
+        }
+      ],
+      "coord_space": "normalized_1000"
+    },
+    "latency_ms": 3869,
+    "input_tokens": 1495,
+    "output_tokens": 19,
+    "api_error": null
+  },
+  {
+    "_key": [
+      "grounding_with_anchors",
+      "gpt-4o",
+      "youtube_pixel7",
+      "youtube_allow_button",
+      0
+    ],
+    "experiment": "grounding_with_anchors",
+    "model": "gpt-4o",
+    "cu_trained": true,
+    "provider": "openai",
+    "scene": "youtube_pixel7",
+    "target_id": "youtube_allow_button",
+    "run": 0,
+    "predicted_bbox_px": [
+      619,
+      512,
+      1901,
+      669
+    ],
+    "raw_response": "{\"box_2d\": [474, 258, 619, 792]}",
+    "parse_error": null,
+    "metrics": {
+      "parse_fail": false,
+      "center_error_px": 1.4142135623730951,
+      "hit": true,
+      "iou": 0.9865764853990274
+    },
+    "metadata": {
+      "target_description": "The 'Allow' button in the notifications permission dialog (top blue button)",
+      "ground_truth_bbox_px": [
+        619,
+        511,
+        1900,
+        668
+      ],
+      "size_category": "large",
+      "area": 201117,
+      "anchors": [
+        {
+          "id": "youtube_dont_allow_button",
+          "bbox_px": [
+            619,
+            668,
+            1900,
+            825
+          ],
+          "description": "The 'Don't allow' button in the notifications permission dialog (bottom blue button)"
+        },
+        {
+          "id": "youtube_signin_button",
+          "bbox_px": [
+            1920,
+            205,
+            2210,
+            305
+          ],
+          "description": "The 'Sign in' button/pill visible in the top-right corner (dimmed, behind dialog)"
+        },
+        {
+          "id": "youtube_logo",
+          "bbox_px": [
+            250,
+            205,
+            555,
+            305
+          ],
+          "description": "The 'YouTube' logo in the top-left corner (red play icon + YouTube text, dimmed behind the dialog)"
+        }
+      ],
+      "coord_space": "normalized_1000"
+    },
+    "latency_ms": 2297,
+    "input_tokens": 1510,
+    "output_tokens": 19,
+    "api_error": null
+  },
+  {
+    "_key": [
+      "grounding_with_anchors",
+      "gpt-4o",
+      "youtube_pixel7",
+      "youtube_bell_icon",
+      0
+    ],
+    "experiment": "grounding_with_anchors",
+    "model": "gpt-4o",
+    "cu_trained": true,
+    "provider": "openai",
+    "scene": "youtube_pixel7",
+    "target_id": "youtube_bell_icon",
+    "run": 0,
+    "predicted_bbox_px": [
+      1080,
+      108,
+      1320,
+      194
+    ],
+    "raw_response": "{\"box_2d\": [100, 450, 180, 550]}",
+    "parse_error": null,
+    "metrics": {
+      "parse_fail": false,
+      "center_error_px": 157.47063218263906,
+      "hit": false,
+      "iou": 0.0
+    },
+    "metadata": {
+      "target_description": "The blue notification bell icon at the top of the dialog",
+      "ground_truth_bbox_px": [
+        1206,
+        255,
+        1312,
+        339
+      ],
+      "size_category": "medium",
+      "area": 8904,
+      "anchors": [
+        {
+          "id": "youtube_dont_allow_button",
+          "bbox_px": [
+            619,
+            668,
+            1900,
+            825
+          ],
+          "description": "The 'Don't allow' button in the notifications permission dialog (bottom blue button)"
+        },
+        {
+          "id": "youtube_signin_button",
+          "bbox_px": [
+            1920,
+            205,
+            2210,
+            305
+          ],
+          "description": "The 'Sign in' button/pill visible in the top-right corner (dimmed, behind dialog)"
+        },
+        {
+          "id": "youtube_logo",
+          "bbox_px": [
+            250,
+            205,
+            555,
+            305
+          ],
+          "description": "The 'YouTube' logo in the top-left corner (red play icon + YouTube text, dimmed behind the dialog)"
+        }
+      ],
+      "coord_space": "normalized_1000"
+    },
+    "latency_ms": 1955,
+    "input_tokens": 1507,
+    "output_tokens": 19,
+    "api_error": null
+  },
+  {
+    "_key": [
+      "grounding_with_anchors",
+      "gpt-4o",
+      "youtube_pixel7",
+      "youtube_dialog_title",
+      0
+    ],
+    "experiment": "grounding_with_anchors",
+    "model": "gpt-4o",
+    "cu_trained": true,
+    "provider": "openai",
+    "scene": "youtube_pixel7",
+    "target_id": "youtube_dialog_title",
+    "run": 0,
+    "predicted_bbox_px": [
+      624,
+      389,
+      1776,
+      475
+    ],
+    "raw_response": "{\"box_2d\": [360, 260, 440, 740]}",
+    "parse_error": null,
+    "metrics": {
+      "parse_fail": false,
+      "center_error_px": 63.90618123468183,
+      "hit": true,
+      "iou": 0.5366680730704921
+    },
+    "metadata": {
+      "target_description": "The dialog title text 'Allow YouTube to send you notifications?'",
+      "ground_truth_bbox_px": [
+        650,
+        370,
+        1870,
+        450
+      ],
+      "size_category": "large",
+      "area": 97600,
+      "anchors": [
+        {
+          "id": "youtube_dont_allow_button",
+          "bbox_px": [
+            619,
+            668,
+            1900,
+            825
+          ],
+          "description": "The 'Don't allow' button in the notifications permission dialog (bottom blue button)"
+        },
+        {
+          "id": "youtube_signin_button",
+          "bbox_px": [
+            1920,
+            205,
+            2210,
+            305
+          ],
+          "description": "The 'Sign in' button/pill visible in the top-right corner (dimmed, behind dialog)"
+        },
+        {
+          "id": "youtube_logo",
+          "bbox_px": [
+            250,
+            205,
+            555,
+            305
+          ],
+          "description": "The 'YouTube' logo in the top-left corner (red play icon + YouTube text, dimmed behind the dialog)"
+        }
+      ],
+      "coord_space": "normalized_1000"
+    },
+    "latency_ms": 4394,
+    "input_tokens": 1764,
+    "output_tokens": 18,
+    "api_error": null
+  },
+  {
+    "_key": [
+      "grounding_with_anchors",
+      "gpt-4.1",
+      "clock_pixel7",
+      "clock_alarm_tab",
+      0
+    ],
+    "experiment": "grounding_with_anchors",
+    "model": "gpt-4.1",
+    "cu_trained": true,
+    "provider": "openai",
+    "scene": "clock_pixel7",
+    "target_id": "clock_alarm_tab",
+    "run": 0,
+    "predicted_bbox_px": [
+      480,
+      807,
+      919,
+      1017
+    ],
+    "raw_response": "{\"box_2d\": [747, 200, 942, 383]}",
+    "parse_error": null,
+    "metrics": {
+      "parse_fail": false,
+      "center_error_px": 442.0,
+      "hit": false,
+      "iou": 0.0
+    },
+    "metadata": {
+      "target_description": "The 'Alarm' tab in the bottom navigation bar (leftmost)",
+      "ground_truth_bbox_px": [
+        36,
+        807,
+        478,
+        1017
+      ],
+      "size_category": "large",
+      "area": 92820,
+      "anchors": [
+        {
+          "id": "clock_timer_tab",
+          "bbox_px": [
+            920,
+            807,
+            1362,
+            1017
+          ],
+          "description": "The 'Timer' tab in the bottom navigation bar (center)"
+        },
+        {
+          "id": "clock_more_options",
+          "bbox_px": [
+            2177,
+            95,
+            2282,
+            221
+          ],
+          "description": "The three-dot 'More options' menu in the top right corner"
+        },
+        {
+          "id": "clock_title_label",
+          "bbox_px": [
+            63,
+            115,
+            214,
+            200
+          ],
+          "description": "The 'Clock' app title in the top left corner"
+        }
+      ],
+      "coord_space": "normalized_1000"
+    },
+    "latency_ms": 1831,
+    "input_tokens": 1740,
+    "output_tokens": 19,
+    "api_error": null
+  },
+  {
+    "_key": [
+      "grounding_with_anchors",
+      "gpt-4.1",
+      "clock_pixel7",
+      "clock_bedtime_tab",
+      0
+    ],
+    "experiment": "grounding_with_anchors",
+    "model": "gpt-4.1",
+    "cu_trained": true,
+    "provider": "openai",
+    "scene": "clock_pixel7",
+    "target_id": "clock_bedtime_tab",
+    "run": 0,
+    "predicted_bbox_px": [
+      1817,
+      807,
+      2333,
+      1017
+    ],
+    "raw_response": "{\"box_2d\": [747, 757, 942, 972]}",
+    "parse_error": null,
+    "metrics": {
+      "parse_fail": false,
+      "center_error_px": 50.0,
+      "hit": true,
+      "iou": 0.8109640831758034
+    },
+    "metadata": {
+      "target_description": "The 'Bedtime' tab in the bottom navigation bar (rightmost)",
+      "ground_truth_bbox_px": [
+        1804,
+        807,
+        2246,
+        1017
+      ],
+      "size_category": "large",
+      "area": 92820,
+      "anchors": [
+        {
+          "id": "clock_timer_tab",
+          "bbox_px": [
+            920,
+            807,
+            1362,
+            1017
+          ],
+          "description": "The 'Timer' tab in the bottom navigation bar (center)"
+        },
+        {
+          "id": "clock_more_options",
+          "bbox_px": [
+            2177,
+            95,
+            2282,
+            221
+          ],
+          "description": "The three-dot 'More options' menu in the top right corner"
+        },
+        {
+          "id": "clock_title_label",
+          "bbox_px": [
+            63,
+            115,
+            214,
+            200
+          ],
+          "description": "The 'Clock' app title in the top left corner"
+        }
+      ],
+      "coord_space": "normalized_1000"
+    },
+    "latency_ms": 1242,
+    "input_tokens": 1741,
+    "output_tokens": 19,
+    "api_error": null
+  },
+  {
+    "_key": [
+      "grounding_with_anchors",
+      "gpt-4.1",
+      "clock_pixel7",
+      "clock_fab_add_city",
+      0
+    ],
+    "experiment": "grounding_with_anchors",
+    "model": "gpt-4.1",
+    "cu_trained": true,
+    "provider": "openai",
+    "scene": "clock_pixel7",
+    "target_id": "clock_fab_add_city",
+    "run": 0,
+    "predicted_bbox_px": [
+      2885,
+      359,
+      3216,
+      508
+    ],
+    "raw_response": "{\"box_2d\": [332, 1202, 470, 1340]}",
+    "parse_error": null,
+    "metrics": {
+      "parse_fail": false,
+      "center_error_px": 1057.8355259680022,
+      "hit": false,
+      "iou": 0.0
+    },
+    "metadata": {
+      "target_description": "The blue circular '+' floating action button (Add city)",
+      "ground_truth_bbox_px": [
+        1902,
+        429,
+        2091,
+        618
+      ],
+      "size_category": "large",
+      "area": 35721,
+      "anchors": [
+        {
+          "id": "clock_timer_tab",
+          "bbox_px": [
+            920,
+            807,
+            1362,
+            1017
+          ],
+          "description": "The 'Timer' tab in the bottom navigation bar (center)"
+        },
+        {
+          "id": "clock_more_options",
+          "bbox_px": [
+            2177,
+            95,
+            2282,
+            221
+          ],
+          "description": "The three-dot 'More options' menu in the top right corner"
+        },
+        {
+          "id": "clock_title_label",
+          "bbox_px": [
+            63,
+            115,
+            214,
+            200
+          ],
+          "description": "The 'Clock' app title in the top left corner"
+        }
+      ],
+      "coord_space": "normalized_1000"
+    },
+    "latency_ms": 1753,
+    "input_tokens": 1737,
+    "output_tokens": 21,
+    "api_error": null
+  },
+  {
+    "_key": [
+      "grounding_with_anchors",
+      "gpt-4.1",
+      "clock_pixel7",
+      "clock_time_display",
+      0
+    ],
+    "experiment": "grounding_with_anchors",
+    "model": "gpt-4.1",
+    "cu_trained": true,
+    "provider": "openai",
+    "scene": "clock_pixel7",
+    "target_id": "clock_time_display",
+    "run": 0,
+    "predicted_bbox_px": [
+      134,
+      315,
+      1188,
+      501
+    ],
+    "raw_response": "{\"box_2d\": [292, 56, 464, 495]}",
+    "parse_error": null,
+    "metrics": {
+      "parse_fail": false,
+      "center_error_px": 372.34392703520757,
+      "hit": false,
+      "iou": 0.2783111111111111
+    },
+    "metadata": {
+      "target_description": "The large '22:25' time display on the left side",
+      "ground_truth_bbox_px": [
+        41,
+        242,
+        538,
+        542
+      ],
+      "size_category": "large",
+      "area": 149100,
+      "anchors": [
+        {
+          "id": "clock_timer_tab",
+          "bbox_px": [
+            920,
+            807,
+            1362,
+            1017
+          ],
+          "description": "The 'Timer' tab in the bottom navigation bar (center)"
+        },
+        {
+          "id": "clock_more_options",
+          "bbox_px": [
+            2177,
+            95,
+            2282,
+            221
+          ],
+          "description": "The three-dot 'More options' menu in the top right corner"
+        },
+        {
+          "id": "clock_title_label",
+          "bbox_px": [
+            63,
+            115,
+            214,
+            200
+          ],
+          "description": "The 'Clock' app title in the top left corner"
+        }
+      ],
+      "coord_space": "normalized_1000"
+    },
+    "latency_ms": 1147,
+    "input_tokens": 1740,
+    "output_tokens": 19,
+    "api_error": null
+  },
+  {
+    "_key": [
+      "grounding_with_anchors",
+      "gpt-4.1",
+      "clock_pixel7",
+      "clock_date_subtitle",
+      0
+    ],
+    "experiment": "grounding_with_anchors",
+    "model": "gpt-4.1",
+    "cu_trained": true,
+    "provider": "openai",
+    "scene": "clock_pixel7",
+    "target_id": "clock_date_subtitle",
+    "run": 0,
+    "predicted_bbox_px": [
+      245,
+      454,
+      677,
+      505
+    ],
+    "raw_response": "{\"box_2d\": [420, 102, 468, 282]}",
+    "parse_error": null,
+    "metrics": {
+      "parse_fail": false,
+      "center_error_px": 326.73077602209435,
+      "hit": false,
+      "iou": 0.0
+    },
+    "metadata": {
+      "target_description": "The small date text 'Sat, Apr 11' below the time",
+      "ground_truth_bbox_px": [
+        42,
+        542,
+        256,
+        610
+      ],
+      "size_category": "medium",
+      "area": 14552,
+      "anchors": [
+        {
+          "id": "clock_timer_tab",
+          "bbox_px": [
+            920,
+            807,
+            1362,
+            1017
+          ],
+          "description": "The 'Timer' tab in the bottom navigation bar (center)"
+        },
+        {
+          "id": "clock_more_options",
+          "bbox_px": [
+            2177,
+            95,
+            2282,
+            221
+          ],
+          "description": "The three-dot 'More options' menu in the top right corner"
+        },
+        {
+          "id": "clock_title_label",
+          "bbox_px": [
+            63,
+            115,
+            214,
+            200
+          ],
+          "description": "The 'Clock' app title in the top left corner"
+        }
+      ],
+      "coord_space": "normalized_1000"
+    },
+    "latency_ms": 1340,
+    "input_tokens": 1741,
+    "output_tokens": 19,
+    "api_error": null
+  },
+  {
+    "_key": [
+      "grounding_with_anchors",
+      "gpt-4.1",
+      "home_pixel7",
+      "home_gmail",
+      0
+    ],
+    "experiment": "grounding_with_anchors",
+    "model": "gpt-4.1",
+    "cu_trained": true,
+    "provider": "openai",
+    "scene": "home_pixel7",
+    "target_id": "home_gmail",
+    "run": 0,
+    "predicted_bbox_px": [
+      292,
+      1483,
+      501,
+      1747
+    ],
+    "raw_response": "{\"box_2d\": [618, 270, 728, 464]}",
+    "parse_error": null,
+    "metrics": {
+      "parse_fail": false,
+      "center_error_px": 18.24828759089466,
+      "hit": true,
+      "iou": 0.8227502921698481
+    },
+    "metadata": {
+      "target_description": "The 'Gmail' app icon (red and white envelope, second in the top row)",
+      "ground_truth_bbox_px": [
+        309,
+        1476,
+        519,
+        1748
+      ],
+      "size_category": "large",
+      "area": 57120,
+      "anchors": [
+        {
+          "id": "home_play_store",
+          "bbox_px": [
+            57,
+            1476,
+            267,
+            1748
+          ],
+          "description": "The 'Play Store' app icon (first icon in the top row, leftmost)"
+        },
+        {
+          "id": "home_google_lens",
+          "bbox_px": [
+            867,
+            2125,
+            993,
+            2219
+          ],
+          "description": "The colorful Google Lens camera icon (rightmost icon inside the search bar)"
+        },
+        {
+          "id": "home_date",
+          "bbox_px": [
+            99,
+            304,
+            1023,
+            370
+          ],
+          "description": "The 'Thu, Apr 16' date text near the top of the screen"
+        }
+      ],
+      "coord_space": "normalized_1000"
+    },
+    "latency_ms": 4286,
+    "input_tokens": 1756,
+    "output_tokens": 19,
+    "api_error": null
+  },
+  {
+    "_key": [
+      "grounding_with_anchors",
+      "gpt-4.1",
+      "home_pixel7",
+      "home_youtube",
+      0
+    ],
+    "experiment": "grounding_with_anchors",
+    "model": "gpt-4.1",
+    "cu_trained": true,
+    "provider": "openai",
+    "scene": "home_pixel7",
+    "target_id": "home_youtube",
+    "run": 0,
+    "predicted_bbox_px": [
+      772,
+      1476,
+      982,
+      1747
+    ],
+    "raw_response": "{\"box_2d\": [615, 715, 728, 909]}",
+    "parse_error": null,
+    "metrics": {
+      "parse_fail": false,
+      "center_error_px": 41.012193308819754,
+      "hit": true,
+      "iou": 0.6712344828596972
+    },
+    "metadata": {
+      "target_description": "The 'YouTube' app icon (red play button, rightmost in the top row)",
+      "ground_truth_bbox_px": [
+        813,
+        1476,
+        1023,
+        1748
+      ],
+      "size_category": "large",
+      "area": 57120,
+      "anchors": [
+        {
+          "id": "home_play_store",
+          "bbox_px": [
+            57,
+            1476,
+            267,
+            1748
+          ],
+          "description": "The 'Play Store' app icon (first icon in the top row, leftmost)"
+        },
+        {
+          "id": "home_google_lens",
+          "bbox_px": [
+            867,
+            2125,
+            993,
+            2219
+          ],
+          "description": "The colorful Google Lens camera icon (rightmost icon inside the search bar)"
+        },
+        {
+          "id": "home_date",
+          "bbox_px": [
+            99,
+            304,
+            1023,
+            370
+          ],
+          "description": "The 'Thu, Apr 16' date text near the top of the screen"
+        }
+      ],
+      "coord_space": "normalized_1000"
+    },
+    "latency_ms": 4751,
+    "input_tokens": 1756,
+    "output_tokens": 19,
+    "api_error": null
+  },
+  {
+    "_key": [
+      "grounding_with_anchors",
+      "gpt-4.1",
+      "home_pixel7",
+      "home_phone",
+      0
+    ],
+    "experiment": "grounding_with_anchors",
+    "model": "gpt-4.1",
+    "cu_trained": true,
+    "provider": "openai",
+    "scene": "home_pixel7",
+    "target_id": "home_phone",
+    "run": 0,
+    "predicted_bbox_px": [
+      57,
+      2124,
+      198,
+      2364
+    ],
+    "raw_response": "{\"box_2d\": [885, 53, 985, 183]}",
+    "parse_error": null,
+    "metrics": {
+      "parse_fail": false,
+      "center_error_px": 295.0830391601659,
+      "hit": false,
+      "iou": 0.0
+    },
+    "metadata": {
+      "target_description": "The blue 'Phone' (dialer) icon in the bottom dock row (leftmost blue circle)",
+      "ground_truth_bbox_px": [
+        76,
+        1854,
+        249,
+        2049
+      ],
+      "size_category": "large",
+      "area": 33735,
+      "anchors": [
+        {
+          "id": "home_play_store",
+          "bbox_px": [
+            57,
+            1476,
+            267,
+            1748
+          ],
+          "description": "The 'Play Store' app icon (first icon in the top row, leftmost)"
+        },
+        {
+          "id": "home_google_lens",
+          "bbox_px": [
+            867,
+            2125,
+            993,
+            2219
+          ],
+          "description": "The colorful Google Lens camera icon (rightmost icon inside the search bar)"
+        },
+        {
+          "id": "home_date",
+          "bbox_px": [
+            99,
+            304,
+            1023,
+            370
+          ],
+          "description": "The 'Thu, Apr 16' date text near the top of the screen"
+        }
+      ],
+      "coord_space": "normalized_1000"
+    },
+    "latency_ms": 3594,
+    "input_tokens": 1758,
+    "output_tokens": 19,
+    "api_error": null
+  },
+  {
+    "_key": [
+      "grounding_with_anchors",
+      "gpt-4.1",
+      "home_pixel7",
+      "home_chrome",
+      0
+    ],
+    "experiment": "grounding_with_anchors",
+    "model": "gpt-4.1",
+    "cu_trained": true,
+    "provider": "openai",
+    "scene": "home_pixel7",
+    "target_id": "home_chrome",
+    "run": 0,
+    "predicted_bbox_px": [
+      569,
+      2885,
+      699,
+      3173
+    ],
+    "raw_response": "{\"box_2d\": [1202, 527, 1322, 647]}",
+    "parse_error": null,
+    "metrics": {
+      "parse_fail": false,
+      "center_error_px": 1078.4748490345057,
+      "hit": false,
+      "iou": 0.0
+    },
+    "metadata": {
+      "target_description": "The colorful Chrome browser icon in the bottom dock (third icon from left)",
+      "ground_truth_bbox_px": [
+        580,
+        1854,
+        753,
+        2049
+      ],
+      "size_category": "large",
+      "area": 33735,
+      "anchors": [
+        {
+          "id": "home_play_store",
+          "bbox_px": [
+            57,
+            1476,
+            267,
+            1748
+          ],
+          "description": "The 'Play Store' app icon (first icon in the top row, leftmost)"
+        },
+        {
+          "id": "home_google_lens",
+          "bbox_px": [
+            867,
+            2125,
+            993,
+            2219
+          ],
+          "description": "The colorful Google Lens camera icon (rightmost icon inside the search bar)"
+        },
+        {
+          "id": "home_date",
+          "bbox_px": [
+            99,
+            304,
+            1023,
+            370
+          ],
+          "description": "The 'Thu, Apr 16' date text near the top of the screen"
+        }
+      ],
+      "coord_space": "normalized_1000"
+    },
+    "latency_ms": 3281,
+    "input_tokens": 1752,
+    "output_tokens": 21,
+    "api_error": null
+  },
+  {
+    "_key": [
+      "grounding_with_anchors",
+      "gpt-4.1",
+      "home_pixel7",
+      "home_camera",
+      0
+    ],
+    "experiment": "grounding_with_anchors",
+    "model": "gpt-4.1",
+    "cu_trained": true,
+    "provider": "openai",
+    "scene": "home_pixel7",
+    "target_id": "home_camera",
+    "run": 0,
+    "predicted_bbox_px": [
+      742,
+      2124,
+      867,
+      2268
+    ],
+    "raw_response": "{\"box_2d\": [885, 687, 945, 803]}",
+    "parse_error": null,
+    "metrics": {
+      "parse_fail": false,
+      "center_error_px": 270.22398117117586,
+      "hit": false,
+      "iou": 0.0
+    },
+    "metadata": {
+      "target_description": "The 'Camera' icon in the bottom dock (rightmost white circle with a black camera)",
+      "ground_truth_bbox_px": [
+        832,
+        1854,
+        1004,
+        2049
+      ],
+      "size_category": "large",
+      "area": 33540,
+      "anchors": [
+        {
+          "id": "home_play_store",
+          "bbox_px": [
+            57,
+            1476,
+            267,
+            1748
+          ],
+          "description": "The 'Play Store' app icon (first icon in the top row, leftmost)"
+        },
+        {
+          "id": "home_google_lens",
+          "bbox_px": [
+            867,
+            2125,
+            993,
+            2219
+          ],
+          "description": "The colorful Google Lens camera icon (rightmost icon inside the search bar)"
+        },
+        {
+          "id": "home_date",
+          "bbox_px": [
+            99,
+            304,
+            1023,
+            370
+          ],
+          "description": "The 'Thu, Apr 16' date text near the top of the screen"
+        }
+      ],
+      "coord_space": "normalized_1000"
+    },
+    "latency_ms": 3429,
+    "input_tokens": 1756,
+    "output_tokens": 19,
+    "api_error": null
+  },
+  {
+    "_key": [
+      "grounding_with_anchors",
+      "gpt-4.1",
+      "home_pixel7",
+      "home_google_search_bar",
+      0
+    ],
+    "experiment": "grounding_with_anchors",
+    "model": "gpt-4.1",
+    "cu_trained": true,
+    "provider": "openai",
+    "scene": "home_pixel7",
+    "target_id": "home_google_search_bar",
+    "run": 0,
+    "predicted_bbox_px": [
+      52,
+      2076,
+      1042,
+      2280
+    ],
+    "raw_response": "{\"box_2d\": [865, 48, 950, 965]}",
+    "parse_error": null,
+    "metrics": {
+      "parse_fail": false,
+      "center_error_px": 10.0,
+      "hit": true,
+      "iou": 0.4319271142800555
+    },
+    "metadata": {
+      "target_description": "The white Google search bar at the very bottom of the screen",
+      "ground_truth_bbox_px": [
+        75,
+        2125,
+        1003,
+        2219
+      ],
+      "size_category": "large",
+      "area": 87326,
+      "anchors": [
+        {
+          "id": "home_play_store",
+          "bbox_px": [
+            57,
+            1476,
+            267,
+            1748
+          ],
+          "description": "The 'Play Store' app icon (first icon in the top row, leftmost)"
+        },
+        {
+          "id": "home_google_lens",
+          "bbox_px": [
+            867,
+            2125,
+            993,
+            2219
+          ],
+          "description": "The colorful Google Lens camera icon (rightmost icon inside the search bar)"
+        },
+        {
+          "id": "home_date",
+          "bbox_px": [
+            99,
+            304,
+            1023,
+            370
+          ],
+          "description": "The 'Thu, Apr 16' date text near the top of the screen"
+        }
+      ],
+      "coord_space": "normalized_1000"
+    },
+    "latency_ms": 3597,
+    "input_tokens": 1750,
+    "output_tokens": 19,
+    "api_error": null
+  },
+  {
+    "_key": [
+      "grounding_with_anchors",
+      "gpt-4.1",
+      "home_pixel7",
+      "home_voice_search",
+      0
+    ],
+    "experiment": "grounding_with_anchors",
+    "model": "gpt-4.1",
+    "cu_trained": true,
+    "provider": "openai",
+    "scene": "home_pixel7",
+    "target_id": "home_voice_search",
+    "run": 0,
+    "predicted_bbox_px": [
+      757,
+      2117,
+      826,
+      2232
+    ],
+    "raw_response": "{\"box_2d\": [882, 701, 930, 765]}",
+    "parse_error": null,
+    "metrics": {
+      "parse_fail": false,
+      "center_error_px": 13.152946437965905,
+      "hit": true,
+      "iou": 0.4879259760776348
+    },
+    "metadata": {
+      "target_description": "The microphone icon for voice search (inside the bottom search bar)",
+      "ground_truth_bbox_px": [
+        741,
+        2125,
+        867,
+        2219
+      ],
+      "size_category": "medium",
+      "area": 11844,
+      "anchors": [
+        {
+          "id": "home_play_store",
+          "bbox_px": [
+            57,
+            1476,
+            267,
+            1748
+          ],
+          "description": "The 'Play Store' app icon (first icon in the top row, leftmost)"
+        },
+        {
+          "id": "home_google_lens",
+          "bbox_px": [
+            867,
+            2125,
+            993,
+            2219
+          ],
+          "description": "The colorful Google Lens camera icon (rightmost icon inside the search bar)"
+        },
+        {
+          "id": "home_date",
+          "bbox_px": [
+            99,
+            304,
+            1023,
+            370
+          ],
+          "description": "The 'Thu, Apr 16' date text near the top of the screen"
+        }
+      ],
+      "coord_space": "normalized_1000"
+    },
+    "latency_ms": 4713,
+    "input_tokens": 1750,
+    "output_tokens": 19,
+    "api_error": null
+  },
+  {
+    "_key": [
+      "grounding_with_anchors",
+      "gpt-4.1",
+      "youtube_pixel7",
+      "youtube_allow_button",
+      0
+    ],
+    "experiment": "grounding_with_anchors",
+    "model": "gpt-4.1",
+    "cu_trained": true,
+    "provider": "openai",
+    "scene": "youtube_pixel7",
+    "target_id": "youtube_allow_button",
+    "run": 0,
+    "predicted_bbox_px": [
+      619,
+      516,
+      1901,
+      669
+    ],
+    "raw_response": "{\"box_2d\": [478, 258, 619, 792]}",
+    "parse_error": null,
+    "metrics": {
+      "parse_fail": false,
+      "center_error_px": 3.1622776601683795,
+      "hit": true,
+      "iou": 0.9612986358991069
+    },
+    "metadata": {
+      "target_description": "The 'Allow' button in the notifications permission dialog (top blue button)",
+      "ground_truth_bbox_px": [
+        619,
+        511,
+        1900,
+        668
+      ],
+      "size_category": "large",
+      "area": 201117,
+      "anchors": [
+        {
+          "id": "youtube_dont_allow_button",
+          "bbox_px": [
+            619,
+            668,
+            1900,
+            825
+          ],
+          "description": "The 'Don't allow' button in the notifications permission dialog (bottom blue button)"
+        },
+        {
+          "id": "youtube_signin_button",
+          "bbox_px": [
+            1920,
+            205,
+            2210,
+            305
+          ],
+          "description": "The 'Sign in' button/pill visible in the top-right corner (dimmed, behind dialog)"
+        },
+        {
+          "id": "youtube_logo",
+          "bbox_px": [
+            250,
+            205,
+            555,
+            305
+          ],
+          "description": "The 'YouTube' logo in the top-left corner (red play icon + YouTube text, dimmed behind the dialog)"
+        }
+      ],
+      "coord_space": "normalized_1000"
+    },
+    "latency_ms": 1209,
+    "input_tokens": 1765,
+    "output_tokens": 19,
+    "api_error": null
+  },
+  {
+    "_key": [
+      "grounding_with_anchors",
+      "gpt-4.1",
+      "youtube_pixel7",
+      "youtube_bell_icon",
+      0
+    ],
+    "experiment": "grounding_with_anchors",
+    "model": "gpt-4.1",
+    "cu_trained": true,
+    "provider": "openai",
+    "scene": "youtube_pixel7",
+    "target_id": "youtube_bell_icon",
+    "run": 0,
+    "predicted_bbox_px": [
+      1884,
+      119,
+      2004,
+      184
+    ],
+    "raw_response": "{\"box_2d\": [110, 785, 170, 835]}",
+    "parse_error": null,
+    "metrics": {
+      "parse_fail": false,
+      "center_error_px": 700.3863219680978,
+      "hit": false,
+      "iou": 0.0
+    },
+    "metadata": {
+      "target_description": "The blue notification bell icon at the top of the dialog",
+      "ground_truth_bbox_px": [
+        1206,
+        255,
+        1312,
+        339
+      ],
+      "size_category": "medium",
+      "area": 8904,
+      "anchors": [
+        {
+          "id": "youtube_dont_allow_button",
+          "bbox_px": [
+            619,
+            668,
+            1900,
+            825
+          ],
+          "description": "The 'Don't allow' button in the notifications permission dialog (bottom blue button)"
+        },
+        {
+          "id": "youtube_signin_button",
+          "bbox_px": [
+            1920,
+            205,
+            2210,
+            305
+          ],
+          "description": "The 'Sign in' button/pill visible in the top-right corner (dimmed, behind dialog)"
+        },
+        {
+          "id": "youtube_logo",
+          "bbox_px": [
+            250,
+            205,
+            555,
+            305
+          ],
+          "description": "The 'YouTube' logo in the top-left corner (red play icon + YouTube text, dimmed behind the dialog)"
+        }
+      ],
+      "coord_space": "normalized_1000"
+    },
+    "latency_ms": 1471,
+    "input_tokens": 1762,
+    "output_tokens": 19,
+    "api_error": null
+  },
+  {
+    "_key": [
+      "grounding_with_anchors",
+      "gpt-4.1",
+      "youtube_pixel7",
+      "youtube_dialog_title",
+      0
+    ],
+    "experiment": "grounding_with_anchors",
+    "model": "gpt-4.1",
+    "cu_trained": true,
+    "provider": "openai",
+    "scene": "youtube_pixel7",
+    "target_id": "youtube_dialog_title",
+    "run": 0,
+    "predicted_bbox_px": [
+      936,
+      359,
+      2662,
+      438
+    ],
+    "raw_response": "{\"box_2d\": [332, 390, 406, 1109]}",
+    "parse_error": null,
+    "metrics": {
+      "parse_fail": false,
+      "center_error_px": 539.1335641564157,
+      "hit": true,
+      "iou": 0.37263115898663474
+    },
+    "metadata": {
+      "target_description": "The dialog title text 'Allow YouTube to send you notifications?'",
+      "ground_truth_bbox_px": [
+        650,
+        370,
+        1870,
+        450
+      ],
+      "size_category": "large",
+      "area": 97600,
+      "anchors": [
+        {
+          "id": "youtube_dont_allow_button",
+          "bbox_px": [
+            619,
+            668,
+            1900,
+            825
+          ],
+          "description": "The 'Don't allow' button in the notifications permission dialog (bottom blue button)"
+        },
+        {
+          "id": "youtube_signin_button",
+          "bbox_px": [
+            1920,
+            205,
+            2210,
+            305
+          ],
+          "description": "The 'Sign in' button/pill visible in the top-right corner (dimmed, behind dialog)"
+        },
+        {
+          "id": "youtube_logo",
+          "bbox_px": [
+            250,
+            205,
+            555,
+            305
+          ],
+          "description": "The 'YouTube' logo in the top-left corner (red play icon + YouTube text, dimmed behind the dialog)"
+        }
+      ],
+      "coord_space": "normalized_1000"
+    },
+    "latency_ms": 1246,
+    "input_tokens": 1764,
+    "output_tokens": 20,
+    "api_error": null
+  },
+  {
+    "_key": [
+      "grounding_with_anchors",
+      "gemini-2.5-pro",
+      "clock_pixel7",
+      "clock_alarm_tab",
+      0
+    ],
+    "experiment": "grounding_with_anchors",
+    "model": "gemini-2.5-pro",
+    "cu_trained": false,
+    "provider": "google",
+    "scene": "clock_pixel7",
+    "target_id": "clock_alarm_tab",
+    "run": 0,
+    "predicted_bbox_px": [
+      36,
+      807,
+      480,
+      1017
+    ],
+    "raw_response": "```json\n{\"box_2d\": [747, 15, 942, 200]}\n```",
+    "parse_error": null,
+    "metrics": {
+      "parse_fail": false,
+      "center_error_px": 1.0,
+      "hit": true,
+      "iou": 0.9954954954954955
+    },
+    "metadata": {
+      "target_description": "The 'Alarm' tab in the bottom navigation bar (leftmost)",
+      "ground_truth_bbox_px": [
+        36,
+        807,
+        478,
+        1017
+      ],
+      "size_category": "large",
+      "area": 92820,
+      "anchors": [
+        {
+          "id": "clock_timer_tab",
+          "bbox_px": [
+            920,
+            807,
+            1362,
+            1017
+          ],
+          "description": "The 'Timer' tab in the bottom navigation bar (center)"
+        },
+        {
+          "id": "clock_more_options",
+          "bbox_px": [
+            2177,
+            95,
+            2282,
+            221
+          ],
+          "description": "The three-dot 'More options' menu in the top right corner"
+        },
+        {
+          "id": "clock_title_label",
+          "bbox_px": [
+            63,
+            115,
+            214,
+            200
+          ],
+          "description": "The 'Clock' app title in the top left corner"
+        }
+      ],
+      "coord_space": "normalized_1000"
+    },
+    "latency_ms": 20551,
+    "input_tokens": 2662,
+    "output_tokens": 1993,
+    "api_error": null
+  },
+  {
+    "_key": [
+      "grounding_with_anchors",
+      "gemini-2.5-pro",
+      "clock_pixel7",
+      "clock_bedtime_tab",
+      0
+    ],
+    "experiment": "grounding_with_anchors",
+    "model": "gemini-2.5-pro",
+    "cu_trained": false,
+    "provider": "google",
+    "scene": "clock_pixel7",
+    "target_id": "clock_bedtime_tab",
+    "run": 0,
+    "predicted_bbox_px": [
+      1853,
+      807,
+      2292,
+      1017
+    ],
+    "raw_response": "```json\n{\"box_2d\": [747, 772, 942, 955]}\n```",
+    "parse_error": null,
+    "metrics": {
+      "parse_fail": false,
+      "center_error_px": 47.0,
+      "hit": true,
+      "iou": 0.805327868852459
+    },
+    "metadata": {
+      "target_description": "The 'Bedtime' tab in the bottom navigation bar (rightmost)",
+      "ground_truth_bbox_px": [
+        1804,
+        807,
+        2246,
+        1017
+      ],
+      "size_category": "large",
+      "area": 92820,
+      "anchors": [
+        {
+          "id": "clock_timer_tab",
+          "bbox_px": [
+            920,
+            807,
+            1362,
+            1017
+          ],
+          "description": "The 'Timer' tab in the bottom navigation bar (center)"
+        },
+        {
+          "id": "clock_more_options",
+          "bbox_px": [
+            2177,
+            95,
+            2282,
+            221
+          ],
+          "description": "The three-dot 'More options' menu in the top right corner"
+        },
+        {
+          "id": "clock_title_label",
+          "bbox_px": [
+            63,
+            115,
+            214,
+            200
+          ],
+          "description": "The 'Clock' app title in the top left corner"
+        }
+      ],
+      "coord_space": "normalized_1000"
+    },
+    "latency_ms": 19326,
+    "input_tokens": 2663,
+    "output_tokens": 1993,
+    "api_error": null
+  },
+  {
+    "_key": [
+      "grounding_with_anchors",
+      "gemini-2.5-pro",
+      "clock_pixel7",
+      "clock_fab_add_city",
+      0
+    ],
+    "experiment": "grounding_with_anchors",
+    "model": "gemini-2.5-pro",
+    "cu_trained": false,
+    "provider": "google",
+    "scene": "clock_pixel7",
+    "target_id": "clock_fab_add_city",
+    "run": 0,
+    "predicted_bbox_px": [
+      1901,
+      430,
+      2275,
+      598
+    ],
+    "raw_response": "{\"box\": [398, 792, 554, 948]}",
+    "parse_error": null,
+    "metrics": {
+      "parse_fail": false,
+      "center_error_px": 92.43916918709297,
+      "hit": true,
+      "iou": 0.4753222257151839
+    },
+    "metadata": {
+      "target_description": "The blue circular '+' floating action button (Add city)",
+      "ground_truth_bbox_px": [
+        1902,
+        429,
+        2091,
+        618
+      ],
+      "size_category": "large",
+      "area": 35721,
+      "anchors": [
+        {
+          "id": "clock_timer_tab",
+          "bbox_px": [
+            920,
+            807,
+            1362,
+            1017
+          ],
+          "description": "The 'Timer' tab in the bottom navigation bar (center)"
+        },
+        {
+          "id": "clock_more_options",
+          "bbox_px": [
+            2177,
+            95,
+            2282,
+            221
+          ],
+          "description": "The three-dot 'More options' menu in the top right corner"
+        },
+        {
+          "id": "clock_title_label",
+          "bbox_px": [
+            63,
+            115,
+            214,
+            200
+          ],
+          "description": "The 'Clock' app title in the top left corner"
+        }
+      ],
+      "coord_space": "normalized_1000"
+    },
+    "latency_ms": 13777,
+    "input_tokens": 2659,
+    "output_tokens": 1289,
+    "api_error": null
+  },
+  {
+    "_key": [
+      "grounding_with_anchors",
+      "gemini-2.5-pro",
+      "clock_pixel7",
+      "clock_time_display",
+      0
+    ],
+    "experiment": "grounding_with_anchors",
+    "model": "gemini-2.5-pro",
+    "cu_trained": false,
+    "provider": "google",
+    "scene": "clock_pixel7",
+    "target_id": "clock_time_display",
+    "run": 0,
+    "predicted_bbox_px": [
+      60,
+      330,
+      1106,
+      460
+    ],
+    "raw_response": "{\"box\": [306, 25, 426, 461]}",
+    "parse_error": null,
+    "metrics": {
+      "parse_fail": false,
+      "center_error_px": 294.0153057240388,
+      "hit": false,
+      "iou": 0.27872970305911904
+    },
+    "metadata": {
+      "target_description": "The large '22:25' time display on the left side",
+      "ground_truth_bbox_px": [
+        41,
+        242,
+        538,
+        542
+      ],
+      "size_category": "large",
+      "area": 149100,
+      "anchors": [
+        {
+          "id": "clock_timer_tab",
+          "bbox_px": [
+            920,
+            807,
+            1362,
+            1017
+          ],
+          "description": "The 'Timer' tab in the bottom navigation bar (center)"
+        },
+        {
+          "id": "clock_more_options",
+          "bbox_px": [
+            2177,
+            95,
+            2282,
+            221
+          ],
+          "description": "The three-dot 'More options' menu in the top right corner"
+        },
+        {
+          "id": "clock_title_label",
+          "bbox_px": [
+            63,
+            115,
+            214,
+            200
+          ],
+          "description": "The 'Clock' app title in the top left corner"
+        }
+      ],
+      "coord_space": "normalized_1000"
+    },
+    "latency_ms": 9516,
+    "input_tokens": 2664,
+    "output_tokens": 905,
+    "api_error": null
+  },
+  {
+    "_key": [
+      "grounding_with_anchors",
+      "gemini-2.5-pro",
+      "clock_pixel7",
+      "clock_date_subtitle",
+      0
+    ],
+    "experiment": "grounding_with_anchors",
+    "model": "gemini-2.5-pro",
+    "cu_trained": false,
+    "provider": "google",
+    "scene": "clock_pixel7",
+    "target_id": "clock_date_subtitle",
+    "run": 0,
+    "predicted_bbox_px": [
+      72,
+      503,
+      679,
+      536
+    ],
+    "raw_response": "{\"box\": [466, 30, 496, 283]}",
+    "parse_error": null,
+    "metrics": {
+      "parse_fail": false,
+      "center_error_px": 233.0772404161333,
+      "hit": false,
+      "iou": 0.0
+    },
+    "metadata": {
+      "target_description": "The small date text 'Sat, Apr 11' below the time",
+      "ground_truth_bbox_px": [
+        42,
+        542,
+        256,
+        610
+      ],
+      "size_category": "medium",
+      "area": 14552,
+      "anchors": [
+        {
+          "id": "clock_timer_tab",
+          "bbox_px": [
+            920,
+            807,
+            1362,
+            1017
+          ],
+          "description": "The 'Timer' tab in the bottom navigation bar (center)"
+        },
+        {
+          "id": "clock_more_options",
+          "bbox_px": [
+            2177,
+            95,
+            2282,
+            221
+          ],
+          "description": "The three-dot 'More options' menu in the top right corner"
+        },
+        {
+          "id": "clock_title_label",
+          "bbox_px": [
+            63,
+            115,
+            214,
+            200
+          ],
+          "description": "The 'Clock' app title in the top left corner"
+        }
+      ],
+      "coord_space": "normalized_1000"
+    },
+    "latency_ms": 15863,
+    "input_tokens": 2664,
+    "output_tokens": 1485,
+    "api_error": null
+  },
+  {
+    "_key": [
+      "grounding_with_anchors",
+      "gemini-2.5-pro",
+      "home_pixel7",
+      "home_gmail",
+      0
+    ],
+    "experiment": "grounding_with_anchors",
+    "model": "gemini-2.5-pro",
+    "cu_trained": false,
+    "provider": "google",
+    "scene": "home_pixel7",
+    "target_id": "home_gmail",
+    "run": 0,
+    "predicted_bbox_px": [
+      321,
+      1476,
+      530,
+      1747
+    ],
+    "raw_response": "{\"box_2d\": [615, 297, 728, 491]}",
+    "parse_error": null,
+    "metrics": {
+      "parse_fail": false,
+      "center_error_px": 11.045361017187261,
+      "hit": true,
+      "iou": 0.892797124839853
+    },
+    "metadata": {
+      "target_description": "The 'Gmail' app icon (red and white envelope, second in the top row)",
+      "ground_truth_bbox_px": [
+        309,
+        1476,
+        519,
+        1748
+      ],
+      "size_category": "large",
+      "area": 57120,
+      "anchors": [
+        {
+          "id": "home_play_store",
+          "bbox_px": [
+            57,
+            1476,
+            267,
+            1748
+          ],
+          "description": "The 'Play Store' app icon (first icon in the top row, leftmost)"
+        },
+        {
+          "id": "home_google_lens",
+          "bbox_px": [
+            867,
+            2125,
+            993,
+            2219
+          ],
+          "description": "The colorful Google Lens camera icon (rightmost icon inside the search bar)"
+        },
+        {
+          "id": "home_date",
+          "bbox_px": [
+            99,
+            304,
+            1023,
+            370
+          ],
+          "description": "The 'Thu, Apr 16' date text near the top of the screen"
+        }
+      ],
+      "coord_space": "normalized_1000"
+    },
+    "latency_ms": 20628,
+    "input_tokens": 2677,
+    "output_tokens": 1989,
+    "api_error": null
+  },
+  {
+    "_key": [
+      "grounding_with_anchors",
+      "gemini-2.5-pro",
+      "home_pixel7",
+      "home_youtube",
+      0
+    ],
+    "experiment": "grounding_with_anchors",
+    "model": "gemini-2.5-pro",
+    "cu_trained": false,
+    "provider": "google",
+    "scene": "home_pixel7",
+    "target_id": "home_youtube",
+    "run": 0,
+    "predicted_bbox_px": [
+      813,
+      1476,
+      996,
+      1747
+    ],
+    "raw_response": "{\"box\": [615, 753, 728, 922]}",
+    "parse_error": null,
+    "metrics": {
+      "parse_fail": false,
+      "center_error_px": 14.035668847618199,
+      "hit": true,
+      "iou": 0.8682247899159664
+    },
+    "metadata": {
+      "target_description": "The 'YouTube' app icon (red play button, rightmost in the top row)",
+      "ground_truth_bbox_px": [
+        813,
+        1476,
+        1023,
+        1748
+      ],
+      "size_category": "large",
+      "area": 57120,
+      "anchors": [
+        {
+          "id": "home_play_store",
+          "bbox_px": [
+            57,
+            1476,
+            267,
+            1748
+          ],
+          "description": "The 'Play Store' app icon (first icon in the top row, leftmost)"
+        },
+        {
+          "id": "home_google_lens",
+          "bbox_px": [
+            867,
+            2125,
+            993,
+            2219
+          ],
+          "description": "The colorful Google Lens camera icon (rightmost icon inside the search bar)"
+        },
+        {
+          "id": "home_date",
+          "bbox_px": [
+            99,
+            304,
+            1023,
+            370
+          ],
+          "description": "The 'Thu, Apr 16' date text near the top of the screen"
+        }
+      ],
+      "coord_space": "normalized_1000"
+    },
+    "latency_ms": 21580,
+    "input_tokens": 2677,
+    "output_tokens": 1991,
+    "api_error": null
+  },
+  {
+    "_key": [
+      "grounding_with_anchors",
+      "gemini-2.5-pro",
+      "home_pixel7",
+      "home_phone",
+      0
+    ],
+    "experiment": "grounding_with_anchors",
+    "model": "gemini-2.5-pro",
+    "cu_trained": false,
+    "provider": "google",
+    "scene": "home_pixel7",
+    "target_id": "home_phone",
+    "run": 0,
+    "predicted_bbox_px": [
+      92,
+      1819,
+      241,
+      2035
+    ],
+    "raw_response": "{\"box_2d\": [758, 85, 848, 223]}",
+    "parse_error": null,
+    "metrics": {
+      "parse_fail": false,
+      "center_error_px": 24.331050121192877,
+      "hit": true,
+      "iou": 0.692400513478819
+    },
+    "metadata": {
+      "target_description": "The blue 'Phone' (dialer) icon in the bottom dock row (leftmost blue circle)",
+      "ground_truth_bbox_px": [
+        76,
+        1854,
+        249,
+        2049
+      ],
+      "size_category": "large",
+      "area": 33735,
+      "anchors": [
+        {
+          "id": "home_play_store",
+          "bbox_px": [
+            57,
+            1476,
+            267,
+            1748
+          ],
+          "description": "The 'Play Store' app icon (first icon in the top row, leftmost)"
+        },
+        {
+          "id": "home_google_lens",
+          "bbox_px": [
+            867,
+            2125,
+            993,
+            2219
+          ],
+          "description": "The colorful Google Lens camera icon (rightmost icon inside the search bar)"
+        },
+        {
+          "id": "home_date",
+          "bbox_px": [
+            99,
+            304,
+            1023,
+            370
+          ],
+          "description": "The 'Thu, Apr 16' date text near the top of the screen"
+        }
+      ],
+      "coord_space": "normalized_1000"
+    },
+    "latency_ms": 20644,
+    "input_tokens": 2680,
+    "output_tokens": 1987,
+    "api_error": null
+  },
+  {
+    "_key": [
+      "grounding_with_anchors",
+      "gemini-2.5-pro",
+      "home_pixel7",
+      "home_chrome",
+      0
+    ],
+    "experiment": "grounding_with_anchors",
+    "model": "gemini-2.5-pro",
+    "cu_trained": false,
+    "provider": "google",
+    "scene": "home_pixel7",
+    "target_id": "home_chrome",
+    "run": 0,
+    "predicted_bbox_px": [
+      583,
+      1867,
+      684,
+      2042
+    ],
+    "raw_response": "{\"box_2d\": [778, 540, 851, 633]}",
+    "parse_error": null,
+    "metrics": {
+      "parse_fail": false,
+      "center_error_px": 33.13608305156178,
+      "hit": true,
+      "iou": 0.5239365643989922
+    },
+    "metadata": {
+      "target_description": "The colorful Chrome browser icon in the bottom dock (third icon from left)",
+      "ground_truth_bbox_px": [
+        580,
+        1854,
+        753,
+        2049
+      ],
+      "size_category": "large",
+      "area": 33735,
+      "anchors": [
+        {
+          "id": "home_play_store",
+          "bbox_px": [
+            57,
+            1476,
+            267,
+            1748
+          ],
+          "description": "The 'Play Store' app icon (first icon in the top row, leftmost)"
+        },
+        {
+          "id": "home_google_lens",
+          "bbox_px": [
+            867,
+            2125,
+            993,
+            2219
+          ],
+          "description": "The colorful Google Lens camera icon (rightmost icon inside the search bar)"
+        },
+        {
+          "id": "home_date",
+          "bbox_px": [
+            99,
+            304,
+            1023,
+            370
+          ],
+          "description": "The 'Thu, Apr 16' date text near the top of the screen"
+        }
+      ],
+      "coord_space": "normalized_1000"
+    },
+    "latency_ms": 15079,
+    "input_tokens": 2674,
+    "output_tokens": 1431,
+    "api_error": null
+  },
+  {
+    "_key": [
+      "grounding_with_anchors",
+      "gemini-2.5-pro",
+      "home_pixel7",
+      "home_camera",
+      0
+    ],
+    "experiment": "grounding_with_anchors",
+    "model": "gemini-2.5-pro",
+    "cu_trained": false,
+    "provider": "google",
+    "scene": "home_pixel7",
+    "target_id": "home_camera",
+    "run": 0,
+    "predicted_bbox_px": [
+      846,
+      1814,
+      1021,
+      2026
+    ],
+    "raw_response": "{\"box_2d\": [756, 783, 844, 945]}",
+    "parse_error": null,
+    "metrics": {
+      "parse_fail": false,
+      "center_error_px": 34.438350715445125,
+      "hit": true,
+      "iou": 0.6252530830112277
+    },
+    "metadata": {
+      "target_description": "The 'Camera' icon in the bottom dock (rightmost white circle with a black camera)",
+      "ground_truth_bbox_px": [
+        832,
+        1854,
+        1004,
+        2049
+      ],
+      "size_category": "large",
+      "area": 33540,
+      "anchors": [
+        {
+          "id": "home_play_store",
+          "bbox_px": [
+            57,
+            1476,
+            267,
+            1748
+          ],
+          "description": "The 'Play Store' app icon (first icon in the top row, leftmost)"
+        },
+        {
+          "id": "home_google_lens",
+          "bbox_px": [
+            867,
+            2125,
+            993,
+            2219
+          ],
+          "description": "The colorful Google Lens camera icon (rightmost icon inside the search bar)"
+        },
+        {
+          "id": "home_date",
+          "bbox_px": [
+            99,
+            304,
+            1023,
+            370
+          ],
+          "description": "The 'Thu, Apr 16' date text near the top of the screen"
+        }
+      ],
+      "coord_space": "normalized_1000"
+    },
+    "latency_ms": 20496,
+    "input_tokens": 2678,
+    "output_tokens": 1989,
+    "api_error": null
+  },
+  {
+    "_key": [
+      "grounding_with_anchors",
+      "gemini-2.5-pro",
+      "home_pixel7",
+      "home_google_search_bar",
+      0
+    ],
+    "experiment": "grounding_with_anchors",
+    "model": "gemini-2.5-pro",
+    "cu_trained": false,
+    "provider": "google",
+    "scene": "home_pixel7",
+    "target_id": "home_google_search_bar",
+    "run": 0,
+    "predicted_bbox_px": [
+      39,
+      2095,
+      1041,
+      2251
+    ],
+    "raw_response": "{\"box_2d\": [873, 36, 938, 964]}",
+    "parse_error": null,
+    "metrics": {
+      "parse_fail": false,
+      "center_error_px": 1.4142135623730951,
+      "hit": true,
+      "iou": 0.5580633604585701
+    },
+    "metadata": {
+      "target_description": "The white Google search bar at the very bottom of the screen",
+      "ground_truth_bbox_px": [
+        75,
+        2125,
+        1003,
+        2219
+      ],
+      "size_category": "large",
+      "area": 87326,
+      "anchors": [
+        {
+          "id": "home_play_store",
+          "bbox_px": [
+            57,
+            1476,
+            267,
+            1748
+          ],
+          "description": "The 'Play Store' app icon (first icon in the top row, leftmost)"
+        },
+        {
+          "id": "home_google_lens",
+          "bbox_px": [
+            867,
+            2125,
+            993,
+            2219
+          ],
+          "description": "The colorful Google Lens camera icon (rightmost icon inside the search bar)"
+        },
+        {
+          "id": "home_date",
+          "bbox_px": [
+            99,
+            304,
+            1023,
+            370
+          ],
+          "description": "The 'Thu, Apr 16' date text near the top of the screen"
+        }
+      ],
+      "coord_space": "normalized_1000"
+    },
+    "latency_ms": 13716,
+    "input_tokens": 2672,
+    "output_tokens": 1151,
+    "api_error": null
+  },
+  {
+    "_key": [
+      "grounding_with_anchors",
+      "gemini-2.5-pro",
+      "home_pixel7",
+      "home_voice_search",
+      0
+    ],
+    "experiment": "grounding_with_anchors",
+    "model": "gemini-2.5-pro",
+    "cu_trained": false,
+    "provider": "google",
+    "scene": "home_pixel7",
+    "target_id": "home_voice_search",
+    "run": 0,
+    "predicted_bbox_px": [
+      766,
+      2124,
+      843,
+      2220
+    ],
+    "raw_response": "{\"box\": [885, 709, 925, 781]}",
+    "parse_error": null,
+    "metrics": {
+      "parse_fail": false,
+      "center_error_px": 0.0,
+      "hit": true,
+      "iou": 0.603267211201867
+    },
+    "metadata": {
+      "target_description": "The microphone icon for voice search (inside the bottom search bar)",
+      "ground_truth_bbox_px": [
+        741,
+        2125,
+        867,
+        2219
+      ],
+      "size_category": "medium",
+      "area": 11844,
+      "anchors": [
+        {
+          "id": "home_play_store",
+          "bbox_px": [
+            57,
+            1476,
+            267,
+            1748
+          ],
+          "description": "The 'Play Store' app icon (first icon in the top row, leftmost)"
+        },
+        {
+          "id": "home_google_lens",
+          "bbox_px": [
+            867,
+            2125,
+            993,
+            2219
+          ],
+          "description": "The colorful Google Lens camera icon (rightmost icon inside the search bar)"
+        },
+        {
+          "id": "home_date",
+          "bbox_px": [
+            99,
+            304,
+            1023,
+            370
+          ],
+          "description": "The 'Thu, Apr 16' date text near the top of the screen"
+        }
+      ],
+      "coord_space": "normalized_1000"
+    },
+    "latency_ms": 16728,
+    "input_tokens": 2672,
+    "output_tokens": 1369,
+    "api_error": null
+  },
+  {
+    "_key": [
+      "grounding_with_anchors",
+      "gemini-2.5-pro",
+      "youtube_pixel7",
+      "youtube_allow_button",
+      0
+    ],
+    "experiment": "grounding_with_anchors",
+    "model": "gemini-2.5-pro",
+    "cu_trained": false,
+    "provider": "google",
+    "scene": "youtube_pixel7",
+    "target_id": "youtube_allow_button",
+    "run": 0,
+    "predicted_bbox_px": [
+      619,
+      512,
+      1901,
+      653
+    ],
+    "raw_response": "{\"box2d\": [474, 258, 605, 792]}",
+    "parse_error": null,
+    "metrics": {
+      "parse_fail": false,
+      "center_error_px": 7.0710678118654755,
+      "hit": true,
+      "iou": 0.897459976746266
+    },
+    "metadata": {
+      "target_description": "The 'Allow' button in the notifications permission dialog (top blue button)",
+      "ground_truth_bbox_px": [
+        619,
+        511,
+        1900,
+        668
+      ],
+      "size_category": "large",
+      "area": 201117,
+      "anchors": [
+        {
+          "id": "youtube_dont_allow_button",
+          "bbox_px": [
+            619,
+            668,
+            1900,
+            825
+          ],
+          "description": "The 'Don't allow' button in the notifications permission dialog (bottom blue button)"
+        },
+        {
+          "id": "youtube_signin_button",
+          "bbox_px": [
+            1920,
+            205,
+            2210,
+            305
+          ],
+          "description": "The 'Sign in' button/pill visible in the top-right corner (dimmed, behind dialog)"
+        },
+        {
+          "id": "youtube_logo",
+          "bbox_px": [
+            250,
+            205,
+            555,
+            305
+          ],
+          "description": "The 'YouTube' logo in the top-left corner (red play icon + YouTube text, dimmed behind the dialog)"
+        }
+      ],
+      "coord_space": "normalized_1000"
+    },
+    "latency_ms": 20098,
+    "input_tokens": 2690,
+    "output_tokens": 1988,
+    "api_error": null
+  },
+  {
+    "_key": [
+      "grounding_with_anchors",
+      "gemini-2.5-pro",
+      "youtube_pixel7",
+      "youtube_bell_icon",
+      0
+    ],
+    "experiment": "grounding_with_anchors",
+    "model": "gemini-2.5-pro",
+    "cu_trained": false,
+    "provider": "google",
+    "scene": "youtube_pixel7",
+    "target_id": "youtube_bell_icon",
+    "run": 0,
+    "predicted_bbox_px": [
+      1162,
+      264,
+      1358,
+      328
+    ],
+    "raw_response": "{\"box_2d\": [244, 484, 304, 566]}",
+    "parse_error": null,
+    "metrics": {
+      "parse_fail": false,
+      "center_error_px": 1.4142135623730951,
+      "hit": true,
+      "iou": 0.46262956901254776
+    },
+    "metadata": {
+      "target_description": "The blue notification bell icon at the top of the dialog",
+      "ground_truth_bbox_px": [
+        1206,
+        255,
+        1312,
+        339
+      ],
+      "size_category": "medium",
+      "area": 8904,
+      "anchors": [
+        {
+          "id": "youtube_dont_allow_button",
+          "bbox_px": [
+            619,
+            668,
+            1900,
+            825
+          ],
+          "description": "The 'Don't allow' button in the notifications permission dialog (bottom blue button)"
+        },
+        {
+          "id": "youtube_signin_button",
+          "bbox_px": [
+            1920,
+            205,
+            2210,
+            305
+          ],
+          "description": "The 'Sign in' button/pill visible in the top-right corner (dimmed, behind dialog)"
+        },
+        {
+          "id": "youtube_logo",
+          "bbox_px": [
+            250,
+            205,
+            555,
+            305
+          ],
+          "description": "The 'YouTube' logo in the top-left corner (red play icon + YouTube text, dimmed behind the dialog)"
+        }
+      ],
+      "coord_space": "normalized_1000"
+    },
+    "latency_ms": 11175,
+    "input_tokens": 2687,
+    "output_tokens": 1089,
+    "api_error": null
+  },
+  {
+    "_key": [
+      "grounding_with_anchors",
+      "gemini-2.5-pro",
+      "youtube_pixel7",
+      "youtube_dialog_title",
+      0
+    ],
+    "experiment": "grounding_with_anchors",
+    "model": "gemini-2.5-pro",
+    "cu_trained": false,
+    "provider": "google",
+    "scene": "youtube_pixel7",
+    "target_id": "youtube_dialog_title",
+    "run": 0,
+    "predicted_bbox_px": [
+      619,
+      377,
+      1901,
+      427
+    ],
+    "raw_response": "```json\n{\"box_2d\": [349, 258, 395, 792]}\n```",
+    "parse_error": null,
+    "metrics": {
+      "parse_fail": false,
+      "center_error_px": 8.0,
+      "hit": true,
+      "iou": 0.605759682224429
+    },
+    "metadata": {
+      "target_description": "The dialog title text 'Allow YouTube to send you notifications?'",
+      "ground_truth_bbox_px": [
+        650,
+        370,
+        1870,
+        450
+      ],
+      "size_category": "large",
+      "area": 97600,
+      "anchors": [
+        {
+          "id": "youtube_dont_allow_button",
+          "bbox_px": [
+            619,
+            668,
+            1900,
+            825
+          ],
+          "description": "The 'Don't allow' button in the notifications permission dialog (bottom blue button)"
+        },
+        {
+          "id": "youtube_signin_button",
+          "bbox_px": [
+            1920,
+            205,
+            2210,
+            305
+          ],
+          "description": "The 'Sign in' button/pill visible in the top-right corner (dimmed, behind dialog)"
+        },
+        {
+          "id": "youtube_logo",
+          "bbox_px": [
+            250,
+            205,
+            555,
+            305
+          ],
+          "description": "The 'YouTube' logo in the top-left corner (red play icon + YouTube text, dimmed behind the dialog)"
+        }
+      ],
+      "coord_space": "normalized_1000"
+    },
+    "latency_ms": 11699,
+    "input_tokens": 2688,
+    "output_tokens": 1138,
+    "api_error": null
+  }
+]

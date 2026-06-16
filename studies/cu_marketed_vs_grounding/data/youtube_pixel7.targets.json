@@ -1,0 +1,68 @@
+[
+  {
+    "id": "youtube_allow_button",
+    "description": "The 'Allow' button in the notifications permission dialog (top blue button)",
+    "bounds": [619, 511, 1900, 668],
+    "center": [1259, 589],
+    "width": 1281,
+    "height": 157,
+    "area": 201117,
+    "size_category": "large",
+    "clickable": true
+  },
+  {
+    "id": "youtube_dont_allow_button",
+    "description": "The 'Don't allow' button in the notifications permission dialog (bottom blue button)",
+    "bounds": [619, 668, 1900, 825],
+    "center": [1259, 746],
+    "width": 1281,
+    "height": 157,
+    "area": 201117,
+    "size_category": "large",
+    "clickable": true
+  },
+  {
+    "id": "youtube_bell_icon",
+    "description": "The blue notification bell icon at the top of the dialog",
+    "bounds": [1206, 255, 1312, 339],
+    "center": [1259, 297],
+    "width": 106,
+    "height": 84,
+    "area": 8904,
+    "size_category": "medium",
+    "clickable": false
+  },
+  {
+    "id": "youtube_dialog_title",
+    "description": "The dialog title text 'Allow YouTube to send you notifications?'",
+    "bounds": [650, 370, 1870, 450],
+    "center": [1260, 410],
+    "width": 1220,
+    "height": 80,
+    "area": 97600,
+    "size_category": "large",
+    "clickable": false
+  },
+  {
+    "id": "youtube_signin_button",
+    "description": "The 'Sign in' button/pill visible in the top-right corner (dimmed, behind dialog)",
+    "bounds": [1920, 205, 2210, 305],
+    "center": [2065, 255],
+    "width": 290,
+    "height": 100,
+    "area": 29000,
+    "size_category": "large",
+    "clickable": true
+  },
+  {
+    "id": "youtube_logo",
+    "description": "The 'YouTube' logo in the top-left corner (red play icon + YouTube text, dimmed behind the dialog)",
+    "bounds": [250, 205, 555, 305],
+    "center": [400, 255],
+    "width": 305,
+    "height": 100,
+    "area": 30500,
+    "size_category": "large",
+    "clickable": false
+  }
+]

@@ -1,0 +1,13 @@
+model,size_category,n,mean_error_px,hit_rate,mean_iou
+claude-opus-4.6,large,18,749.18,0.11,0.04
+claude-opus-4.6,medium,6,709.66,0.17,0.08
+claude-opus-4.7,large,18,39.87,1.0,0.66
+claude-opus-4.7,medium,6,19.13,1.0,0.63
+claude-sonnet-4.5,large,18,824.66,0.11,0.04
+claude-sonnet-4.5,medium,6,940.47,0.0,0.03
+gemini-2.5-pro,large,17,81.27,0.94,0.5
+gemini-2.5-pro,medium,6,84.19,0.5,0.23
+gpt-4.1,large,18,461.36,0.22,0.11
+gpt-4.1,medium,6,316.12,0.0,0.03
+gpt-4o,large,18,180.45,0.17,0.13
+gpt-4o,medium,6,186.52,0.0,0.05

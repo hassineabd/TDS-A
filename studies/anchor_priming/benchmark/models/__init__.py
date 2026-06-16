@@ -1,9 +1,10 @@
 """Model registry for the benchmark (all via OpenRouter)."""
 from __future__ import annotations
 
-from .base import GroundingModel, Prediction, parse_coordinates
+from .base import GroundingModel, RawResponse, encode_image
 from .openrouter import (
     ClaudeOpus46,
+    ClaudeOpus47,
     ClaudeSonnet45,
     Gemini25Pro,
     GPT4o,
@@ -15,6 +16,7 @@ from .openrouter import (
 ALL_MODELS: dict[str, callable] = {
     "claude-sonnet-4.5": ClaudeSonnet45,
     "claude-opus-4.6":   ClaudeOpus46,
+    "claude-opus-4.7":   ClaudeOpus47,
     "gpt-4o":            GPT4o,
     "gpt-4.1":           GPT41,
     "gemini-2.5-pro":    Gemini25Pro,
@@ -30,8 +32,9 @@ def available_models() -> list[str]:
 
 
 __all__ = [
-    "GroundingModel", "Prediction", "parse_coordinates",
+    "GroundingModel", "RawResponse", "encode_image",
     "OpenRouterModel",
-    "ClaudeSonnet45", "ClaudeOpus46", "GPT4o", "GPT41", "Gemini25Pro",
+    "ClaudeSonnet45", "ClaudeOpus46", "ClaudeOpus47",
+    "GPT4o", "GPT41", "Gemini25Pro",
     "ALL_MODELS", "available_models",
 ]
